@@ -5,6 +5,7 @@ import { SolidChevronDown, Button } from "@relume_io/relume-ui";
 import type { ImageProps, ButtonProps } from "@relume_io/relume-ui";
 import { motion } from 'framer-motion'
 import { AnimatePresence } from 'framer-motion'
+import logo from '../../assets/main-website-logo.png'
 type LinkProps = {
     title: string;
     url: string;
@@ -154,7 +155,7 @@ const NavItemDropdown = ({ title, subLinks }: { title: string; subLinks: LinkPro
 
 const Navbar2Defaults: Navbar2Props = {
     logo: {
-        src: "https://relume-assets.s3.amazonaws.com/logo-image.svg",
+        src: logo,
         alt: "Logo image",
     },
     links: [
