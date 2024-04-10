@@ -1,0 +1,10 @@
+﻿/* Importing Tailwind CSS */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Your custom styles go below */
+/* For example: */
+body {
+    /* Your styles here */
+}
