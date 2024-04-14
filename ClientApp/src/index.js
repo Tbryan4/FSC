@@ -2,12 +2,16 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './styles.css'
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import {Navbar2} from "./Components/Navbar/Navbar";
+import Home from "./Pages/home"; // Import MyComponent instead of Carousel
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const Root = () => {
+    return (
+        <div> {/* Or use <>...</> for a fragment */}
+            <Navbar2 />
+            <Home />
+        </div>
+    );
+};
 
-root.render(
-    <Navbar2></Navbar2>,
-    <App></App>
-)
+ReactDOM.render(<Root />, document.getElementById("root"));
