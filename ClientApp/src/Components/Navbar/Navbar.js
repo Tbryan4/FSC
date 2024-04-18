@@ -1,182 +1,249 @@
-﻿"use client";
-import clsx from "clsx";
-import { useState } from "react";
-import { SolidChevronDown, Button } from "@relume_io/relume-ui";
-import type { ImageProps, ButtonProps } from "@relume_io/relume-ui";
-import { motion } from 'framer-motion'
-import { AnimatePresence } from 'framer-motion'
-import logo from '../../assets/main-website-logo.png'
-type LinkProps = {
-    title: string;
-    url: string;
-};
+﻿import React from "react";
+// Importing the logo
+import logo from "../../assets/main-website-logo.png";
+import {
+    Navbar,
+    Collapse,
+    Typography,
+    Button,
+    IconButton,
+    List,
+    ListItem,
+    Menu,
+    MenuHandler,
+    MenuList,
+    MenuItem,
+} from "@material-tailwind/react";
+import {
+    ChevronDownIcon,
+    Bars3Icon,
+    XMarkIcon,
+} from "@heroicons/react/24/outline";
+import {
+    Bars4Icon,
+    GlobeAmericasIcon,
+    NewspaperIcon,
+    PhoneIcon,
+    RectangleGroupIcon,
+    SquaresPlusIcon,
+    SunIcon,
+    TagIcon,
+    UserGroupIcon,
+    UsersIcon,
+    UserCircleIcon
+} from "@heroicons/react/24/solid";
 
-type MenuLinkProps = LinkProps & {
-    subLinks?: LinkProps[];
-};
+//Js object that contains the data for the menu items
+const navListMenuItems = [
+    {
+        title: "Executive Team",
+        description: "Learn how we can help you achieve your goals.",
+        icon: UsersIcon,
+    },
+    {
+        title: "Coaching Team",
+        description: "Meet our team of professional coaches.",
+        icon: UserGroupIcon,
+    },
+    {
+        title: "Recommended Vendors & Funding Assistance",
+        description: "Explore our network of trusted partners.",
+        icon: Bars4Icon,
+    },
+    {
+        title: "Parental Information",
+        description: "Find the perfect solution for your needs.",
+        icon: UserCircleIcon,
+    },
+];
 
-type Props = {
-    logo: ImageProps;
-    links: MenuLinkProps[];
-    buttons: ButtonProps[];
-};
-
-export type Navbar2Props = React.ComponentPropsWithoutRef<"section"> & Props;
-
-export const Navbar2 = (props: Navbar2Props) => {
-    const { logo, links, buttons } = {
-        ...Navbar2Defaults,
-        ...props
-    };
-
-
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const genericHamburgerLine = `h-[2px] w-6 my-[3px] bg-black transition ease-in-out transform duration-300 lg:hidden`;
-    return (
-        <nav className="flex h-auto min-h-16 w-full items-center border-b border-black bg-white px-[5%] lg:min-h-18">
-            <div className="mx-auto flex h-full w-full auto-cols-fr items-center justify-between gap-4 lg:grid lg:grid-cols-[0.375fr_1fr_0.375fr]">
-                <div className="flex min-h-16 flex-shrink-0 items-center">
-                    <img src={logo.src} alt={logo.alt} />
-                </div>
-                <ul
-                    className={clsx(
-                        "absolute left-0 top-16 flex h-dvh w-full flex-col items-center justify-start border-b border-border-primary bg-white px-[5%] pt-4 lg:static lg:flex lg:h-auto lg:w-auto lg:flex-row lg:justify-center lg:border-none lg:px-0 lg:pt-0",
-                        mobileMenuOpen ? "block" : "hidden",
-                    )}
-                >
-                    {links.map((link, index) => (
-                        <li key={`${link.title}-${index}`} className="w-full lg:w-auto">
-                            {link.subLinks && link.subLinks.length > 0 ? (
-                                <NavItemDropdown subLinks={link.subLinks} title={link.title} />
-                            ) : (
-                                <a
-                                    href={link.url}
-                                    className="relative block py-3 text-center text-md ring-offset-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-primary focus-visible:ring-offset-2 lg:px-4 lg:py-2 lg:text-base"
-                                >
-                                    {link.title}
-                                </a>
-                            )}
-                        </li>
-                    ))}
-                </ul>
-                <div className="flex min-h-16 items-center justify-end gap-x-4">
-                    <div>
-                        {buttons.map((button, index) => (
-                            <Button
-                                key={`${button.title}-${index}`}
-                                variant={button.variant}
-                                size={button.size}
-                                className="px-4 py-1 md:px-6 md:py-2"
-                            >
-                                {button.title}
-                            </Button>
-                        ))}
+//NavListMenu is a functional component that returns a Menu component
+function NavListMenu() {
+    //is Menu Open is the current state value, its initialized to false
+    //setIsMenuOpen is the function that will be used to update the state value
+    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+    const renderItems = navListMenuItems.map(
+        ({ icon, title, description }, key) => (
+            <a href="#" key={key}>
+                <MenuItem className="flex items-center gap-3 rounded-lg">
+                    <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
+                        {""}
+                        {React.createElement(icon, {
+                            strokeWidth: 2,
+                            className: "h-6 text-gray-900 w-6",
+                        })}
                     </div>
-                    <button
-                        className="-mr-2 flex size-12 flex-col items-center justify-center lg:hidden"
-                        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                    >
-                        <div
-                            className={clsx(genericHamburgerLine, mobileMenuOpen && "translate-y-2 -rotate-45")}
-                        />
-                        <div className={clsx(genericHamburgerLine, mobileMenuOpen && "opacity-0")} />
-                        <div
-                            className={clsx(genericHamburgerLine, mobileMenuOpen && "-translate-y-2 rotate-45")}
-                        />
-                    </button>
-                </div>
-            </div>
-        </nav>
+                    <div>
+                        <Typography
+                            variant="h6"
+                            color="blue-gray"
+                            className="flex items-center text-sm font-bold"
+                        >
+                            {title}
+                        </Typography>
+                        <Typography
+                            variant="paragraph"
+                            className="text-xs !font-medium text-blue-gray-500"
+                        >
+                            {description}
+                        </Typography>
+                    </div>
+                </MenuItem>
+            </a>
+        ),
     );
-};
 
-const NavItemDropdown = ({ title, subLinks }: { title: string; subLinks: LinkProps[] }) => {
-    const [dropdownOpen, setDropdownOpen] = useState(false);
     return (
-        <div>
-            <button
-                className="flex w-full items-center justify-center gap-2 py-3 text-center text-md ring-offset-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-primary focus-visible:ring-offset-2 lg:w-auto lg:flex-none lg:justify-start lg:gap-2 lg:px-4 lg:py-2 lg:text-base"
-                onClick={() => setDropdownOpen((prev) => !prev)}
-                onMouseEnter={() => setDropdownOpen(true)}
-                onMouseLeave={() => setDropdownOpen(false)}
+        <React.Fragment>
+            <Menu
+                open={isMenuOpen}
+                handler={setIsMenuOpen}
+                offset={{ mainAxis: 20 }}
+                placement="bottom"
+                allowHover={true}
             >
-                <span>{title}</span>
-                <AnimatePresence>
-                    <motion.div
-                        animate={dropdownOpen ? "rotated" : "initial"}
-                        variants={{
-                            rotated: { rotate: 180 },
-                            initial: { rotate: 0 },
-                        }}
-                        transition={{ duration: 0.3 }}
-                    >
-                        <SolidChevronDown className="size-4" />
-                    </motion.div>
-                </AnimatePresence>
-            </button>
-            {dropdownOpen && (
-                <AnimatePresence>
-                    <motion.ul
-                        initial="hidden"
-                        animate="visible"
-                        exit="hidden"
-                        variants={{
-                            hidden: {
-                                opacity: "var(--opacity-from, 100%)",
-                                y: "var(--slide-from, 25%)",
-                            },
-                            visible: {
-                                opacity: 1,
-                                y: "var(--slide-to, 0%)",
-                            },
-                        }}
-                        transition={{ duration: 0.3, type: "spring", bounce: 0 }}
-                        className="border-border-primary bg-white [--slide-from:0%] lg:absolute lg:h-auto lg:border lg:p-2 lg:[--opacity-from:0%] lg:[--slide-from:25%]"
-                    >
-                        {subLinks.map((subLink, index) => (
-                            <li
-                                key={`${subLink.title}-${index}`}
-                                className="relative whitespace-nowrap py-3 text-center align-top text-base lg:px-4 lg:py-2 lg:text-left"
-                            >
-                                <a
-                                    href={subLink.url}
-                                    className="ring-offset-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-primary focus-visible:ring-offset-2"
-                                >
-                                    {subLink.title}
-                                </a>
-                            </li>
-                        ))}
-                    </motion.ul>
-                </AnimatePresence>
-            )}
+                <MenuHandler>
+                    <Typography as="div" variant="small" className="font-medium">
+                        <ListItem
+                            className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
+                            selected={isMenuOpen || isMobileMenuOpen}
+                            onClick={() => setIsMobileMenuOpen((cur) => !cur)}>
+                            About Us
+                            <ChevronDownIcon
+                                strokeWidth={2.5}
+                                className={`hidden h-3 w-3 transition-transform lg:block ${
+                                    isMenuOpen ? "rotate-180" : ""
+                                }`}/>
+                            <ChevronDownIcon
+                                strokeWidth={2.5}
+                                className={`block h-3 w-3 transition-transform lg:hidden ${
+                                    isMobileMenuOpen ? "rotate-180" : "" 
+                                }`}/>
+                        </ListItem>
+                    </Typography>
+                </MenuHandler>
+                <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
+                    <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
+                        {renderItems}
+                    </ul>
+                </MenuList>
+            </Menu>
+            <div className="block lg:hidden">
+                <Collapse open={isMobileMenuOpen}>{renderItems}</Collapse>
+            </div>
+        </React.Fragment>
+    );
+}
+
+function NavList() {
+    return (
+        <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
+            <NavListMenu />
+            
+            <Typography
+                as="a"
+                href="#"
+                variant="small"
+                color="blue-gray"
+                className="font-medium"
+            >
+                <ListItem className="flex items-center gap-2 py-2 pr-4">
+                    Events
+                </ListItem>
+            </Typography>
+            <Typography
+                as="a"
+                href="#"
+                variant="small"
+                color="blue-gray"
+                className="font-medium"
+            >
+                <ListItem className="flex items-center gap-2 py-2 pr-4">
+                    Schedule
+                </ListItem>
+            </Typography>
+
+            <Typography
+                as="a"
+                href="#"
+                variant="small"
+                color="blue-gray"
+                className="font-medium"
+            >
+                <ListItem className="flex items-center gap-2 py-2 pr-4">
+                    News
+                </ListItem>
+            </Typography>
+
+            <Typography
+                as="a"
+                href="#"
+                variant="small"
+                color="blue-gray"
+                className="font-medium"
+            >
+                <ListItem className="flex items-center gap-2 py-2 pr-4">
+                    Contact Us
+                </ListItem>
+            </Typography>
+        </List>
+    );
+}
+
+export function GlobalNavbar() {
+    const [openNav, setOpenNav] = React.useState(false);
+
+    React.useEffect(() => {
+        window.addEventListener(
+            "resize",
+            () => window.innerWidth >= 960 && setOpenNav(false),
+        );
+    }, []);
+
+    return (
+        <div className="sticky top-0 z-50 bg-white">
+            <Navbar style={{ height: '6rem' }} className="mx-auto max-w-screen-xl px-4 py-2">
+            <div className="flex items-center justify-between text-blue-gray-900">
+                <Typography
+                    as="a"
+                    href="#"
+                    variant="h6"
+                    className="mr-4 cursor-pointer py-1.5 lg:ml-2">
+                    <img src={logo} width={60} alt="Main Website Logo" />
+                </Typography>
+                <div className="hidden lg:block">
+                    <NavList />
+                </div>
+                <div className="hidden gap-2 lg:flex">
+                    <a href="https://www.federationskatingclub.ca/registration/" target="_blank" rel="noopener noreferrer">
+                        <Button variant="gradient" size="sm">
+                            Register
+                        </Button>
+                    </a>
+                </div>
+                <IconButton
+                    variant="text"
+                    color="blue-gray"
+                    className="lg:hidden"
+                    onClick={() => setOpenNav(!openNav)}
+                >
+                    {openNav ? (
+                        <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+                    ) : (
+                        <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+                    )}
+                </IconButton>
+            </div>
+            <Collapse open={openNav}>
+                <NavList />
+                <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
+                    <Button variant="gradient" size="sm" fullWidth>
+                        Register
+                    </Button>
+                </div>
+            </Collapse>
+        </Navbar>
         </div>
     );
-};
-
-const Navbar2Defaults: Navbar2Props = {
-    logo: {
-        src: logo,
-        alt: "Logo image",
-    },
-    links: [
-        { title: "Link One", url: "#" },
-        { title: "Link Two", url: "#" },
-        { title: "Link Three", url: "#" },
-        {
-            title: "Link Four",
-            url: "#",
-            subLinks: [
-                { title: "Link Five", url: "#" },
-                { title: "Link Six", url: "#" },
-                { title: "Link Seven", url: "#" },
-            ],
-        },
-    ],
-    buttons: [
-        {
-            title: "Button",
-            size: "sm",
-        },
-    ],
-};
-
+}

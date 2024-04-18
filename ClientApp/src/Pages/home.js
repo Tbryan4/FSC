@@ -1,10 +1,16 @@
 import React from 'react';
-import { MyComponent } from '../Components/Carousel/Carousel'; // Import the carousel component
+import { CarouselDefault } from '../Components/Carousel/Carousel';
+
+
 
 const Home = () => {
     return (
         <div>
-            <MyComponent /> {/* Render the carousel component */}
+            <CarouselDefault heading="Welcome to Federation Skating Club"
+                             description="Experience the thrill of gliding on ice while building lifelong friendships."
+                             buttons={[{ title: "Register" }]}
+                             image={{ src: "https://skatecanada.ca/wp-content/uploads/2019/12/CanPower-Cropped.jpg", alt: "Image Alt Text" }}>
+            </CarouselDefault>
         </div>
     );
 };
