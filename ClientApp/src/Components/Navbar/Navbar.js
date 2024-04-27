@@ -66,8 +66,8 @@ function NavListMenu() {
     const renderItems = navListMenuItems.map(
         ({ icon, title, description }, key) => (
             <a href="#" key={key}>
-                <MenuItem className="flex items-center gap-3 rounded-lg">
-                    <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
+                <MenuItem className="flex items-center gap-3">
+                    <div className="flex items-center justify-center !bg-blue-gray-50 p-2 ">
                         {""}
                         {React.createElement(icon, {
                             strokeWidth: 2,
@@ -127,7 +127,7 @@ function NavListMenu() {
                                 </ListItem>
                             </Typography>
                         </MenuHandler>
-                        <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
+                        <MenuList className="hidden max-w-screen-xl lg:block">
                             <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
                                 {renderItems}
                             </ul>
