@@ -28,6 +28,11 @@ body {
     width: 100vw;
 }
 
+#root > div.sticky.top-0.z-50.bg-white > nav {
+    background-color: red;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
 .swiper-slide {
     background-position: center;
     background-size: cover;

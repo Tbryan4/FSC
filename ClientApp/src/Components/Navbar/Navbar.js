@@ -21,13 +21,6 @@ import {
 } from "@heroicons/react/24/outline";
 import {
     Bars4Icon,
-    GlobeAmericasIcon,
-    NewspaperIcon,
-    PhoneIcon,
-    RectangleGroupIcon,
-    SquaresPlusIcon,
-    SunIcon,
-    TagIcon,
     UserGroupIcon,
     UsersIcon,
     UserCircleIcon
@@ -137,24 +130,9 @@ function NavListMenu() {
                         <Collapse open={isMobileMenuOpen}>{renderItems}</Collapse>
                     </div>
                 </div>
-                <div style={{
-                    top: "525px",
-                    left: "-1300px",
-                    right: "-1200px",
-                    position: "absolute",
-                    height: "500px",
-                    backgroundImage: "linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0.9) 100%)"
-                }}>
-                </div>
-
-
-
         </div>
 </React.Fragment>
-
-)
-    ;
-}
+);}
 
 function NavList() {
     return (
@@ -223,7 +201,7 @@ export function GlobalNavbar() {
 
     return (
         <div className="sticky top-0 z-50 bg-white">
-            <Navbar style={{ height: '6rem' }} className="mx-auto max-w-screen-xl px-4 py-2">
+            <Navbar style={{ height: '6rem', borderRadius: 0  }} className="mx-auto max-w-screen-xl px-4 py-2">
             <div className="flex items-center justify-between text-blue-gray-900">
                 <Typography
                     as="a"

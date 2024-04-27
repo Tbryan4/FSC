@@ -38,13 +38,13 @@ export const CarouselDefault = ({ heading, description, buttons, image }: Header
                     <img alt={"img-one"} className="image-container" src="https://www.federationskatingclub.ca/sites/files/DSC_8897.jpg"/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img alt={"img-one"} className="image-container" src="https://64.media.tumblr.com/f2140e991e53a9fcedf1752f641b1a25/tumblr_n1o421rxSs1s24qdco1_500.gif"/>
+                    <img alt={"img-two"} className="image-container" src="https://64.media.tumblr.com/f2140e991e53a9fcedf1752f641b1a25/tumblr_n1o421rxSs1s24qdco1_500.gif"/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img alt={"img-one"} className="image-container" src="https://i.pinimg.com/originals/05/98/00/0598001e5c36eae7490f9accab56d583.gif"/>
+                    <img alt={"img-three"} className="image-container" src="https://i.pinimg.com/originals/05/98/00/0598001e5c36eae7490f9accab56d583.gif"/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img alt={"img-one"} className="image-container" src="https://i.gifer.com/YsD.gif"/>
+                    <img alt={"img-four"} className="image-container" src="https://i.gifer.com/YsD.gif"/>
                 </SwiperSlide>
             </Swiper>
         </header>
