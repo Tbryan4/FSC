@@ -31,24 +31,6 @@ export const CarouselDefault = ({ heading, description, buttons, image }: Header
     };
     return (
         <header className="grid grid-cols-1 items-center gap-y-16 pt-16 lg:grid-cols-2 lg:pt-0">
-            <div  className="mx-[5%] md:max-w-md md:justify-self-start lg:ml-[5vw] lg:mr-20 lg:justify-self-end">
-                <h1 className="mb-5 text-10xl font-bold md:mb-6 md:text-10xl lg:text-10xl">{heading}</h1>
-                <p className="md:text-md">{description}</p>
-                <div className="mt-6 flex gap-x-4 md:mt-8">
-                    {buttons && buttons.map((button, index) => (
-                        <Button
-                            style={{ color:"white", backgroundColor:"#cf1123" }}
-                            key={`${button.title}-${index}`}
-                            variant={button.variant}
-                            size={button.size}
-                            iconRight={button.iconRight}
-                            iconLeft={button.iconLeft}
-                        >
-                            {button.title}
-                        </Button>
-                    ))}
-                </div>
-            </div>
             <Swiper
                 autoplay={{
                     delay: 4000,
