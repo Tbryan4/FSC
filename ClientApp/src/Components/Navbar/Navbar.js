@@ -26,39 +26,53 @@ import {
     UserCircleIcon
 } from "@heroicons/react/24/solid";
 
-//Js object that contains the data for the menu items
+//? navListMenuItems is an array containing menu items, each item is an object with three properties: (title, description, and icon.)
+//! Where each item has a title, a description, and an icon associated with it. 
+//! This data structure could be used, for example, to dynamically render a navigation menu in a web application.
+
 const navListMenuItems = [
     {
         title: "Executive Team",
+        link: "https://www.federationskatingclub.ca/pages/club-page/board-members/",
         description: "Learn how we can help you achieve your goals.",
         icon: UsersIcon,
     },
     {
         title: "Coaching Team",
+        link : "https://www.federationskatingclub.ca/pages/club-page/undefined/",
         description: "Meet our team of professional coaches.",
         icon: UserGroupIcon,
     },
     {
         title: "Recommended Vendors & Funding Assistance",
+        link: "https://www.federationskatingclub.ca/pages/club-page/links/",
         description: "Explore our network of trusted partners.",
         icon: Bars4Icon,
     },
     {
         title: "Parental Information",
+        link: "https://www.federationskatingclub.ca/pages/club-page/links/",
         description: "Find the perfect solution for your needs.",
         icon: UserCircleIcon,
     },
 ];
 
-//NavListMenu is a functional component that returns a Menu component
 function NavListMenu() {
-    //is Menu Open is the current state value, its initialized to false
-    //setIsMenuOpen is the function that will be used to update the state value
+    
+    // ? is Menu Open is the current state value, its initialized to false
+    // ? setIsMenuOpen is the function that will be used to update the state value
+    
+    //! In our situation isMenuOpen is defaulted to false, if we want to update the ismenu open state we will call setIsMenuOpen with the new value
+    
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+    
+    // ? renderItems is a variable that contains the JSX code that will be rendered in the browser
+    // ? navListMenuItems.map is a function that will iterate over the navListMenuItems array and for each item in the array it will return a JSX element
+    
     const renderItems = navListMenuItems.map(
-        ({ icon, title, description }, key) => (
-            <a href="#" key={key}>
+        ({ icon, title, description, link }, key) => (
+            <a href={link} key={key}>
                 <MenuItem className="flex items-center gap-3">
                     <div className="flex items-center justify-center !bg-blue-gray-50 p-2 ">
                         {""}
@@ -89,7 +103,6 @@ function NavListMenu() {
 
     return (
         <React.Fragment>
-            <div style={{position: "relative"}}>
                 <div style={{
                     backgroundImage: 'linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))',
                 }}>
@@ -130,7 +143,6 @@ function NavListMenu() {
                         <Collapse open={isMobileMenuOpen}>{renderItems}</Collapse>
                     </div>
                 </div>
-        </div>
 </React.Fragment>
 );}
 
@@ -234,11 +246,13 @@ export function GlobalNavbar() {
                 </IconButton>
             </div>
             <Collapse open={openNav}>
-                <NavList />
-                <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
-                    <Button variant="gradient" size="sm" fullWidth>
-                        Register
-                    </Button>
+                <div className="bg-background-primary">
+                    <NavList  />
+                    <div className="register-btn-group flex w-full flex-nowrap items-center gap-2 lg:hidden">
+                        <Button variant="gradient" size="sm" fullWidth>
+                            Register
+                        </Button>
+                    </div>
                 </div>
             </Collapse>
         </Navbar>

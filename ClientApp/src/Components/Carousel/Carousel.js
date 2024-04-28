@@ -21,7 +21,7 @@ type Props = {
 export type HeaderProps = React.ComponentPropsWithoutRef<"section"> & Props;
 
 export const CarouselDefault = ({ heading, description, buttons, image }: HeaderProps) => {
-    return (
+    return ( 
         <header className="grid grid-cols-1 items-center gap-y-16 lg:grid-cols-2 lg:pt-0">
             <Swiper
                 autoplay={{
