@@ -108,7 +108,31 @@ body {
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 10px;
+}  
+
+/*
+    Home Page Style
+*/
+
+.home-title-container
+{
+    color:black;
+    text-align: center;
+    margin-top:1rem;
 }
+
+.home-title-container > h1
+{
+    color:crimson;
+    font-size: 5rem;
+}
+
+.home-title-container img {
+    margin:0 auto;
+    height: 150px;
+    width: 150px;
+}
+
 
 
 
