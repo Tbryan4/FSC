@@ -53,7 +53,7 @@ body {
 .swiper-slide img {
     display: block;
     width: 100vw;
-    height: 43rem;
+    height: 90vh;
     object-fit: cover;
     position: relative; /* Needed for absolute positioning of gradient */
 }
@@ -118,7 +118,7 @@ body {
 {
     color:black;
     text-align: center;
-    margin-top:1rem;
+  
 }
 
 .home-title-container > h1
@@ -132,6 +132,77 @@ body {
     height: 150px;
     width: 150px;
 }
+
+.banner-container
+{
+    background-color: black;
+    position:relative;
+    
+}
+
+.overlay-text {
+    font-size: 3rem;
+    position: absolute;
+    top: 46%;
+    left: 0; /* Adjusted to stick to the very left */
+    transform: translateY(-50%);
+    z-index: 10; /* Ensure the text is above the image */
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.5); /* Background color with opacity */
+    padding: 10px; /* Adjust as needed */
+    max-width: 80%; /* Limiting the width to 80% of the container */
+    white-space: normal; /* Allow text to wrap */
+    height: 20rem;
+    width: 50rem;
+}
+
+.overlay-text h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+.overlay-text p {
+    font-size: 1rem;
+    color: white;
+}
+
+/* Media Queries for Small and Medium Views */
+@media only screen and (max-width: 768px) {
+    .overlay-text {
+        font-size: 2rem;
+        height: 15rem;
+        width: 90%;
+        padding: 5px;
+        max-width: 90%;
+    }
+
+    .overlay-text h1 {
+        font-size: 3rem;
+    }
+
+    .overlay-text p {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .overlay-text {
+        font-size: 1.5rem;
+        height: 12rem;
+        width: 90%;
+        padding: 5px;
+        max-width: 90%;
+    }
+
+    .overlay-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .overlay-text p {
+        font-size: 0.7rem;
+    }
+}
+
 
 
 

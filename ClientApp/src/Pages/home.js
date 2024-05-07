@@ -13,11 +13,6 @@ const Home = () => {
                              buttons={[{ title: "Register" }]}
                              image={{ src: "https://skatecanada.ca/wp-content/uploads/2019/12/CanPower-Cropped.jpg", alt: "Image Alt Text" }}>
             </CarouselDefault>
-            <div className={'home-title-container'}>
-                <img src={logo} width={60} alt="Main Website Logo"/>
-                <h1>Welcome to Federation Skating Club</h1>
-                <h2>Providing quality skating lessons for all ages and skill levels since 1947! Check out our PreCanSkate, CanSkate, Figure Skating, CanPower, and Adult Skating classes </h2>
-            </div>
             <ProgramCollection/>
         </div>
     );

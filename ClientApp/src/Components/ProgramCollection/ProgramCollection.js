@@ -40,6 +40,7 @@ export const ProgramCollection = (props: Blog44Props) => {
                     </div>
                     <div className="hidden flex-wrap items-center justify-end md:block">
                         <Button
+                            style={{color: "black"}}
                             variant={button.variant}
                             size={button.size}
                             iconRight={button.iconRight}
@@ -148,5 +149,6 @@ export const Blog44Defaults: Blog44Props = {
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
             button: { title: "Read more", variant: "link", size: "link", iconRight: <ChevronRight /> },
         },
+        
     ],
 };

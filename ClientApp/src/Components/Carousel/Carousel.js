@@ -5,6 +5,8 @@ import type { ImageProps, ButtonProps } from "@relume_io/relume-ui";
 import { EffectFade, Autoplay } from 'swiper/modules';
 import '../../styles.css';
 import 'swiper/swiper-bundle.css';
+import logo from "../../assets/banner-image-3.png";
+
 
 //Defines a type named Props which represents the expected shape of props that the CarouselDefault component will receive. 
 // It includes properties for heading, description, an array of buttons, and an image.
@@ -34,19 +36,43 @@ export const CarouselDefault = ({ heading, description, buttons, image }: Header
                 modules={[Autoplay, EffectFade]}
                 className="mySwiper"
             >
-                <SwiperSlide>
-                    <img alt={"img-one"} className="image-container" src="https://www.federationskatingclub.ca/sites/files/DSC_8897.jpg"/>
+                <SwiperSlide className="position-relative">
+                    <img alt={"img-one"} className="image-container" src="https://skatecanada.ca/wp-content/uploads/2019/12/CanPower-Cropped.jpg"/>
+                    <div className="overlay-text">
+                        <h1>Welcome to Federation Skating Club!</h1>
+                        <p>Providing quality skating lessons for all ages and skill levels since 1947! Check out our PreCanSkate, CanSkate, Figure Skating, CanPower, and Adult Skating classes!</p>
+                    </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img alt={"img-two"} className="image-container" src="https://64.media.tumblr.com/f2140e991e53a9fcedf1752f641b1a25/tumblr_n1o421rxSs1s24qdco1_500.gif"/>
+                    <img height={"5rem"} alt={"img-two"} className="image-container"
+                         src="https://www.federationskatingclub.ca/sites/files/DSC_7090_EDIT2.jpg"/>
+                    <div className="overlay-text">
+                        <h1>Welcome to Federation Skating Club!</h1>
+                        <p>Providing quality skating lessons for all ages and skill levels since 1947! Check out our PreCanSkate, CanSkate, Figure Skating, CanPower, and Adult Skating classes!</p>
+                    </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img alt={"img-three"} className="image-container" src="https://i.pinimg.com/originals/05/98/00/0598001e5c36eae7490f9accab56d583.gif"/>
+                    <img alt={"img-three"} className="image-container"
+                         src={logo}/>
+                    <div className="overlay-text">
+                        <h1>Welcome to Federation <br/> Skating Club!</h1>
+                        <p>Providing quality skating lessons for all ages and skill levels since 1947! Check out our PreCanSkate, CanSkate, Figure Skating, CanPower, and Adult Skating classes!</p>
+                    </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img alt={"img-four"} className="image-container" src="https://i.gifer.com/YsD.gif"/>
+                    <img alt={"img-four"} className="image-container"
+                         src="https://skatecanada.ca/wp-content/uploads/2019/12/CanPower-Cropped.jpg"/>
+                    <div className="overlay-text">
+                        <h1>Welcome to Federation Skating Club!</h1>
+                        <p>Providing quality skating lessons for all ages and skill levels since 1947! Check out our PreCanSkate, CanSkate, Figure Skating, CanPower, and Adult Skating classes!</p>
+                    </div>
                 </SwiperSlide>
+
             </Swiper>
+
+            <div>
+                <p>test</p>
+            </div>
         </header>
     );
 };
