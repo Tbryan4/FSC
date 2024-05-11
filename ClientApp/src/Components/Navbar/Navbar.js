@@ -227,7 +227,7 @@ export function GlobalNavbar() {
                 </div>
                 <div className="hidden gap-2 lg:flex">
                     <a href="https://www.federationskatingclub.ca/registration/" target="_blank" rel="noopener noreferrer">
-                        <Button variant="gradient" size="sm">
+                        <Button size="sm" className="btn-12">
                             Register
                         </Button>
                     </a>
@@ -249,7 +249,7 @@ export function GlobalNavbar() {
                 <div className="bg-background-primary">
                     <NavList  />
                     <div className="register-btn-group flex w-full flex-nowrap items-center gap-2 lg:hidden">
-                        <Button variant="gradient" size="sm" fullWidth>
+                        <Button className="btn-12" variant="gradient" size="sm" fullWidth>
                             Register
                         </Button>
                     </div>

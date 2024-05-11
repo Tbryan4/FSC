@@ -67,12 +67,7 @@ export const CarouselDefault = ({ heading, description, buttons, image }: Header
                         <p>Providing quality skating lessons for all ages and skill levels since 1947! Check out our PreCanSkate, CanSkate, Figure Skating, CanPower, and Adult Skating classes!</p>
                     </div>
                 </SwiperSlide>
-
             </Swiper>
-
-            <div>
-                <p>test</p>
-            </div>
         </header>
     );
 };
