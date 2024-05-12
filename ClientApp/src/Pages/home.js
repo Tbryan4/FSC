@@ -1,8 +1,6 @@
 import React from 'react';
 import { CarouselDefault } from '../Components/Carousel/Carousel';
 import {ProgramCollection} from "../Components/ProgramCollection/ProgramCollection";
-import logo from "../assets/main-website-logo.webp";
-
 
 
 const Home = () => {
