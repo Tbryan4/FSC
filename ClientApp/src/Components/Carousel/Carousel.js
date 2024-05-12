@@ -40,15 +40,48 @@ export const CarouselDefault = ({ heading, description, buttons, image }: Header
                     <img alt={"img-one"} className="image-container" src="https://skatecanada.ca/wp-content/uploads/2019/12/CanPower-Cropped.jpg"/>
                     <div className="overlay-text">
                         <h1>Welcome to Federation Skating Club!</h1>
-                        <p>Providing quality skating lessons for all ages and skill levels since 1947! Check out our PreCanSkate, CanSkate, Figure Skating, CanPower, and Adult Skating classes!</p>
+                        <p>Providing quality skating lessons for all ages and skill levels since 1947! Check out our
+                            PreCanSkate, CanSkate, Figure Skating, CanPower, and Adult Skating classes!</p>
+
+                        <button className="animated-button">
+                            <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                ></path>
+                            </svg>
+                            <span className="text">Modern Button</span>
+                            <span className="circle"></span>
+                            <svg viewBox="0 0 24 24" className="arr-1" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                ></path>
+                            </svg>
+                        </button>
                     </div>
+
                 </SwiperSlide>
                 <SwiperSlide>
                     <img height={"5rem"} alt={"img-two"} className="image-container"
                          src="https://www.federationskatingclub.ca/sites/files/DSC_7090_EDIT2.jpg"/>
                     <div className="overlay-text">
                         <h1>Welcome to Federation Skating Club!</h1>
-                        <p>Providing quality skating lessons for all ages and skill levels since 1947! Check out our PreCanSkate, CanSkate, Figure Skating, CanPower, and Adult Skating classes!</p>
+                        <p>Providing quality skating lessons for all ages and skill levels since 1947! Check out our
+                            PreCanSkate, CanSkate, Figure Skating, CanPower, and Adult Skating classes!</p>
+                        <button className="animated-button">
+                            <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                ></path>
+                            </svg>
+                            <span className="text">Modern Button</span>
+                            <span className="circle"></span>
+                            <svg viewBox="0 0 24 24" className="arr-1" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                ></path>
+                            </svg>
+                        </button>
+
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -56,15 +89,49 @@ export const CarouselDefault = ({ heading, description, buttons, image }: Header
                          src={logo}/>
                     <div className="overlay-text">
                         <h1>Welcome to Federation <br/> Skating Club!</h1>
-                        <p>Providing quality skating lessons for all ages and skill levels since 1947! Check out our PreCanSkate, CanSkate, Figure Skating, CanPower, and Adult Skating classes!</p>
+                        <p>Providing quality skating lessons for all ages and skill levels since 1947! Check out our
+                            PreCanSkate, CanSkate, Figure Skating, CanPower, and Adult Skating classes!</p>
+                        <button className="animated-button">
+                            <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                ></path>
+                            </svg>
+                            <span className="text">Modern Button</span>
+                            <span className="circle"></span>
+                            <svg viewBox="0 0 24 24" className="arr-1" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                ></path>
+                            </svg>
+                        </button>
+
+
                     </div>
+
                 </SwiperSlide>
                 <SwiperSlide>
                     <img alt={"img-four"} className="image-container"
                          src="https://skatecanada.ca/wp-content/uploads/2019/12/CanPower-Cropped.jpg"/>
                     <div className="overlay-text">
                         <h1>Welcome to Federation Skating Club!</h1>
-                        <p>Providing quality skating lessons for all ages and skill levels since 1947! Check out our PreCanSkate, CanSkate, Figure Skating, CanPower, and Adult Skating classes!</p>
+                        <p>Providing quality skating lessons for all ages and skill levels since 1947! Check out our
+                            PreCanSkate, CanSkate, Figure Skating, CanPower, and Adult Skating classes!</p>
+                        <button className="animated-button">
+                            <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                ></path>
+                            </svg>
+                            <span className="text">Modern Button</span>
+                            <span className="circle"></span>
+                            <svg viewBox="0 0 24 24" className="arr-1" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                ></path>
+                            </svg>
+                        </button>
+
                     </div>
                 </SwiperSlide>
             </Swiper>

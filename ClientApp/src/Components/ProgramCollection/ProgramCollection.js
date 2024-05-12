@@ -65,7 +65,7 @@ export const ProgramCollection = (props: Blog44Props) => {
                             style={{color: "black"}}
                             key={`${post.title}-${index}`}
                             href={post.url}
-                            className="flex size-full flex-col items-center justify-start border border-border-primary ring-offset-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-primary focus-visible:ring-offset-2"
+                            className="program-card flex size-full flex-col items-center justify-start border border-border-primary ring-offset-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-primary focus-visible:ring-offset-2"
                         >
                             <div className="relative w-full overflow-hidden pt-[66%]">
                                 <img
