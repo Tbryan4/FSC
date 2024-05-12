@@ -213,49 +213,53 @@ export function GlobalNavbar() {
 
     return (
         <div className="sticky top-0 z-50 bg-white">
-            <Navbar style={{ height: '6rem', borderRadius: 0  }} className="mx-auto max-w-screen-xl px-4 py-2">
-            <div className="flex items-center justify-between text-blue-gray-900">
-                <Typography
-                    as="a"
-                    href="#"
-                    variant="h6"
-                    className="mr-4 cursor-pointer py-1.5 lg:ml-2">
-                    <img src={logo} width={60} alt="Main Website Logo" />
-                </Typography>
-                <div className="hidden lg:block">
-                    <NavList />
-                </div>
-                <div className="hidden gap-2 lg:flex">
-                    <a href="https://www.federationskatingclub.ca/registration/" target="_blank" rel="noopener noreferrer">
-                        <Button size="sm" className="btn-12">
-                            Register
-                        </Button>
-                    </a>
-                </div>
-                <IconButton
-                    variant="text"
-                    color="blue-gray"
-                    className="lg:hidden"
-                    onClick={() => setOpenNav(!openNav)}
-                >
-                    {openNav ? (
-                        <XMarkIcon className="h-6 w-6" strokeWidth={2} />
-                    ) : (
-                        <Bars3Icon className="h-6 w-6" strokeWidth={2} />
-                    )}
-                </IconButton>
-            </div>
-            <Collapse open={openNav}>
-                <div className="bg-background-primary">
-                    <NavList  />
-                    <div className="register-btn-group flex w-full flex-nowrap items-center gap-2 lg:hidden">
-                        <Button className="btn-12" variant="gradient" size="sm" fullWidth>
-                            Register
-                        </Button>
+            <Navbar style={{ height: '6rem', borderRadius: 0  }} className=" max-w-screen-xl px-4 py-2">
+                <div className="container">
+                    <div className="flex items-center justify-between text-blue-gray-900">
+                        <Typography
+                            as="a"
+                            href="#"
+                            variant="h6"
+                            className="mr-4 cursor-pointer py-1.5 lg:ml-2">
+                            <img src={logo} width={60} alt="Main Website Logo"/>
+                        </Typography>
+                        <div className="hidden lg:block">
+                            <NavList/>
+                        </div>
+                        <div className="hidden gap-2 lg:flex">
+                            <a href="https://www.federationskatingclub.ca/registration/" target="_blank"
+                               rel="noopener noreferrer">
+                                <Button size="sm" className="btn-12">
+                                    Register
+                                </Button>
+                            </a>
+                        </div>
+                        <IconButton
+                            variant="text"
+                            color="blue-gray"
+                            className="lg:hidden"
+                            onClick={() => setOpenNav(!openNav)}
+                        >
+                            {openNav ? (
+                                <XMarkIcon className="h-6 w-6" strokeWidth={2}/>
+                            ) : (
+                                <Bars3Icon className="h-6 w-6" strokeWidth={2}/>
+                            )}
+                        </IconButton>
                     </div>
                 </div>
-            </Collapse>
-        </Navbar>
+
+                <Collapse open={openNav}>
+                    <div className="bg-background-primary">
+                        <NavList/>
+                        <div className="register-btn-group flex w-full flex-nowrap items-center gap-2 lg:hidden">
+                            <Button className="btn-12" variant="gradient" size="sm" fullWidth>
+                                Register
+                            </Button>
+                        </div>
+                    </div>
+                </Collapse>
+            </Navbar>
         </div>
     );
 }
