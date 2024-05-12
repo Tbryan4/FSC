@@ -1,6 +1,6 @@
 ﻿import React from "react";
 // Importing the logo
-import logo from "../../assets/main-website-logo.png";
+import logo from "../../assets/main-website-logo.webp";
 import {
     Navbar,
     Collapse,
@@ -214,7 +214,6 @@ export function GlobalNavbar() {
     return (
         <div className="sticky top-0 z-50 bg-white">
             <Navbar style={{ height: '6rem', borderRadius: 0  }} className=" max-w-screen-xl px-4 py-2">
-                <div className="container">
                     <div className="flex items-center justify-between text-blue-gray-900">
                         <Typography
                             as="a"
@@ -246,7 +245,6 @@ export function GlobalNavbar() {
                                 <Bars3Icon className="h-6 w-6" strokeWidth={2}/>
                             )}
                         </IconButton>
-                    </div>
                 </div>
 
                 <Collapse open={openNav}>

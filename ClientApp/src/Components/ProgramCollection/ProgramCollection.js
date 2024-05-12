@@ -2,10 +2,10 @@
 
 import { Button, ChevronRight } from "@relume_io/relume-ui";
 import { ImageProps, ButtonProps } from "@relume_io/relume-ui";
-import adultcanskateimg from "../../assets/program-adult-can-skate.png"
-import figureskateimg from "../../assets/program-intro-to-figure-skate.jpeg"
-import canskateimg from "../../assets/program-canskate.jpeg"
-import canpowerskateimg from "../../assets/program-canpowerskate.jpeg"
+import adultcanskateimg from "../../assets/program-adult-can-skate.webp"
+import figureskateimg from "../../assets/program-intro-to-figure-skate.webp"
+import canskateimg from "../../assets/program-canskate.webp"
+import canpowerskateimg from "../../assets/program-canpowerskate.webp"
 
 type BlogPost = {
     url: string;
