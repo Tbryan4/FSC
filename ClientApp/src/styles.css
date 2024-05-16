@@ -53,7 +53,7 @@ body {
 .swiper-slide img {
     display: block;
     width: 100vw;
-    height: 80vh;
+    height: 75vh;
     object-fit: cover;
     position: relative; /* Needed for absolute positioning of gradient */
 }
@@ -407,9 +407,10 @@ body {
 /* Media Queries for Small and Medium Views */
 @media only screen and (max-width: 1000px) {
     .overlay-text {
-        height: 18rem;
-        width: 100%;
-        padding: 5px;
+        height: fit-content;
+        width: fit-content;
+        padding: 1.5rem;
+        bottom: -110px;
     }
 
     .overlay-text h1 {

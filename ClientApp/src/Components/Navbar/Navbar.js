@@ -73,8 +73,8 @@ function NavListMenu() {
     const renderItems = navListMenuItems.map(
         ({ icon, title, description, link }, key) => (
             <a href={link} key={key}>
-                <MenuItem className="flex items-center">
-                    <div className="flex items-center justify-center !bg-blue-gray-50 p-2 ">
+                <MenuItem className="flex items-center ">
+                    <div className="flex items-center justify-center !bg-blue-gray-50 p-2 mr-2 ">
                         {""}
                         {React.createElement(icon, {
                             strokeWidth: 2,
