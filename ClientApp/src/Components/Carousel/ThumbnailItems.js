@@ -2,7 +2,7 @@
 
 const ThumbnailItems = ({imgSrc, title, description}) => {
     return (
-        <div style={{maxWidth: 'unset'}} className="h-carousel-thumbnail-item">
+        <div className="h-carousel-thumbnail-item">
             <img src={imgSrc} alt={title}/>
             <div className="h-carousel-thumbnail-content">
                 <div className="h-carousel-thumbnail-title">{title}</div>

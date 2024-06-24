@@ -63,25 +63,25 @@ const HomeCarouselItems = [
 const HomeCarouselThumbnailItems = [
     {
         imgSrc: img1,
-        title: "Welcome To The Federation Skating Club",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        title: "test",
+        description: "test"
     },
     {
         imgSrc: img2,
-        title: "Welcome To The Federation Skating Club",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        title: "test",
+        description: "test"
     },
 
     {
         imgSrc: img3,
-        title: "Welcome To The Federation Skating Club",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        title: "test",
+        description: "test"
     },
 
     {
         imgSrc: img4,
-        title: "Welcome To The Federation Skating Club",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        title: "test",
+        description: "test"
     }
 
 ]
@@ -108,6 +108,10 @@ const Home = () => {
                         description={item.description}
                     />
                 ))}
+            </div>
+            <div className="arrows">
+                <button id="prev">&lt;</button>
+                <button id="next">&gt;</button>
             </div>
         </div>);
 };

@@ -41,7 +41,7 @@ body {
 {
     position:absolute;
     top: 20%;
-    width: 1140px;
+    width: 1500px;
     max-width: 80%;
     left: 50%;
     transform: translateX(-50%);
@@ -60,7 +60,7 @@ body {
 .h-carousel-title, .h-carousel-topic
 {
     font-weight: bold;
-    font-size: 5em;
+    font-size: 7em;
     line-height: 1.3em;
 }
 
@@ -98,7 +98,7 @@ body {
 .h-carousel-thumbnail
 {
     position: absolute;
-    bottom: 50px;
+    bottom: 150px;
     left: 50%;
     width: max-content;
     z-index: 100;
@@ -112,6 +112,7 @@ body {
     height: 220px;
     flex-shrink: 0;
     position: relative;
+    border-radius: 50px;
 }
 
 .h-carousel-thumbnail-item img
@@ -119,15 +120,61 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .h-carousel-thumbnail-content
 {
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     left: 10px;
     right: 10px;
+    border-radius:20px;
 }
+
+.h-carousel-thumbnail-title
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 5px 10px black;
+}
+
+/* ! arrow */
+
+.arrows {
+    position: absolute;
+    top:60%;
+    right: 67%;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap:10px;
+    align-content: center;
+}
+
+.arrows button
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 26, 26, 0.45);
+    border:none;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: large;
+}
+
+.arrows button:hover
+{
+    width: 42px;
+    height: 42px;
+    background-color: #eee;
+    color: #555;
+    transition: 1s ease;
+}
+
+
 
 
 
