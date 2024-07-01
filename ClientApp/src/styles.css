@@ -112,7 +112,9 @@ body {
     height: 220px;
     flex-shrink: 0;
     position: relative;
+    /*
     border-radius: 50px;
+    */
 }
 
 .h-carousel-thumbnail-item img
@@ -163,6 +165,7 @@ body {
     font-family: monospace;
     font-weight: bold;
     font-size: large;
+    z-index: 100;
 }
 
 .arrows button:hover
@@ -173,6 +176,125 @@ body {
     color: #555;
     transition: 1s ease;
 }
+
+.h-carousel .h-carousel-item:nth-child(1)
+{
+    z-index: 1;
+}
+
+.h-carousel-item:nth-child(1) .h-carousel-author,
+.h-carousel-item:nth-child(1) .h-carousel-title,
+.h-carousel-item:nth-child(1) .h-carousel-topic,
+.h-carousel-item:nth-child(1) .h-carousel-description,
+.h-carousel-item:nth-child(1) .h-carousel-buttons
+{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.5s 0.5s linear 1 forwards;
+}
+
+@keyframes showContent {
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+.h-carousel-item:nth-child(1) .h-carousel-title
+{
+    animation-delay: 1.2s;
+}
+
+.h-carousel-item:nth-child(1) .h-carousel-topic
+{
+    animation-delay: 1.4s;
+}
+
+.h-carousel-item:nth-child(1) .h-carousel-description
+{
+    animation-delay: 1.6s;
+}
+
+.h-carousel-item:nth-child(1) .h-carousel-buttons
+{
+    animation-delay: 1.8s;
+}
+
+.next-carousel .h-carousel-item:nth-child(1) img
+{
+    width: 150px;
+    height: 220px;
+    position:absolute;
+    left: 55%;
+    bottom:150px;
+    border-radius: 20px;
+    animation: showImage 0.3s linear 1 forwards;
+}
+
+@keyframes showImage {
+    to{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+}
+
+.next-carousel .h-carousel-thumbnail .h-carousel-thumbnail-item:nth-last-child(1)
+{
+    width: 0;
+    overflow: hidden;
+    animation: showThumbnail 0.5s linear 1 forwards;
+}
+
+@keyframes showThumbnail {
+    to {
+        width: 150px;
+    }
+}
+
+.next-carousel .h-carousel-thumbnail {
+    transform: translateX(150px);
+    animation: transformThumbnail 0.5s linear 1 forwards;
+}
+
+@keyframes transformThumbnail {
+    to {
+        transform: translateX(0);
+    }
+}
+
+.prev-carousel .h-carousel-item:nth-child(2)
+{
+    z-index: 2;
+}
+
+.prev-carousel .h-carousel-item:nth-child(2) img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: outImage 3s linear 1 forwards;
+}
+
+@keyframes outImage 
+{
+    to {
+        width: 150px;
+        height: 220px;
+        border-radius: 20px;
+        left: 50%;
+        bottom: 150px;
+    }
+    
+}
+
+
+
+
+
 
 
 

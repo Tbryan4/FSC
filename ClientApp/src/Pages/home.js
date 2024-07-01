@@ -1,7 +1,7 @@
 import React from 'react';
 import HomeCarouselItem from "../Components/Carousel/Carousel";
 import ThumbnailItems from "../Components/Carousel/ThumbnailItems";
-import img1 from '../assets/index-carosel-img-one.jpeg';
+import img1 from '../assets/index-carosel-img-one.jpg';
 import img2 from '../assets/index-carosel-img-two.jpeg';
 import img3 from '../assets/index-carosel-img-three.jpeg';
 import img4 from '../assets/index-carosel-img-four.jpeg';
@@ -88,7 +88,7 @@ const HomeCarouselThumbnailItems = [
 
 const Home = () => {
     return (
-        <div className="h-carousel">
+        <div className="h-carousel prev-carousel">
             {HomeCarouselItems.map((item, index) => (
                 <HomeCarouselItem
                     key={index}
