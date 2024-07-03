@@ -1,10 +1,10 @@
 import React from 'react';
 import HomeCarouselItem from "../Components/Carousel/Carousel";
 import ThumbnailItems from "../Components/Carousel/ThumbnailItems";
-import img1 from '../assets/index-carosel-img-one.jpg';
-import img2 from '../assets/index-carosel-img-two.jpeg';
-import img3 from '../assets/index-carosel-img-three.jpeg';
-import img4 from '../assets/index-carosel-img-four.jpeg';
+import img1 from '../assets/index-carosel-img-two.jpg';
+import img2 from '../assets/index-carosel-img-one.jpg';
+import img3 from '../assets/index-carosel-img-three.jpg';
+import img4 from '../assets/index-carosel-img-four.jpg';
 
 const HomeCarouselItems = [
     {
@@ -62,7 +62,7 @@ const HomeCarouselItems = [
 ];
 const HomeCarouselThumbnailItems = [
     {
-        imgSrc: img1,
+        imgSrc: img4,
         title: "test",
         description: "test"
     },
@@ -79,7 +79,7 @@ const HomeCarouselThumbnailItems = [
     },
 
     {
-        imgSrc: img4,
+        imgSrc: img1,
         title: "test",
         description: "test"
     }
@@ -88,7 +88,7 @@ const HomeCarouselThumbnailItems = [
 
 const Home = () => {
     return (
-        <div className="h-carousel prev-carousel">
+        <div className="h-carousel next-carousel">
             {HomeCarouselItems.map((item, index) => (
                 <HomeCarouselItem
                     key={index}
@@ -109,10 +109,8 @@ const Home = () => {
                     />
                 ))}
             </div>
-            <div className="arrows">
-                <button id="prev">&lt;</button>
-                <button id="next">&gt;</button>
-            </div>
+
+            
         </div>);
 };
 

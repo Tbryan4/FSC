@@ -22,6 +22,10 @@ const HomeCarouselItem = ({imgSrc, author, title, topic, description}) => {
                     <button>SEE MORE</button>
                     <button>ABOUT US</button>
                 </div>
+                <div className="arrows">
+                    <button id="prev">&lt;</button>
+                    <button id="next">&gt;</button>
+                </div>
             </div>
         </div>
     );
