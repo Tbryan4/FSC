@@ -1,5 +1,5 @@
 // MyComponent.js
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 
 
@@ -10,6 +10,33 @@ import React from 'react';
 //? render(): This is a lifecycle method that must be implemented in all class components. It is responsible for returning the JSX (or React elements) that will be rendered to the DOM.
 //? export default MyComponent: This statement exports the MyComponent class as the default export from this module. This allows other files to import and use MyComponent.
 const HomeCarouselItem = ({imgSrc, author, title, topic, description}) => {
+
+    const prevButtonRef = useRef(null);
+    const nextButtonRef = useRef(null);
+
+    useEffect(() => {
+        const prevButton = prevButtonRef.current;
+        const nextButton = nextButtonRef.current;
+
+        const handlePrevClick = () => {
+            console.log('Previous button clicked');
+            // Add your logic for handling previous button click here
+        };
+
+        const handleNextClick = () => {
+            console.log('Next button clicked');
+            // Add your logic for handling next button click here
+        };
+
+        prevButton.addEventListener('click', handlePrevClick);
+        nextButton.addEventListener('click', handleNextClick);
+
+        return () => {
+            prevButton.removeEventListener('click', handlePrevClick);
+            nextButton.removeEventListener('click', handleNextClick);
+        };
+    }, []);
+    
     return (
         <div className="h-carousel-item">
             <img src={imgSrc} alt={title}/>
@@ -23,8 +50,8 @@ const HomeCarouselItem = ({imgSrc, author, title, topic, description}) => {
                     <button>ABOUT US</button>
                 </div>
                 <div className="arrows">
-                    <button id="prev">&lt;</button>
-                    <button id="next">&gt;</button>
+                    <button ref={prevButtonRef} id="prev">&lt;</button>
+                    <button ref={nextButtonRef} id="next">&gt;</button>
                 </div>
             </div>
         </div>

@@ -19,7 +19,7 @@ body {
     background-color: black;
     color: white;
     width: 100vw;
-    height: 90vh;
+    height: 80vh;
     overflow: hidden;
     position:relative;
 }
@@ -331,13 +331,8 @@ body {
     }
 }
 
-.next-carousel .arrows button ,
-.prev-carousel .arrows button
+@media screen and (max-width: 678px)
 {
-    pointer-events: none;
-}
-
-@media screen and (max-width: 678px){
     .h-carousel .h-carousel-content
     {
         padding-right: 0;
@@ -363,8 +358,6 @@ body {
     {
         display: none;
     }
-    
-    
 }
 
 
