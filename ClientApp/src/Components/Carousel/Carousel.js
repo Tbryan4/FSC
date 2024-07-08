@@ -39,7 +39,6 @@ const HomeCarouselItem = ({imgSrc, title, author, topic, description}) => {
             thumbnailDom.appendChild(firstThumbnailItem);
             carouselDom.classList.remove('prev-carousel')
             carouselDom.classList.add('next-carousel');
-
         };
 
         prevButton.addEventListener('click', handlePrevClick);

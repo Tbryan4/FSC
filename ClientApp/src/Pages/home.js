@@ -12,7 +12,7 @@ const HomeCarouselItems = [
         author: 'Welcome To The',
         title: 'Federation',
         topic: 'Skating Club 1',
-        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        description: `1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                   when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
                   It has survived not only five centuries, but also the leap into electronic typesetting, 
@@ -25,7 +25,7 @@ const HomeCarouselItems = [
         author: 'Welcome To The',
         title: 'Federation',
         topic: 'Skating Club 2',
-        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        description: `2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                   when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
                   It has survived not only five centuries, but also the leap into electronic typesetting, 
@@ -38,7 +38,7 @@ const HomeCarouselItems = [
         author: 'Welcome To The',
         title: 'Federation',
         topic: 'Skating Club 3',
-        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        description: `3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                   when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
                   It has survived not only five centuries, but also the leap into electronic typesetting, 
@@ -51,7 +51,7 @@ const HomeCarouselItems = [
         author: 'Welcome To The',
         title: 'Federation',
         topic: 'Skating Club 4',
-        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        description: `4 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                   when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
                   It has survived not only five centuries, but also the leap into electronic typesetting, 
@@ -63,25 +63,25 @@ const HomeCarouselItems = [
 const HomeCarouselThumbnailItems = [
     {
         imgSrc: img2,
-        title: "test",
-        description: "testsssssssssssssssssssssss"
+        title: "Thumbnail 1",
+        description: "test 1"
     },
     {
         imgSrc: img3,
-        title: "test",
-        description: "test"
+        title: "thumbnail 2",
+        description: "test 2"
     },
 
     {
         imgSrc: img4,
-        title: "test",
-        description: "test"
+        title: "thumbnail 3",
+        description: "test 3"
     },
 
     {
         imgSrc: img1,
-        title: "test",
-        description: "test"
+        title: "thumbnail 4",
+        description: "test 4"
     }
 
 ]

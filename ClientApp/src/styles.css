@@ -278,7 +278,7 @@ body {
     left: 55%;
     bottom:150px;
     border-radius: 20px;
-    animation: showImage 0.5s linear 1 forwards;
+    animation: showImage 0.3s linear 1 forwards;
 }
 
 @keyframes showImage {
@@ -294,6 +294,7 @@ body {
 .next-carousel .h-carousel-thumbnail .h-carousel-thumbnail-item:nth-last-child(1)
 {
     width: 0;
+    opacity: 0;
     overflow: hidden;
     animation: showThumbnail .5s linear 1 forwards;
 }
@@ -301,30 +302,35 @@ body {
 @keyframes showThumbnail {
     to {
         width: 150px;
+        opacity: 100;
     }
 }
 
 .next-carousel .h-carousel-thumbnail {
+    /*Move group of 4 thumbnails to the beginning of where the last one is*/
     transform: translateX(150px);
-    animation: transformThumbnail .5s linear 1 forwards;
+    animation: moveThumbnailRight .5s linear 1 forwards;
 }
 
-@keyframes transformThumbnail {
+@keyframes moveThumbnailRight {
     to {
+        /*grow to the original position of what the thumbnail was*/
         transform: translateX(0);
     }
 }
 
 .prev-carousel .h-carousel-item:nth-child(2)
 {
+    /*After we move the item we will make it so the image will move below the first thumbnail img*/
     z-index: 2;
 }
 
 .prev-carousel .h-carousel-item:nth-child(2) img {
+    /*move full image to position of img*/
     position: absolute;
     bottom: 0;
     left: 0;
-    animation: outImage 1s linear 1 forwards;
+    animation: outImage 0.5s linear 1 forwards;
 }
 
 @keyframes outImage 
@@ -335,6 +341,7 @@ body {
         border-radius: 20px;
         left: 50%;
         bottom:150px;
+        visibility: hidden;
     }
     
 }
