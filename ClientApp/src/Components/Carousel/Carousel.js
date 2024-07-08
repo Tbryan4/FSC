@@ -3,6 +3,8 @@ import React, {useEffect, useRef} from 'react';
 const HomeCarouselItem = ({imgSrc, title, author, topic, description}) => {
     const prevButtonRef = useRef(null);
     const nextButtonRef = useRef(null);
+    let carouselTimer = 3000;
+    let runTimeout;
 
     useEffect(() => {
         const prevButton = prevButtonRef.current;
@@ -23,6 +25,7 @@ const HomeCarouselItem = ({imgSrc, title, author, topic, description}) => {
 
             const lastThumbnailItem = thumbnailDom.children[thumbnailDom.children.length - 1];
             thumbnailDom.insertBefore(lastThumbnailItem, thumbnailDom.children[0]);
+            carouselDom.classList.remove('next-carousel')
             carouselDom.classList.add('prev-carousel');
         };
 
@@ -34,12 +37,22 @@ const HomeCarouselItem = ({imgSrc, title, author, topic, description}) => {
             const firstThumbnailItem = thumbnailDom.children[0];
             carouselItemList.appendChild(firstCarouselItem);
             thumbnailDom.appendChild(firstThumbnailItem);
+            carouselDom.classList.remove('prev-carousel')
             carouselDom.classList.add('next-carousel');
 
         };
 
         prevButton.addEventListener('click', handlePrevClick);
         nextButton.addEventListener('click', handleNextClick);
+        
+        //set the timer to run the carousel
+        //clear the timer if the user clicks on the carousel
+        //this is to prevent the carousel from running when the user is interacting with it
+        clearTimeout(runTimeout);
+        runTimeout = setTimeout(() => {
+            carouselDom.classList.remove('next-carousel');
+            carouselDom.classList.remove('prev-carousel');
+        }, carouselTimer)
 
         return () => {
             prevButton.removeEventListener('click', handlePrevClick);

@@ -229,8 +229,7 @@ body {
 .h-carousel-item:nth-child(1) .h-carousel-title,
 .h-carousel-item:nth-child(1) .h-carousel-topic,
 .h-carousel-item:nth-child(1) .h-carousel-description,
-.h-carousel-item:nth-child(1) .h-carousel-buttons,
-.h-carousel-item:nth-child(1) .arrows
+.h-carousel-item:nth-child(1) .h-carousel-buttons
 {
     transform: translateY(50px);
     filter: blur(20px);
@@ -246,29 +245,29 @@ body {
     }
 }
 
+.h-carousel-item:nth-child(1) .h-carousel-author
+{
+    animation-delay: 0.4s;
+}
+
 .h-carousel-item:nth-child(1) .h-carousel-title
 {
-    animation-delay: 1.2s;
+    animation-delay: 0.4s;
 }
 
 .h-carousel-item:nth-child(1) .h-carousel-topic
 {
-    animation-delay: 1.4s;
+    animation-delay: 0.6s;
 }
 
 .h-carousel-item:nth-child(1) .h-carousel-description
 {
-    animation-delay: 1.6s;
+    animation-delay: 1s;
 }
 
 .h-carousel-item:nth-child(1) .h-carousel-buttons
 {
-    animation-delay: 1.8s;
-}
-
-.h-carousel-item:nth-child(1) .arrows
-{
-    animation-delay: 1.8s;
+    animation-delay: 1.4s;
 }
 
 .next-carousel .h-carousel-item:nth-child(1) img
@@ -307,7 +306,7 @@ body {
 
 .next-carousel .h-carousel-thumbnail {
     transform: translateX(150px);
-    animation: transformThumbnail 1s linear 1 forwards;
+    animation: transformThumbnail .5s linear 1 forwards;
 }
 
 @keyframes transformThumbnail {
@@ -352,9 +351,7 @@ body {
 .prev-carousel .h-carousel-item:nth-child(2) .h-carousel-title,
 .prev-carousel .h-carousel-item:nth-child(2) .h-carousel-topic,
 .prev-carousel .h-carousel-item:nth-child(2) .h-carousel-description,
-.prev-carousel .h-carousel-item:nth-child(2) .h-carousel-buttons,
-.prev-carousel .h-carousel-item:nth-child(2) .arrows
-{
+.prev-carousel .h-carousel-item:nth-child(2) .h-carousel-buttons{
 
     animation: contentOut 0.5s 0.5s linear 1 forwards;
 }
