@@ -1,8 +1,8 @@
 import React from 'react';
 import HomeCarouselItem from "../Components/Carousel/Carousel";
 import ThumbnailItems from "../Components/Carousel/ThumbnailItems";
-import img1 from '../assets/index-carosel-img-two.jpg';
-import img2 from '../assets/index-carosel-img-one.jpg';
+import img1 from '../assets/index-carosel-img-one.jpg';
+import img2 from '../assets/index-carosel-img-two.jpg';
 import img3 from '../assets/index-carosel-img-three.jpg';
 import img4 from '../assets/index-carosel-img-four.jpg';
 
@@ -11,7 +11,7 @@ const HomeCarouselItems = [
         imgSrc: img1,
         author: 'Welcome To The',
         title: 'Federation',
-        topic: 'Skating Club',
+        topic: 'Skating Club 1',
         description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                   when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -24,7 +24,7 @@ const HomeCarouselItems = [
         imgSrc: img2,
         author: 'Welcome To The',
         title: 'Federation',
-        topic: 'Skating Club',
+        topic: 'Skating Club 2',
         description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                   when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -37,7 +37,7 @@ const HomeCarouselItems = [
         imgSrc: img3,
         author: 'Welcome To The',
         title: 'Federation',
-        topic: 'Skating Club',
+        topic: 'Skating Club 3',
         description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                   when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -50,7 +50,7 @@ const HomeCarouselItems = [
         imgSrc: img4,
         author: 'Welcome To The',
         title: 'Federation',
-        topic: 'Skating Club',
+        topic: 'Skating Club 4',
         description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                   when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -62,18 +62,18 @@ const HomeCarouselItems = [
 ];
 const HomeCarouselThumbnailItems = [
     {
-        imgSrc: img4,
+        imgSrc: img2,
         title: "test",
-        description: "test"
+        description: "testsssssssssssssssssssssss"
     },
     {
-        imgSrc: img2,
+        imgSrc: img3,
         title: "test",
         description: "test"
     },
 
     {
-        imgSrc: img3,
+        imgSrc: img4,
         title: "test",
         description: "test"
     },
@@ -88,17 +88,19 @@ const HomeCarouselThumbnailItems = [
 
 const Home = () => {
     return (
-        <div className="h-carousel next-carousel">
-            {HomeCarouselItems.map((item, index) => (
-                <HomeCarouselItem
-                    key={index}
-                    imgSrc={item.imgSrc}
-                    author={item.author}
-                    title={item.title}
-                    topic={item.topic}
-                    description={item.description}
-                />
-            ))}
+        <div className="h-carousel">
+            <div className="h-carousel-list">
+                {HomeCarouselItems.map((item, index) => (
+                    <HomeCarouselItem
+                        key={index}
+                        imgSrc={item.imgSrc}
+                        author={item.author}
+                        title={item.title}
+                        topic={item.topic}
+                        description={item.description}
+                    />
+                ))}
+            </div>
             <div className="h-carousel-thumbnail">
                 {HomeCarouselThumbnailItems.map((item, index) => (
                     <ThumbnailItems
@@ -110,7 +112,7 @@ const Home = () => {
                 ))}
             </div>
 
-            
+
         </div>);
 };
 

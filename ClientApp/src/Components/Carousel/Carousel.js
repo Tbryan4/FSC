@@ -1,31 +1,41 @@
-// MyComponent.js
-import React, { useEffect, useRef } from 'react';
+import React, {useEffect, useRef} from 'react';
 
-
-
-
-//! importing the Component class from the React library. The Component class allows us to create class components in React
-//! The Component class is a JavaScript class that we can extend to create our own class components.
-
-//? render(): This is a lifecycle method that must be implemented in all class components. It is responsible for returning the JSX (or React elements) that will be rendered to the DOM.
-//? export default MyComponent: This statement exports the MyComponent class as the default export from this module. This allows other files to import and use MyComponent.
-const HomeCarouselItem = ({imgSrc, author, title, topic, description}) => {
-
+const HomeCarouselItem = ({imgSrc, title, author, topic, description}) => {
     const prevButtonRef = useRef(null);
     const nextButtonRef = useRef(null);
 
     useEffect(() => {
         const prevButton = prevButtonRef.current;
         const nextButton = nextButtonRef.current;
+        const carouselItemList = document.querySelector('.h-carousel-list');
+        const thumbnailDom = document.querySelector('.h-carousel-thumbnail');
+
+        const carouselDom = document.querySelector('.h-carousel');
+        const itemSlider = document.querySelectorAll('.h-carousel-item');
+        const itemThumbnail = document.querySelectorAll('.h-carousel-thumbnail-item');
 
         const handlePrevClick = () => {
-            console.log('Previous button clicked');
-            // Add your logic for handling previous button click here
+            //retrieve the last item in the list and insert it at the beginning of the list
+            // we subtract 1 from the length of the list to get the last item because the list is 0-indexed
+
+            const lastCarouselItem = carouselItemList.children[carouselItemList.children.length - 1];
+            carouselItemList.insertBefore(lastCarouselItem, carouselItemList.children[0]);
+
+            const lastThumbnailItem = thumbnailDom.children[thumbnailDom.children.length - 1];
+            thumbnailDom.insertBefore(lastThumbnailItem, thumbnailDom.children[0]);
+            carouselDom.classList.add('prev-carousel');
         };
 
         const handleNextClick = () => {
-            console.log('Next button clicked');
-            // Add your logic for handling next button click here
+            //retrieve the first item in the list and append it to the end of the list
+            //append child means to add a new child to the end of the list of children
+
+            const firstCarouselItem = carouselItemList.children[0];
+            const firstThumbnailItem = thumbnailDom.children[0];
+            carouselItemList.appendChild(firstCarouselItem);
+            thumbnailDom.appendChild(firstThumbnailItem);
+            carouselDom.classList.add('next-carousel');
+
         };
 
         prevButton.addEventListener('click', handlePrevClick);
@@ -36,10 +46,12 @@ const HomeCarouselItem = ({imgSrc, author, title, topic, description}) => {
             nextButton.removeEventListener('click', handleNextClick);
         };
     }, []);
-    
+
     return (
-        <div className="h-carousel-item">
-            <img src={imgSrc} alt={title}/>
+        <div className="h-carousel-item overlay">
+            <div className="image-wrapper">
+                <img src={imgSrc} alt={title}/>
+            </div>
             <div className="h-carousel-content">
                 <div className="h-carousel-author">{author}</div>
                 <div className="h-carousel-title">{title}</div>
@@ -59,9 +71,3 @@ const HomeCarouselItem = ({imgSrc, author, title, topic, description}) => {
 };
 
 export default HomeCarouselItem;
-
-
-
-
-
-
