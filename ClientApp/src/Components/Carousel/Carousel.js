@@ -1,58 +1,94 @@
 import React, {useEffect, useRef} from 'react';
 
 const HomeCarouselItem = ({imgSrc, title, author, topic, description}) => {
+    //?     useRef
+    
+    //      useRef is used to create a reference to a DOM element
+    //      in this example we are using it to create a reference to the previous and next buttons so we can add event listeners to them
+    
     const prevButtonRef = useRef(null);
     const nextButtonRef = useRef(null);
-    let carouselTimer = 3000;
+    let carouselTimer = 5000;
+    let autoPlayTimer = 7000;
     let runTimeout;
+    
 
+    //?     useEffect
+    
+    //      hook to handle the carousel animation
+    //      useEffect is used to handle side effects in functional components
+    
     useEffect(() => {
         const prevButton = prevButtonRef.current;
         const nextButton = nextButtonRef.current;
         const carouselItemList = document.querySelector('.h-carousel-list');
         const thumbnailDom = document.querySelector('.h-carousel-thumbnail');
-
         const carouselDom = document.querySelector('.h-carousel');
-        const itemSlider = document.querySelectorAll('.h-carousel-item');
-        const itemThumbnail = document.querySelectorAll('.h-carousel-thumbnail-item');
 
+        let runAutoRun = setTimeout(() => {
+            nextButton.click();
+        }, autoPlayTimer);
+        
         const handlePrevClick = () => {
-            //retrieve the last item in the list and insert it at the beginning of the list
-            // we subtract 1 from the length of the list to get the last item because the list is 0-indexed
+            // Retrieve the last items from carousel and thumbnail lists
+            const lastCarouselItem = carouselItemList.lastElementChild;
+            const lastThumbnailItem = thumbnailDom.lastElementChild;
+            
+            // Check if the last items exist
+            if (lastCarouselItem && lastThumbnailItem) {
+                
+                // Remove animation classes to reset animation
+                carouselDom.classList.remove('prev-carousel', 'next-carousel');
 
-            const lastCarouselItem = carouselItemList.children[carouselItemList.children.length - 1];
-            carouselItemList.insertBefore(lastCarouselItem, carouselItemList.children[0]);
+                // Move the last items to the beginning of the lists
+                carouselItemList.insertBefore(lastCarouselItem, carouselItemList.firstElementChild);
+                thumbnailDom.insertBefore(lastThumbnailItem, thumbnailDom.firstElementChild);
 
-            const lastThumbnailItem = thumbnailDom.children[thumbnailDom.children.length - 1];
-            thumbnailDom.insertBefore(lastThumbnailItem, thumbnailDom.children[0]);
-            carouselDom.classList.remove('next-carousel')
-            carouselDom.classList.add('prev-carousel');
+                carouselDom.classList.add('prev-carousel');
+            }
         };
 
         const handleNextClick = () => {
-            //retrieve the first item in the list and append it to the end of the list
-            //append child means to add a new child to the end of the list of children
+            // Retrieve the first item in the carousel and thumbnail lists and append them to the end
+            const firstCarouselItem = carouselItemList.firstElementChild;
+            const firstThumbnailItem = thumbnailDom.firstElementChild;
+            
+            // Check if the first items exist
+            if(firstCarouselItem && firstThumbnailItem) {
+                
+                // Remove animation classes to reset animation
+                carouselDom.classList.remove('prev-carousel', 'next-carousel');
+                
+                // Move the first items to the end of the lists
+                // appendChild moves an element to the end of the list
+                carouselItemList.appendChild(firstCarouselItem); 
+                thumbnailDom.appendChild(firstThumbnailItem);
 
-            const firstCarouselItem = carouselItemList.children[0];
-            const firstThumbnailItem = thumbnailDom.children[0];
-            carouselItemList.appendChild(firstCarouselItem);
-            thumbnailDom.appendChild(firstThumbnailItem);
-            carouselDom.classList.remove('prev-carousel')
-            carouselDom.classList.add('next-carousel');
+                // Add the next-carousel class to trigger the animation
+                carouselDom.classList.add('next-carousel');
+
+                // Clear the previous timeout and set a new one to reset the animation classes after the carouselTimer duration
+                clearTimeout(runTimeout);
+                runTimeout = setTimeout(() => {
+                    carouselDom.classList.remove('next-carousel', 'prev-carousel');
+                }, carouselTimer);
+                
+                // Clear the previous auto run timeout and set a new one to trigger the next button click after the autoPlayTimer duration
+                clearTimeout(runAutoRun);
+                runAutoRun = setTimeout(() => {
+                    nextButton.click();
+                }, autoPlayTimer);
+            }
+
         };
-
+        
         prevButton.addEventListener('click', handlePrevClick);
         nextButton.addEventListener('click', handleNextClick);
         
-        //set the timer to run the carousel
-        //clear the timer if the user clicks on the carousel
-        //this is to prevent the carousel from running when the user is interacting with it
-        clearTimeout(runTimeout);
-        runTimeout = setTimeout(() => {
-            carouselDom.classList.remove('next-carousel');
-            carouselDom.classList.remove('prev-carousel');
-        }, carouselTimer)
-
+        // Cleanup function to remove event listeners
+        // we do this to prevent memory leaks
+        // if we don't remove the event listeners, they will continue to exist even after the component is removed from the DOM
+        
         return () => {
             prevButton.removeEventListener('click', handlePrevClick);
             nextButton.removeEventListener('click', handleNextClick);
