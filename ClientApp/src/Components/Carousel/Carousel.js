@@ -8,9 +8,6 @@ const HomeCarouselItem = ({imgSrc, title, author, topic, description}) => {
     
     const prevButtonRef = useRef(null);
     const nextButtonRef = useRef(null);
-    let carouselTimer = 5000;
-    let autoPlayTimer = 7000;
-    let runTimeout;
     
 
     //?     useEffect
@@ -24,10 +21,11 @@ const HomeCarouselItem = ({imgSrc, title, author, topic, description}) => {
         const carouselItemList = document.querySelector('.h-carousel-list');
         const thumbnailDom = document.querySelector('.h-carousel-thumbnail');
         const carouselDom = document.querySelector('.h-carousel');
-
-        let runAutoRun = setTimeout(() => {
-            nextButton.click();
-        }, autoPlayTimer);
+        
+        let timeRunning = 2000;
+        let timeAutoNext = 5000;
+        let runTimeOut;
+        let autorun;
         
         const handlePrevClick = () => {
             // Retrieve the last items from carousel and thumbnail lists
@@ -45,6 +43,20 @@ const HomeCarouselItem = ({imgSrc, title, author, topic, description}) => {
                 thumbnailDom.insertBefore(lastThumbnailItem, thumbnailDom.firstElementChild);
 
                 carouselDom.classList.add('prev-carousel');
+                
+                clearTimeout(runTimeOut);
+                clearTimeout(autorun);
+                
+                runTimeOut = setTimeout(() =>
+                {
+                    carouselDom.classList.remove('prev-carousel')
+                    carouselDom.classList.remove('next-carousel')
+                },timeRunning)
+
+                autorun = setTimeout(() =>
+                {
+                    nextButton.click();
+                },timeAutoNext )
             }
         };
 
@@ -67,17 +79,21 @@ const HomeCarouselItem = ({imgSrc, title, author, topic, description}) => {
                 // Add the next-carousel class to trigger the animation
                 carouselDom.classList.add('next-carousel');
 
-                // Clear the previous timeout and set a new one to reset the animation classes after the carouselTimer duration
-                clearTimeout(runTimeout);
-                runTimeout = setTimeout(() => {
-                    carouselDom.classList.remove('next-carousel', 'prev-carousel');
-                }, carouselTimer);
+                clearTimeout(runTimeOut);
+                runTimeOut = setTimeout(() =>
+                {
+                    console.log('Animation reset after', timeRunning, 'ms.');
+                    carouselDom.classList.remove('prev-carousel')
+                    carouselDom.classList.remove('next-carousel')
+                },timeRunning)
                 
-                // Clear the previous auto run timeout and set a new one to trigger the next button click after the autoPlayTimer duration
-                clearTimeout(runAutoRun);
-                runAutoRun = setTimeout(() => {
+                clearTimeout(autorun);
+                autorun = setTimeout(() =>
+                {
+                    console.log('Autoplay triggered after', timeAutoNext, 'ms.');
                     nextButton.click();
-                }, autoPlayTimer);
+                },timeAutoNext )
+                
             }
 
         };
@@ -92,6 +108,8 @@ const HomeCarouselItem = ({imgSrc, title, author, topic, description}) => {
         return () => {
             prevButton.removeEventListener('click', handlePrevClick);
             nextButton.removeEventListener('click', handleNextClick);
+            clearTimeout(autorun);
+            clearTimeout(runTimeOut);
         };
     }, []);
 
