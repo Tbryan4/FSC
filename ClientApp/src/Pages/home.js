@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import HomeCarouselItem from "../Components/Carousel/Carousel";
 import ThumbnailItems from "../Components/Carousel/ThumbnailItems";
 import img1 from '../assets/index-carosel-img-one.jpg';
@@ -86,7 +86,67 @@ const HomeCarouselThumbnailItems = [
 
 ]
 
+
+
 const Home = () => {
+    
+
+
+    useEffect(() => {
+        let nextButton = document.getElementById('next');
+        let prevButton = document.getElementById('prev');
+
+
+        let timeAutoNext = 5000;
+        let autorun = setTimeout(() => {
+            nextButton.click();
+        }, timeAutoNext);
+        
+        let timeRunning = 500;
+        let runTimeOut;
+
+
+        let carousel = document.querySelector('.h-carousel');
+        let carouselList = document.querySelector('.h-carousel-list');
+        let thumbnailList = document.querySelector('.h-carousel-thumbnail');
+
+
+        
+        nextButton.onclick = function () {
+            showSlider('next');
+        }
+        prevButton.onclick = function () {
+            showSlider('prev');
+        }
+        
+        function showSlider(direction) {
+            let carouselItems = document.querySelectorAll('.h-carousel-item');
+            let thumbnailListItem = document.querySelectorAll('.h-carousel-thumbnail-item');
+
+            if(direction === 'next') {
+                carousel.classList.add('next-carousel');
+                carouselList.appendChild(carouselItems[0]);
+                thumbnailList.appendChild(thumbnailListItem[0]);
+            }
+            else {
+                carousel.classList.add('prev-carousel');
+                carouselList.insertBefore(carouselItems[carouselItems.length - 1], carouselItems[0]);
+                thumbnailList.insertBefore(thumbnailListItem[thumbnailListItem.length - 1], thumbnailListItem[0]);
+
+            }
+            clearTimeout(runTimeOut);
+            runTimeOut = setTimeout(() => {
+                carousel.classList.remove('prev-carousel');
+                carousel.classList.remove('next-carousel');
+            }, timeRunning);
+            
+            clearTimeout(autorun);
+            autorun = setTimeout(() => {
+                nextButton.click(); 
+            }, timeAutoNext);
+            
+        }
+    }, []);
     return (
         <div className="h-carousel">
             <div className="h-carousel-list">
@@ -101,6 +161,12 @@ const Home = () => {
                     />
                 ))}
             </div>
+
+            <div className="arrows">
+                <button id="prev">&lt;</button>
+                <button id="next">&gt;</button>
+            </div>
+
             <div className="h-carousel-thumbnail">
                 {HomeCarouselThumbnailItems.map((item, index) => (
                     <ThumbnailItems
@@ -111,8 +177,6 @@ const Home = () => {
                     />
                 ))}
             </div>
-
-
         </div>);
 };
 

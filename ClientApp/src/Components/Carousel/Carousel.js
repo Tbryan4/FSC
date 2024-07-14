@@ -6,8 +6,8 @@ const HomeCarouselItem = ({imgSrc, title, author, topic, description}) => {
     //      useRef is used to create a reference to a DOM element
     //      in this example we are using it to create a reference to the previous and next buttons so we can add event listeners to them
     
-    const prevButtonRef = useRef(null);
-    const nextButtonRef = useRef(null);
+    //const prevButtonRef = useRef(null);
+    //const nextButtonRef = useRef(null);
     
 
     //?     useEffect
@@ -16,8 +16,8 @@ const HomeCarouselItem = ({imgSrc, title, author, topic, description}) => {
     //      useEffect is used to handle side effects in functional components
     
     useEffect(() => {
-        const prevButton = prevButtonRef.current;
-        const nextButton = nextButtonRef.current;
+        //const prevButton = prevButtonRef.current;
+        //const nextButton = nextButtonRef.current;
         const carouselItemList = document.querySelector('.h-carousel-list');
         const thumbnailDom = document.querySelector('.h-carousel-thumbnail');
         const carouselDom = document.querySelector('.h-carousel');
@@ -55,7 +55,7 @@ const HomeCarouselItem = ({imgSrc, title, author, topic, description}) => {
 
                 autorun = setTimeout(() =>
                 {
-                    nextButton.click();
+                    //nextButton.click();
                 },timeAutoNext )
             }
         };
@@ -91,23 +91,23 @@ const HomeCarouselItem = ({imgSrc, title, author, topic, description}) => {
                 autorun = setTimeout(() =>
                 {
                     console.log('Autoplay triggered after', timeAutoNext, 'ms.');
-                    nextButton.click();
+                    //nextButton.click();
                 },timeAutoNext )
                 
             }
 
         };
         
-        prevButton.addEventListener('click', handlePrevClick);
-        nextButton.addEventListener('click', handleNextClick);
+        //prevButton.addEventListener('click', handlePrevClick);
+        //nextButton.addEventListener('click', handleNextClick);
         
         // Cleanup function to remove event listeners
         // we do this to prevent memory leaks
         // if we don't remove the event listeners, they will continue to exist even after the component is removed from the DOM
         
         return () => {
-            prevButton.removeEventListener('click', handlePrevClick);
-            nextButton.removeEventListener('click', handleNextClick);
+            //prevButton.removeEventListener('click', handlePrevClick);
+            //nextButton.removeEventListener('click', handleNextClick);
             clearTimeout(autorun);
             clearTimeout(runTimeOut);
         };
@@ -126,10 +126,6 @@ const HomeCarouselItem = ({imgSrc, title, author, topic, description}) => {
                 <div className="h-carousel-buttons">
                     <button>SEE MORE</button>
                     <button>ABOUT US</button>
-                </div>
-                <div className="arrows">
-                    <button ref={prevButtonRef} id="prev">&lt;</button>
-                    <button ref={nextButtonRef} id="next">&gt;</button>
                 </div>
             </div>
         </div>
