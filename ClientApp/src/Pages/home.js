@@ -98,9 +98,10 @@ const Home = () => {
 
 
         let timeAutoNext = 5000;
-        let autorun = setTimeout(() => {
-            nextButton.click();
-        }, timeAutoNext);
+        // let autorun = setTimeout(() => {
+        //     nextButton.click();
+        // }, timeAutoNext);
+        let autorun;
         
         let timeRunning = 500;
         let runTimeOut;
@@ -124,6 +125,7 @@ const Home = () => {
             let thumbnailListItem = document.querySelectorAll('.h-carousel-thumbnail-item');
 
             if(direction === 'next') {
+                console.log(carouselItems)
                 carousel.classList.add('next-carousel');
                 carouselList.appendChild(carouselItems[0]);
                 thumbnailList.appendChild(thumbnailListItem[0]);
