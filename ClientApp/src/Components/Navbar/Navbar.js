@@ -212,7 +212,7 @@ export function GlobalNavbar() {
     }, []);
 
     return (
-        <div className="sticky top-0 z-50 bg-white">
+        <div className="sticky top-0 fsc-navbar bg-white">
             <Navbar style={{ height: '6rem', borderRadius: 0  }} className=" max-w-screen-xl px-4 py-2">
                     <div className="flex items-center justify-between text-blue-gray-900">
                         <Typography

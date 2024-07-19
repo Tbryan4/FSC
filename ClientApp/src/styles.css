@@ -13,10 +13,15 @@ body {
     padding: 0;
 }
 
-/* ! Carousel */
+.fsc-navbar
+{
+    z-index: 9999;
+}
+
+    /* ! Carousel */
 .h-carousel {
     width: 100vw;
-    height: 90vh;
+    height: 80vh;
     overflow: hidden;
     background-color: black;
     color: white;
