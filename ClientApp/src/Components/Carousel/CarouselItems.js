@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React from 'react';
 
 const HomeCarouselItem = ({imgSrc, title, author, topic, description}) => {
 
@@ -14,7 +14,6 @@ const HomeCarouselItem = ({imgSrc, title, author, topic, description}) => {
                 <div className="h-carousel-description">{description}</div>
                 <div className="h-carousel-buttons">
                     <button>SEE MORE</button>
-                    <button>ABOUT US</button>
                 </div>
             </div>
         </div>

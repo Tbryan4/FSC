@@ -1,6 +1,6 @@
 ﻿import React from "react";
 // Importing the logo
-import logo from "../../assets/main-website-logo.webp";
+import logo from "../../assets/main-website-logo.jpg";
 import {
     Navbar,
     Collapse,
@@ -30,7 +30,7 @@ import {
 //! Where each item has a title, a description, and an icon associated with it. 
 //! This data structure could be used, for example, to dynamically render a navigation menu in a web application.
 
-const navListMenuItems = [
+const AboutUsMenuList = [
     {
         title: "Executive Team",
         link: "https://www.federationskatingclub.ca/pages/club-page/board-members/",
@@ -57,7 +57,34 @@ const navListMenuItems = [
     },
 ];
 
-function NavListMenu() {
+const ProgramsMenuList = [
+    {
+        title: "Can Power Skate",
+        link: "https://www.federationskatingclub.ca/pages/club-page/board-members/",
+        description: "Learn how we can help you achieve your goals.",
+        icon: UsersIcon,
+    },
+    {
+        title: "Star Skate",
+        link : "https://www.federationskatingclub.ca/pages/club-page/undefined/",
+        description: "Meet our team of professional coaches.",
+        icon: UserGroupIcon,
+    },
+    {
+        title: "Intro To figure Skate",
+        link: "https://www.federationskatingclub.ca/pages/club-page/links/",
+        description: "Explore our network of trusted partners.",
+        icon: Bars4Icon,
+    },
+    {
+        title: "Can Skate",
+        link: "https://www.federationskatingclub.ca/pages/club-page/links/",
+        description: "Find the perfect solution for your needs.",
+        icon: UserCircleIcon,
+    },
+];
+
+function AboutUsListMenu() {
     
     // ? is Menu Open is the current state value, its initialized to false
     // ? setIsMenuOpen is the function that will be used to update the state value
@@ -70,7 +97,7 @@ function NavListMenu() {
     // ? renderItems is a variable that contains the JSX code that will be rendered in the browser
     // ? navListMenuItems.map is a function that will iterate over the navListMenuItems array and for each item in the array it will return a JSX element
     
-    const renderItems = navListMenuItems.map(
+    const renderItems = AboutUsMenuList.map(
         ({ icon, title, description, link }, key) => (
             <a href={link} key={key}>
                 <MenuItem className="flex items-center ">
@@ -114,7 +141,7 @@ function NavListMenu() {
                         allowHover={true}
                     >
                         <MenuHandler>
-                            <Typography as="div" variant="small" className="font-medium">
+                            <Typography as="div" variant="h6" className="font-medium">
                                 <ListItem
                                     className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
                                     selected={isMenuOpen || isMobileMenuOpen}
@@ -145,27 +172,115 @@ function NavListMenu() {
                 </div>
 </React.Fragment>
 );}
+function ProgramsListMenu() {
+
+    // ? is Menu Open is the current state value, its initialized to false
+    // ? setIsMenuOpen is the function that will be used to update the state value
+
+    //! In our situation isMenuOpen is defaulted to false, if we want to update the ismenu open state we will call setIsMenuOpen with the new value
+
+    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+
+    // ? renderItems is a variable that contains the JSX code that will be rendered in the browser
+    // ? navListMenuItems.map is a function that will iterate over the navListMenuItems array and for each item in the array it will return a JSX element
+
+    const renderItems = ProgramsMenuList.map(
+        ({ icon, title, description, link }, key) => (
+            <a href={link} key={key}>
+                <MenuItem className="flex items-center ">
+                    <div className="flex items-center justify-center !bg-blue-gray-50 p-2 mr-2 ">
+                        {""}
+                        {React.createElement(icon, {
+                            strokeWidth: 2,
+                            className: "h-6 text-gray-900 w-6",
+                        })}
+                    </div>
+                    <div>
+                        <Typography
+                            variant="h6"
+                            color="blue-gray"
+                            className="flex items-center text-sm font-bold"
+                        >
+                            {title}
+                        </Typography>
+                        <Typography
+                            variant="paragraph"
+                            className="text-xs !font-medium text-blue-gray-500"
+                        >
+                            {description}
+                        </Typography>
+                    </div>
+                </MenuItem>
+            </a>
+        ),
+    );
+
+    return (
+        <React.Fragment>
+            <div style={{
+                backgroundImage: 'linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))',
+            }}>
+                <Menu
+                    open={isMenuOpen}
+                    handler={setIsMenuOpen}
+                    offset={{mainAxis: 20}}
+                    placement="bottom"
+                    allowHover={true}
+                >
+                    <MenuHandler>
+                        <Typography as="div" variant="h6" className="font-medium">
+                            <ListItem
+                                className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
+                                selected={isMenuOpen || isMobileMenuOpen}
+                                onClick={() => setIsMobileMenuOpen((cur) => !cur)}>
+                                Programs
+                                <ChevronDownIcon
+                                    strokeWidth={2.5}
+                                    className={`hidden h-3 w-3 transition-transform lg:block ${
+                                        isMenuOpen ? "rotate-180" : ""
+                                    }`}/>
+                                <ChevronDownIcon
+                                    strokeWidth={2.5}
+                                    className={`block h-3 w-3 transition-transform lg:hidden ${
+                                        isMobileMenuOpen ? "rotate-180" : ""
+                                    }`}/>
+                            </ListItem>
+                        </Typography>
+                    </MenuHandler>
+                    <MenuList className="hidden max-w-screen-xl lg:block">
+                        <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
+                            {renderItems}
+                        </ul>
+                    </MenuList>
+                </Menu>
+                <div className="block lg:hidden">
+                    <Collapse open={isMobileMenuOpen}>{renderItems}</Collapse>
+                </div>
+            </div>
+        </React.Fragment>
+    );}
 
 function NavList() {
     return (
-        <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
-            <NavListMenu/>
-
+        <List className="mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
+            <AboutUsListMenu/>
+            <ProgramsListMenu/>
             <Typography
                 as="a"
                 href="#"
-                variant="small"
+                variant="h6"
                 color="blue-gray"
                 className="font-medium"
             >
-                <ListItem className="flex items-center gap-2 py-2 pr-4">
+                <ListItem className="flex items-center gap-5 py-2 pr-4 pl-5">
                     Events
                 </ListItem>
             </Typography>
             <Typography
                 as="a"
                 href="#"
-                variant="small"
+                variant="h6"
                 color="blue-gray"
                 className="font-medium"
             >
@@ -177,7 +292,7 @@ function NavList() {
             <Typography
                 as="a"
                 href="#"
-                variant="small"
+                variant="h6"
                 color="blue-gray"
                 className="font-medium"
             >
@@ -189,7 +304,7 @@ function NavList() {
             <Typography
                 as="a"
                 href="#"
-                variant="small"
+                variant="h6"
                 color="blue-gray"
                 className="font-medium"
             >
@@ -213,7 +328,7 @@ export function GlobalNavbar() {
 
     return (
         <div className="sticky top-0 fsc-navbar bg-white">
-            <Navbar style={{ height: '6rem', borderRadius: 0  }} className=" max-w-screen-xl px-4 py-2">
+            <Navbar style={{borderRadius: 0  }} className=" max-w-screen-xl px-4 py-2">
                     <div className="flex items-center justify-between text-blue-gray-900">
                         <Typography
                             as="a"
@@ -228,7 +343,7 @@ export function GlobalNavbar() {
                         <div className="hidden gap-2 lg:flex">
                             <a href="https://www.federationskatingclub.ca/registration/" target="_blank"
                                rel="noopener noreferrer">
-                                <Button size="sm" className="btn-12">
+                                <Button size="sm">
                                     Register
                                 </Button>
                             </a>
