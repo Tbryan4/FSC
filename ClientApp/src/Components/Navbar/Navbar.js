@@ -292,7 +292,6 @@ function NavList() {
             <Typography
                 as="a"
                 href="#"
-                variant="h6"
                 color="blue-gray"
                 className="font-medium"
             >
@@ -304,7 +303,6 @@ function NavList() {
             <Typography
                 as="a"
                 href="#"
-                variant="h6"
                 color="blue-gray"
                 className="font-medium"
             >
@@ -316,7 +314,6 @@ function NavList() {
             <Typography
                 as="a"
                 href="#"
-                variant="h6"
                 color="blue-gray"
                 className="font-medium"
             >
@@ -345,7 +342,6 @@ export function GlobalNavbar() {
                         <Typography
                             as="a"
                             href="#"
-                            variant="h6"
                             className="mr-4 cursor-pointer py-1.5 lg:ml-2">
                             <img src={logo} width={60} alt="Main Website Logo"/>
                         </Typography>

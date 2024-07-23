@@ -43,24 +43,24 @@ const HomeCarouselItems = [
 const HomeCarouselThumbnailItems = [
     {
         imgSrc: img2,
-        title: "Thumbnail 1",
+        title: "Check this out",
         description: "test 1"
     },
     {
         imgSrc: img3,
-        title: "thumbnail 2",
+        title: "New Event",
         description: "test 2"
     },
 
     {
         imgSrc: img4,
-        title: "thumbnail 3",
+        title: "Sign Up",
         description: "test 3"
     },
 
     {
         imgSrc: img1,
-        title: "thumbnail 4",
+        title: "Follow us!!",
         description: "test 4"
     }
 

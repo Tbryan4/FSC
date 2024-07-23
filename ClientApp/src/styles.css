@@ -2,11 +2,11 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
 body {
     background-color: white;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Reddit Sans', sans-serif;
     font-size: 14px;
     color: black;
     margin: 0;
@@ -198,10 +198,10 @@ body {
     border-radius: 50%;
     background-color: rgba(255, 26, 26, 0.45);
     border: none;
-    font-family: monospace;
     font-weight: bold;
     font-size: large;
     z-index: 100;
+    transition: 500ms;
 }
 
 .arrows button:hover {
