@@ -309,6 +309,18 @@ function NavList() {
                 className="font-medium"
             >
                 <ListItem className="flex items-center gap-2 py-2 pr-4">
+                    Equipment
+                </ListItem>
+            </Typography>
+
+            <Typography
+                as="a"
+                href="#"
+                variant="h6"
+                color="blue-gray"
+                className="font-medium"
+            >
+                <ListItem className="flex items-center gap-2 py-2 pr-4">
                     Contact Us
                 </ListItem>
             </Typography>
