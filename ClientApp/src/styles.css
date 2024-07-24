@@ -21,7 +21,7 @@ body {
     /* ! Carousel */
 .h-carousel {
     width: 100vw;
-    height: 85vh;
+    height: 50rem;
     overflow: hidden;
     background-color: black;
     color: white;

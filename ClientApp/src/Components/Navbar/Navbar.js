@@ -50,8 +50,8 @@ const AboutUsMenuList = [
         icon: Bars4Icon,
     },
     {
-        title: "Parental Information",
-        link: "https://www.federationskatingclub.ca/pages/club-page/links/",
+        title: "About Us",
+        link: "/about",
         description: "Find the perfect solution for your needs.",
         icon: UserCircleIcon,
     },

@@ -32,7 +32,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ClientApp\src\Pages\" />
     <Folder Include="Models\" />
   </ItemGroup>
 
