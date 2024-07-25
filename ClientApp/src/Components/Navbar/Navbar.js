@@ -25,6 +25,7 @@ import {
     UsersIcon,
     UserCircleIcon
 } from "@heroicons/react/24/solid";
+import {Link} from "react-router-dom";
 
 //? navListMenuItems is an array containing menu items, each item is an object with three properties: (title, description, and icon.)
 //! Where each item has a title, a description, and an icon associated with it. 
@@ -39,7 +40,7 @@ const AboutUsMenuList = [
     },
     {
         title: "Coaching Team",
-        link : "https://www.federationskatingclub.ca/pages/club-page/undefined/",
+        link : "/coach",
         description: "Meet our team of professional coaches.",
         icon: UserGroupIcon,
     },
@@ -51,7 +52,7 @@ const AboutUsMenuList = [
     },
     {
         title: "About Us",
-        link: "/about",
+        link: "/aboutus",
         description: "Find the perfect solution for your needs.",
         icon: UserCircleIcon,
     },
@@ -187,7 +188,7 @@ function ProgramsListMenu() {
 
     const renderItems = ProgramsMenuList.map(
         ({ icon, title, description, link }, key) => (
-            <a href={link} key={key}>
+            <Link to={link} key={key}>
                 <MenuItem className="flex items-center ">
                     <div className="flex items-center justify-center !bg-blue-gray-50 p-2 mr-2 ">
                         {""}
@@ -212,7 +213,7 @@ function ProgramsListMenu() {
                         </Typography>
                     </div>
                 </MenuItem>
-            </a>
+            </Link>
         ),
     );
 
