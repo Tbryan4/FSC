@@ -17,7 +17,7 @@ type Props = {
 
 export type CoachingTeanBannerProps = React.ComponentPropsWithoutRef<"header"> & Partial<Props>;
 
-export const CoachingTeanBannerDefaults: Props = {
+export const CoachingTeamBannerDefaults: Props = {
     heading: "Meet Our Coaching Staff",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
     buttons: [{ title: "Contact Us" }],
@@ -27,12 +27,12 @@ export const CoachingTeanBannerDefaults: Props = {
     },
 };
 
-export const CoachingTeamBanner = (props: CoachingTeanBannerProps) => {
+export const CoachingTeamBanner = (props: CoachingTeamBannerDefaults) => {
     const {
-        heading = CoachingTeanBannerDefaults.heading,
-        description = CoachingTeanBannerDefaults.description,
-        buttons = CoachingTeanBannerDefaults.buttons,
-        image = CoachingTeanBannerDefaults.image,
+        heading = CoachingTeamBannerDefaults.heading,
+        description = CoachingTeamBannerDefaults.description,
+        buttons = CoachingTeamBannerDefaults.buttons,
+        image = CoachingTeamBannerDefaults.image,
     } = props;
 
     return (

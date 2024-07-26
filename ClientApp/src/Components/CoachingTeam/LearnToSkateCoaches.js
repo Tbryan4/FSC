@@ -1,8 +1,12 @@
 import React from 'react';
-import { Button } from "@relume_io/relume-ui";
 import type { ButtonProps } from "@relume_io/relume-ui";
 import { BiLogoDribbble, BiLogoLinkedinSquare } from "react-icons/bi";
 import { FaXTwitter } from "react-icons/fa6";
+import BaseCoachImg1 from "../../assets/coaching-staff/katrina-abou-rjeily  .jpg"
+import BaseCoachImg2 from "../../assets/coaching-staff/darci-wilson  .jpg"
+import BaseCoachImg3 from "../../assets/coaching-staff/rhea-sherman.jpg"
+import BaseCoachImg4 from "../../assets/coaching-staff/emily-johnston.jpg"
+
 
 type ImageProps = {
     src: string;
@@ -36,36 +40,20 @@ type Props = {
     footer: FooterProps;
 };
 
-export type Team2Props = React.ComponentPropsWithoutRef<"section"> & Partial<Props>;
+export type LearnToSkateCoachesProps = React.ComponentPropsWithoutRef<"section"> & Partial<Props>;
 
-export const Team2Defaults: Props = {
+export const LearnToSkateCoachesDefaults: Props = {
     tagline: "coaches",
-    heading: "Our team",
+    heading: "Learn To Skate",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     teamMembers: [
         {
             image: {
-                src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg",
-                alt: "Placeholder image 1",
+                src: BaseCoachImg1,
+                alt: BaseCoachImg1,
             },
-            name: "Full name",
-            jobTitle: "Job title",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-            socialLinks: [
-                { href: "#", icon: <BiLogoLinkedinSquare className="size-6" /> },
-                { href: "#", icon: <FaXTwitter className="size-6 p-0.5" /> },
-                { href: "#", icon: <BiLogoDribbble className="size-6" /> },
-            ],
-        },
-        // other team members...
-
-        {
-            image: {
-                src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg",
-                alt: "Placeholder image 1",
-            },
-            name: "Full name",
-            jobTitle: "Job title",
+            name: "Katrina Abou Rjeily",
+            jobTitle: "Base Coach",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
             socialLinks: [
                 { href: "#", icon: <BiLogoLinkedinSquare className="size-6" /> },
@@ -77,10 +65,25 @@ export const Team2Defaults: Props = {
         {
             image: {
                 src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg",
-                alt: "Placeholder image 1",
+                alt: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg",
             },
-            name: "Full name",
-            jobTitle: "Job title",
+            name: "Amy Warnke",
+            jobTitle: "Base Coach",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+            socialLinks: [
+                { href: "#", icon: <BiLogoLinkedinSquare className="size-6" /> },
+                { href: "#", icon: <FaXTwitter className="size-6 p-0.5" /> },
+                { href: "#", icon: <BiLogoDribbble className="size-6" /> },
+            ],
+        },
+
+        {
+            image: {
+                src: BaseCoachImg2,
+                alt: BaseCoachImg2,
+            },
+            name: "Darci Wilson",
+            jobTitle: "Base Coach",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
             socialLinks: [
                 { href: "#", icon: <BiLogoLinkedinSquare className="size-6" /> },
@@ -91,10 +94,10 @@ export const Team2Defaults: Props = {
         {
             image: {
                 src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg",
-                alt: "Placeholder image 1",
+                alt: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg",
             },
-            name: "Full name",
-            jobTitle: "Job title",
+            name: "Ellen Kim",
+            jobTitle: "Base Coach",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
             socialLinks: [
                 { href: "#", icon: <BiLogoLinkedinSquare className="size-6" /> },
@@ -105,10 +108,10 @@ export const Team2Defaults: Props = {
         {
             image: {
                 src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg",
-                alt: "Placeholder image 1",
+                alt: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg",
             },
-            name: "Full name",
-            jobTitle: "Job title",
+            name: "Sofia Arzayus Trujillo",
+            jobTitle: "Base Coach",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
             socialLinks: [
                 { href: "#", icon: <BiLogoLinkedinSquare className="size-6" /> },
@@ -119,38 +122,10 @@ export const Team2Defaults: Props = {
         {
             image: {
                 src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg",
-                alt: "Placeholder image 1",
+                alt: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg",
             },
-            name: "Full name",
-            jobTitle: "Job title",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-            socialLinks: [
-                { href: "#", icon: <BiLogoLinkedinSquare className="size-6" /> },
-                { href: "#", icon: <FaXTwitter className="size-6 p-0.5" /> },
-                { href: "#", icon: <BiLogoDribbble className="size-6" /> },
-            ],
-        },
-        {
-            image: {
-                src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg",
-                alt: "Placeholder image 1",
-            },
-            name: "Full name",
-            jobTitle: "Job title",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-            socialLinks: [
-                { href: "#", icon: <BiLogoLinkedinSquare className="size-6" /> },
-                { href: "#", icon: <FaXTwitter className="size-6 p-0.5" /> },
-                { href: "#", icon: <BiLogoDribbble className="size-6" /> },
-            ],
-        },
-        {
-            image: {
-                src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg",
-                alt: "Placeholder image 1",
-            },
-            name: "Full name",
-            jobTitle: "Job title",
+            name: "Astha Shah",
+            jobTitle: "Base Coach",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
             socialLinks: [
                 { href: "#", icon: <BiLogoLinkedinSquare className="size-6" /> },
@@ -160,15 +135,15 @@ export const Team2Defaults: Props = {
         },
     ],
     footer: {
-        heading: "We're hiring!",
+        heading: "Alyssa Higo",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         button: { title: "Open positions", variant: "secondary", size: "medium", iconRight: undefined, iconLeft: undefined },
     },
 };
 
-export const Team2: React.FC<Team2Props> = (props) => {
+export const LearnToSkateCoaches: React.FC<LearnToSkateCoachesProps> = (props) => {
     const { tagline, heading, description, teamMembers, footer } = {
-        ...Team2Defaults,
+        ...LearnToSkateCoachesDefaults,
         ...props,
     };
 
@@ -216,4 +191,4 @@ export const Team2: React.FC<Team2Props> = (props) => {
     );
 };
 
-Team2.displayName = "Team2";
+LearnToSkateCoaches.displayName = "Team2";

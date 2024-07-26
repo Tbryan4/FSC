@@ -1,13 +1,17 @@
 // src/pages/AboutPage.js
 import React from 'react';
-import {Team2} from "../Components/CoachingTeam/CoachingTeam";
+import {StarSkateCoaches} from "../Components/CoachingTeam/StarSkateCoaches";
 import {CoachingTeamBanner} from "../Components/CoachingTeamBanner/CoachingTeamBanner";
+import {LearnToSkateCoaches} from "../Components/CoachingTeam/LearnToSkateCoaches";
+import {CanPowerCoaches} from "../Components/CoachingTeam/CanPowerCoaches";
 
 const CoachPage = () => {
     return (
         <div>
             <CoachingTeamBanner/>
-            <Team2/>
+            <StarSkateCoaches/>
+            <LearnToSkateCoaches/>
+            <CanPowerCoaches/>
         </div>
     );
 };
