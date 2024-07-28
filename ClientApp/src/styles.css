@@ -21,7 +21,7 @@ body {
     /* ! Carousel */
 .h-carousel {
     width: 100vw;
-    height: 50rem;
+    height: 80vh;
     overflow: hidden;
     background-color: black;
     color: white;
@@ -70,7 +70,7 @@ body {
 }
 
 .h-carousel-topic {
-    color: crimson;
+    color: #fd2e2e;
 }
 
 .h-carousel-buttons {
@@ -146,18 +146,19 @@ body {
     transition: 500ms;
 }
 
+
 .h-carousel-thumbnail-item:hover {
     width: 170px;
     height: 240px;
     transition: .5s ease-in-out;
+    box-shadow: 1px 1px 10px black;
 }
 
 .h-carousel-thumbnail-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
-}
+    }
 
 .h-carousel-thumbnail-content {
     position: absolute;
@@ -187,9 +188,8 @@ body {
     display: flex;
     gap: 10px;
     align-content: center;
-    position: absolute;
-    margin-left: 12rem;
-    margin-top: 60vh;
+    margin-top: 40rem;
+    margin-left: 10%;
 }
 
 .arrows button {
@@ -357,6 +357,30 @@ body {
     }
 }
 
+/*Coach Section*/
+
+.coach-email {
+    color: #007bff; /* Link color */
+    text-decoration: underline; /* Underline link */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 0.5rem;
+}
+
+.coach-description, .coach-email {
+    opacity: 0; /* Start as invisible */
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Smooth fade effect */
+    visibility: hidden; /* Start as hidden */
+}
+
+.coach-card {
+    cursor: pointer;
+    position: relative; /* Ensure absolutely positioned children are relative to this element */
+}
+
+.coach-card:hover .coach-description, .coach-card:hover .coach-email {
+    opacity: 1; /* Fully visible */
+    visibility: visible; /* Ensure it's visible */
+}
 
 
 @media screen and (max-width: 678px) {
@@ -376,10 +400,7 @@ body {
         .h-carousel-thumbnail {
         display: none;
     }
-
-    .arrows {
-        display: none;
-    }
+        
     .h-carousel .h-carousel-content {
         margin-left: 4rem;
         width: 100%;
@@ -412,11 +433,15 @@ body {
     height: 230px;
 }
 
-@media (min-width: 678px) and (max-width: 1350px) {
+@media (min-width: 600px) and (max-width: 1350px) {
     .max-width{
         width:100%;
         display:flex;
         justify-content:center;
+    }
+
+    .arrows {
+        display: none;
     }
 
     .h-carousel-content

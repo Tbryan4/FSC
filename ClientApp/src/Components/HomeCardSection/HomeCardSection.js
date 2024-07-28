@@ -11,12 +11,10 @@ import {
     Typography,
     Button,
 } from "@material-tailwind/react";
-import Fade from 'react-reveal/Fade';
 
 
 export function CardDefault({ src, title, description }) {
     return (
-        <Fade top distance="10%" duration={1500}>
             <Card className="mt-5 w-96">
                 <CardHeader color="blue-gray" className="relative h-56">
                     <img
@@ -33,10 +31,9 @@ export function CardDefault({ src, title, description }) {
                     </Typography>
                 </CardBody>
                 <CardFooter className="pt-0">
-                    <Button>Read More</Button>
+                    <Button color={"red"}>Read More</Button>
                 </CardFooter>
             </Card>
-        </Fade>
         
     );
 }
@@ -45,28 +42,27 @@ export function CardList() {
     const cards = [
         {
             src: img1,
-            title: "Can Power Skate",
+            title: "CanPower Skating",
             description: "Develop and improve upon the skills required for hockey and/or ringette in a fast-paced and upbeat environment from certified coaches."
         },
         {
-            src: img2,
-            title: "Star Skate",
+            src: img3,
+            title: "StarSkate",
             description: "Enter the sport of figure skating. Skaters have the opportunity to participate in competitions and/or assessments."
         },
         {
-            src: img3,
-            title: "Intro To Figure skate\n",
+            src: img2,
+            title: "Intro To Figure Skating\n",
             description: "Develop the basic figure skating skills in group lesson. Acts as a transition between CanSkate and StarSkate."
         },
         {
             src: img4,
-            title: "Can Skate",
+            title: "Learn to Skate",
             description: "Learn how to skate in a upbeat and progressive environment. Skaters are split into groups based on skill level and age."
         }
     ];
 
     return (
-        <Fade>
             <div>
                 <div className="container mx-auto mb-10 mt-30 text-center lg:mb-20">
                     <Typography
@@ -100,7 +96,6 @@ export function CardList() {
                     ))}
                 </div>
             </div>
-        </Fade>
 
     );
 }
