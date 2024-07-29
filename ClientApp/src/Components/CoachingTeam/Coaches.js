@@ -1,5 +1,6 @@
 // src/Components/CoachingTeam/Coaches.tsx
 import React from 'react';
+import {Chip} from "@material-tailwind/react";
 
 type ImageProps = {
     src: string;
@@ -25,21 +26,24 @@ type Props = {
 export type CoachesProps = React.ComponentPropsWithoutRef<"section"> & Partial<Props>;
 
 export const Coaches: React.FC<CoachesProps> = (props) => {
-    const { tagline, heading, description, teamMembers } = props;
+    const {tagline, heading, description, teamMembers} = props;
 
     return (
         <section className="px-[5%] py-12">
             <div className="container">
                 <div className="mx-auto mb-10 max-w-lg text-center md:mb-18 lg:mb-15">
-                    <p style={{ color: 'crimson' }} className="mb-3 font-semibold md:mb-4">{tagline}</p>
+                    <div className="d-flex justify-content-center mt-2 mb-2">
+                        <Chip className="custom-chip-two" value={tagline}/>
+                    </div>
                     <h2 className="mb-3 text-5xl font-bold md:text-7xl lg:text-8xl">{heading}</h2>
                     <p className="md:text-md">{description}</p>
                 </div>
 
-                <div className="coach-info grid grid-cols-1 items-start justify-center gap-x-8 gap-y-12 md:grid-cols-2 md:gap-y-16 lg:grid-cols-4">
+                <div
+                    className="coach-info grid grid-cols-1 items-start justify-center gap-x-8 gap-y-12 md:grid-cols-2 md:gap-y-16 lg:grid-cols-4">
                     {teamMembers.map((member, index) => (
                         <div className="coach-card flex flex-col items-stretch text-center" key={index}>
-                            <div className="relative mb-5 size-full overflow-hidden pt-[66%] md:mb-6 md:pt-[100%]">
+                            <div className="relative mb-4 size-full overflow-hidden pt-[66%] md:mb-6 md:pt-[100%]">
                                 <img
                                     src={member.image.src}
                                     alt={member.image.alt}
@@ -48,7 +52,15 @@ export const Coaches: React.FC<CoachesProps> = (props) => {
                             </div>
                             <div className="mb-3 md:mb-4">
                                 <h5 className="text-md font-semibold md:text-lg">{member.name}</h5>
-                                <h6 className="md:text-md">{member.jobTitle}</h6>
+                                <div className="d-flex justify-content-center mt-1">
+                                    <Chip
+                                        variant="ghost"
+                                        className="custom-chip"
+                                        size="sm"
+                                        color="red"
+                                        value={member.jobTitle}
+                                    />
+                                </div>
                             </div>
 
                             <p className="coach-description">{member.description}</p>

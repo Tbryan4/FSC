@@ -366,10 +366,16 @@ body {
     margin-top: 0.5rem;
 }
 
-.coach-description, .coach-email {
-    opacity: 0; /* Start as invisible */
-    transition: opacity 0.5s ease, visibility 0.5s ease; /* Smooth fade effect */
-    visibility: hidden; /* Start as hidden */
+.coach-description,
+.coach-email {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transform: scale(0.9); /* Start slightly smaller */
+    visibility: hidden; /* Hide elements initially */
+    overflow: hidden; /* Ensure no content overflows */
+    transition: width 0.5s ease, height 0.5s ease, opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
+    /* Ensure the element does not affect layout initially */
 }
 
 .coach-card {
@@ -377,10 +383,27 @@ body {
     position: relative; /* Ensure absolutely positioned children are relative to this element */
 }
 
-.coach-card:hover .coach-description, .coach-card:hover .coach-email {
-    opacity: 1; /* Fully visible */
-    visibility: visible; /* Ensure it's visible */
+/* Show elements on hover */
+.coach-card:hover .coach-description,
+.coach-card:hover .coach-email {
+    width: auto; /* Transition to natural width */
+    height: auto; /* Transition to natural height */
+    opacity: 1;
+    transform: scale(1); /* Grow to normal size */
+    visibility: visible; /* Make elements visible */
 }
+
+
+
+
+
+
+.custom-chip {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    width: 9rem;
+}
+
 
 
 @media screen and (max-width: 678px) {
