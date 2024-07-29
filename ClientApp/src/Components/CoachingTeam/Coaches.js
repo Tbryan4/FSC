@@ -33,7 +33,7 @@ export const Coaches: React.FC<CoachesProps> = (props) => {
             <div className="container">
                 <div className="mx-auto mb-10 max-w-lg text-center md:mb-18 lg:mb-15">
                     <div className="d-flex justify-content-center mt-2 mb-2">
-                        <Chip className="custom-chip-two" value={tagline}/>
+                        <Chip className="custom-chip-two" color={"red"} value={tagline}/>
                     </div>
                     <h2 className="mb-3 text-5xl font-bold md:text-7xl lg:text-8xl">{heading}</h2>
                     <p className="md:text-md">{description}</p>
@@ -54,10 +54,10 @@ export const Coaches: React.FC<CoachesProps> = (props) => {
                                 <h5 className="text-md font-semibold md:text-lg">{member.name}</h5>
                                 <div className="d-flex justify-content-center mt-1">
                                     <Chip
-                                        variant="ghost"
                                         className="custom-chip"
                                         size="sm"
-                                        color="red"
+                                        color={"black"}
+                                        variant="outlined"
                                         value={member.jobTitle}
                                     />
                                 </div>
