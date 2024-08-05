@@ -18,6 +18,17 @@ body {
     z-index: 9999;
 }
 
+.contact-banner
+{
+    height: 70vh;
+}
+
+.contact-icon
+{
+    height: 3rem;
+    width: 3.3rem;
+}
+
     /* ! Carousel */
 .h-carousel {
     width: 100vw;

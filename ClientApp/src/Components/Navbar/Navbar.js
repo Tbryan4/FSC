@@ -314,7 +314,7 @@ function NavList() {
 
             <Typography
                 as="a"
-                href="#"
+                href="/contactus"
                 color="blue-gray"
                 className="font-medium"
             >
