@@ -44,15 +44,14 @@ export const Banner = (props: BannerDefaults) => {
                             {heading}
                         </h1>
                         <p className="text-base text-text-alternative md:text-md">{description}
-                            <strong>To arrange private StarSkate lessons, please contact a StarSkate coach using their
-                                email.
-                            </strong>
                         </p>
                         <div className="mt-6 flex items-center justify-center gap-x-4 md:mt-8">
                             {buttons.map((button, index) => (
-                                <Button key={index} {...button}>
-                                    {button.title}
-                                </Button>
+                                <a href="/contactus">
+                                    <Button key={index} {...button}>
+                                        {button.title}
+                                    </Button>
+                                </a>
                             ))}
                         </div>
                     </div>

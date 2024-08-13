@@ -1,6 +1,11 @@
-import { Button } from "@relume_io/relume-ui";
-import { BiLogoDribbble, BiLogoLinkedinSquare } from "react-icons/bi";
-import { FaXTwitter } from "react-icons/fa6";
+import img1 from "../../assets/executiveteam/scott-sutton.png"
+import img2 from "../../assets/executiveteam/cat-h.png"
+import img3 from "../../assets/executiveteam/vicky-b.png"
+import img4 from "../../assets/executiveteam/abby-s.png"
+import img5 from "../../assets/executiveteam/mr-hung.png"
+import img6 from "../../assets/executiveteam/kara-h.png"
+import img7 from "../../assets/executiveteam/Jenna-h.png"
+
 
 const ExecutiveTeam = (props) => {
     const { tagline, heading, description, teamMembers, footer } = {
@@ -26,16 +31,6 @@ const ExecutiveTeam = (props) => {
                         {footer.heading}
                     </h4>
                     <p className="md:text-md">{footer.description}</p>
-                    <div className="mt-6 flex items-center justify-center gap-x-4 text-center md:mt-8">
-                        <Button
-                            variant={footer.button.variant}
-                            size={footer.button.size}
-                            iconRight={footer.button.iconRight}
-                            iconLeft={footer.button.iconLeft}
-                        >
-                            {footer.button.title}
-                        </Button>
-                    </div>
                 </div>
             </div>
         </section>
@@ -62,23 +57,100 @@ const ExecutiveTeamMember = ({ member }) => {
 };
 
 const ExecutiveTeamDefaults = {
-    tagline: "Tagline",
-    heading: "Our team",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    tagline: "Meet our",
+    heading: "Board Members",
+    description: "All Board positions have a $150 credit given to the member account per season that they are an active board member. Thank you for helping our club run!",
     teamMembers: [
         {
             image: {
-                src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg",
+                src: img1,
                 alt: "Placeholder image 1",
             },
-            name: "Full name",
-            jobTitle: "Job title",
+            name: "Scott Sutton",
+            jobTitle: "President",
             description:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
             
         },
-        // Other team members...
-    ],
+        {
+            image: {
+                src: img5,
+                alt: "Placeholder image 1",
+            },
+            name: "Nam Hoang",
+            jobTitle: "Vice President",
+            description:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+
+        },
+        {
+            image: {
+                src: img6,
+                alt: "Placeholder image 1",
+            },
+            name: "Kara Hodnefield",
+            jobTitle: "Test Chair",
+            description:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+
+        },
+        {
+            image: {
+                src: img1,
+                alt: "Placeholder image 1",
+            },
+            name: "Scott Sutton",
+            jobTitle: "Registar",
+            description:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+
+        },
+        {
+            image: {
+                src: img7,
+                alt: "Placeholder image 1",
+            },
+            name: "Jenna Hodnefield",
+            jobTitle: "Coaches Representative",
+            description:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+
+        },
+        {
+            image: {
+                src: img4,
+                alt: "Placeholder image 1",
+            },
+            name: "Abigail Seewald",
+            jobTitle: "Coaches Representative",
+            description:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+
+        },
+        {
+            image: {
+                src: img3,
+                alt: "Placeholder image 1",
+            },
+            name: "Vickey Bu",
+            jobTitle: "Volunteer Coordinator",
+            description:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+
+        },
+        {
+            image: {
+                src: img2,
+                alt: "Placeholder image 1",
+            },
+            name: "Cat Trinh Nguyen",
+            jobTitle: "Ice Show Coordinator",
+            description:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+
+        },
+        
+        ],
     footer: {
         heading: "We're hiring!",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
