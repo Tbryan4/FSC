@@ -1,6 +1,9 @@
 import React from 'react';
 import { Coaches } from "../Components/CoachingTeam/Coaches";
-import { CoachingTeamBanner } from "../Components/CoachingTeamBanner/CoachingTeamBanner";
+import {Banner} from "../Components/StaticBanner/StaticBanner";
+
+import BannerImg from "../assets/coaching-staff/coaching-staff.jpg"
+
 
 // star skate coaches
 import BaseCoachImg1 from "../assets/coaching-staff/jenna-hodnefield.jpg";
@@ -130,6 +133,13 @@ const learnToSkateCoaches = [
         description: "Ashtha is a Club Coach In-Training with four years of Program Assistant experience and is an active skater.",
         type: 'base',
     },
+    {
+        image: { src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg", alt: "Astha Shah" },
+        name: "Ellen Kim",
+        jobTitle: "Base Coach",
+        description: "Ellen is a Club Coach In-Training with one year of Program Assistant (PA) experience. She specializes in figure skating coaching, focusing on developing foundational skills for skaters.",
+        type: 'base',
+    },
 ];
 const CanPowerCoaches = [
     {
@@ -144,7 +154,15 @@ const CanPowerCoaches = [
 const CoachPage = () => {
     return (
         <div>
-            <CoachingTeamBanner/>
+            <Banner
+                heading="Meet Our Coaching Staff"
+                description="Our coaching team is a dynamic part of the Federation Skating Club that molds and shapes the atmosphere on and off the ice. Their enthusiastic dedication to the skaters and our programs enables them to pass on knowledge and build the basic skills of all our skaters."
+                buttons={[{ title: "Contact Us" }]}
+                image={{
+                    src: BannerImg,
+                    alt: "Coach Image"
+                }}
+            />
             
             {/*Star Skate Coaches*/}
             

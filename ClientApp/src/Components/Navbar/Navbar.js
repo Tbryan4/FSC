@@ -34,7 +34,7 @@ import {Link} from "react-router-dom";
 const AboutUsMenuList = [
     {
         title: "Executive Team",
-        link: "https://www.federationskatingclub.ca/pages/club-page/board-members/",
+        link: "/executives",
         description: "Learn how we can help you achieve your goals.",
         icon: UsersIcon,
     },
@@ -303,7 +303,7 @@ function NavList() {
 
             <Typography
                 as="a"
-                href="#"
+                href="/equipment"
                 color="blue-gray"
                 className="font-medium"
             >

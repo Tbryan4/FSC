@@ -29,7 +29,7 @@ export const Layout1 = (props: Layout1Props) => {
     } = props;
 
     return (
-        <section className="px-[5%] py-16 md:py-24 lg:py-28">
+        <section className="px-[5%] py-16">
             <div className="container">
                 <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
                     <div>
@@ -55,7 +55,7 @@ export const Layout1 = (props: Layout1Props) => {
 
 export const Layout1Defaults: Layout1Props = {
     tagline: "Tagline",
-    heading: "Medium length section heading goes here",
+    heading: "JumpStart",
     description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
     buttons: [
