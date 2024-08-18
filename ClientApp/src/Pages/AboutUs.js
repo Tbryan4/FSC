@@ -1,11 +1,60 @@
 // src/pages/AboutPage.js
 import React from 'react';
+import {ScrollingBanner} from "../Components/ScrollingBanner/ScrollingBanner";
+import img1 from "../assets/about-us-scrolling-banner/scrolling-banner-img1.jpg"
+import img2 from "../assets/about-us-scrolling-banner/scrolling-banner-img2.jpg"
+import img3 from "../assets/about-us-scrolling-banner/scrolling-banner-img3.jpg"
+import img4 from "../assets/about-us-scrolling-banner/scrolling-banner-img4.jpg"
+import img5 from "../assets/about-us-scrolling-banner/scrolling-banner-img5.jpg"
+import img6 from "../assets/about-us-scrolling-banner/scrolling-banner-img6.jpg"
+import img7 from "../assets/about-us-scrolling-banner/scrolling-banner-img7.jpg"
+import {Faq} from "../Components/Faq/FAQ";
+
+const buttons = [
+    { title: "View More" },
+];
+
+const images = [
+    {
+        src: img1,
+        alt: "Image 1 description",
+    },
+    {
+        src: img2,
+        alt: "Image 2 description",
+    },
+    {
+        src: img3,
+        alt: "Image 3 description",
+    },
+    {
+        src: img4,
+        alt: "Image 4 description",
+    },
+    {
+        src: img5,
+        alt: "Image 5 description",
+    },
+    {
+        src: img6,
+        alt: "Image 6 description",
+    },
+    {
+        src: img7,
+        alt: "Image 7 description",
+    },
+];
 
 const AboutPage = () => {
     return (
         <div>
-            <h1>About Us</h1>
-            <p>This is the about page.</p>
+            <ScrollingBanner
+                heading={"About Us"}
+                description={"Federation Skating Club is a welcoming figure skating club where skaters of all levels can thrive. Our certified coaches are committed to helping each skater improve, whether they're just starting out or competing. Join us to enjoy the sport, refine your skills, and be part of our skating community."}
+                images={images} 
+                buttons={buttons}
+            />
+            <Faq/>
         </div>
     );
 };
