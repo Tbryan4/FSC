@@ -152,8 +152,8 @@ const ExecutiveTeamDefaults = {
         
         ],
     footer: {
-        heading: "We're hiring!",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        heading: "",
+        description: "",
         button: { title: "Open positions", variant: "secondary" },
     },
 };
