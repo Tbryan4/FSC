@@ -1,5 +1,7 @@
 import React from 'react';
-import {Button} from "@relume_io/relume-ui";
+import {
+    Button
+} from "@material-tailwind/react";
 import type {ButtonProps} from "@relume_io/relume-ui";
 
 type ImageProps = {
