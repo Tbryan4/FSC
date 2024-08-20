@@ -9,6 +9,10 @@ import ContactUsPage from "./Pages/ContactUs";
 import Team2Props from "./Pages/Coach";
 import EquipmentPage from "./Pages/Equipment";
 import ExecutiveTeam from "./Pages/ExecutiveTeam";
+import TimelinePage from "./Pages/Events";
+import EventsPage from "./Pages/Events";
+import ProgramPage from "./Pages/program";
+import BlogsPage from "./Pages/Blogs";
 
 const App = () => {
     return (
@@ -22,6 +26,10 @@ const App = () => {
                     <Route path="/contactus" component={ContactUsPage} />
                     <Route path="/equipment" component={EquipmentPage} />
                     <Route path="/executives" component={ExecutiveTeam}/>
+                    <Route path="/events" component={EventsPage}/>
+                    <Route path="/program" component={ProgramPage}/>
+                    <Route path="/blogs" component={BlogsPage}/>
+
                 </Switch>
                 <FooterWithSocialLinks />
             </Router>

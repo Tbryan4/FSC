@@ -37,7 +37,7 @@ export const Banner = (props: BannerDefaults) => {
     } = props;
 
     return (
-        <header className="relative px-[5%]">
+        <header className="relative px-[5%] z-10">
             <div className="container">
                 <div
                     className="flex max-h-[20rem] min-h-svh items-center justify-center py-16 text-center md:py-24 lg:py-28">

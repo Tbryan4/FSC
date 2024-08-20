@@ -269,7 +269,7 @@ function NavList() {
             <ProgramsListMenu/>
             <Typography
                 as="a"
-                href="#"
+                href="/events"
                 variant="h6"
                 color="blue-gray"
                 className="font-medium"
@@ -280,7 +280,7 @@ function NavList() {
             </Typography>
             <Typography
                 as="a"
-                href="#"
+                href="https://www.federationskatingclub.ca/pages/schedule/"
                 variant="h6"
                 color="blue-gray"
                 className="font-medium"
@@ -292,7 +292,7 @@ function NavList() {
 
             <Typography
                 as="a"
-                href="#"
+                href="/blogs"
                 color="blue-gray"
                 className="font-medium"
             >
