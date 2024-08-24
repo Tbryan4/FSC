@@ -19,9 +19,9 @@ type Props = {
 export type BannerProps = React.ComponentPropsWithoutRef<"header"> & Partial<Props>;
 
 export const BannerDefaults: Props = {
-    heading: "Welcome",
-    description: "Check out more about Federation skating club",
-    buttons: [{title: "Contact Us"}],
+    heading: "",
+    description: "",
+    buttons: [{title: ""}],
     image: {
         src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg",
         alt: "Banner image",
@@ -40,7 +40,7 @@ export const Banner = (props: BannerDefaults) => {
         <header className="relative px-[5%] z-10">
             <div className="container">
                 <div
-                    className="flex max-h-[20rem] min-h-svh items-center justify-center py-16 text-center md:py-24 lg:py-28">
+                    className="flex max-h-[10rem] min-h-svh items-center justify-center py-16 text-center md:py-24 lg:py-28">
                     <div className="w-full max-w-lg">
                         <h1 className="mb-5 text-6xl font-bold text-text-alternative md:mb-6 md:text-9xl lg:text-10xl">
                             {heading}
@@ -49,13 +49,16 @@ export const Banner = (props: BannerDefaults) => {
                         </p>
                         <div className="mt-6 flex items-center justify-center gap-x-4 md:mt-8">
                             {buttons.map((button, index) => (
-                                <a href="/contactus">
-                                    <Button key={index} {...button}>
-                                        {button.title}
-                                    </Button>
-                                </a>
+                                button && button.title ? (
+                                    <a href="/contactus" key={index}>
+                                        <Button {...button}>
+                                            {button.title}
+                                        </Button>
+                                    </a>
+                                ) : null
                             ))}
                         </div>
+
                     </div>
                 </div>
             </div>

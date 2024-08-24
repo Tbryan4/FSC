@@ -1,9 +1,13 @@
 import React from 'react';
-import img from "../../assets/can-power.jpg"
+import img from "../../assets/can-power.jpg";
 
 export const Programs = ({
-                             heading = "Project name here",
-                             description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+                             heading = "CanSkate",
+                             description = "August Learn to Skate Registration is Open\n" +
+                             " \n" +
+                             "Schedule is available under the 'Schedule' tab.\n" +
+                             " \n" +
+                             "Fall & Winter Registration is Open",
                              image = {
                                  src: img,
                                  alt: "Placeholder image",
@@ -12,24 +16,16 @@ export const Programs = ({
                                  {
                                      url: "#",
                                      label: "Tag one",
-                                 },
-                                 {
-                                     url: "#",
-                                     label: "Tag two",
-                                 },
-                                 {
-                                     url: "#",
-                                     label: "Tag three",
-                                 },
+                                 }
                              ],
                              metaDataSections = [
                                  {
-                                     title: "Client",
-                                     description: "Full name",
+                                     title: "Program Difficulty",
+                                     description: "Easy",
                                  },
                                  {
-                                     title: "Date",
-                                     description: "March 2023",
+                                     title: "Registration Start Date",
+                                     description: "March 2025",
                                  },
                                  {
                                      title: "Role",
@@ -37,22 +33,19 @@ export const Programs = ({
                                  },
                                  {
                                      url: "#",
-                                     title: "Website",
-                                     description: "www.relume.io",
+                                     title: "Registration",
+                                     description: "https://www.federationskatingclub.ca/registration/",
                                  },
                              ],
+                             content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit."
                          }) => {
     return (
-        <section className="flex h-svh min-h-svh flex-col">
-            <div className="relative flex-1 h-100">
-                <img src={image.src} className="absolute inset-0 size-full object-cover" alt={image.alt}/>
-            </div>
+        <section className="flex flex-col">
             <div className="px-[5%] py-12 md:py-16 lg:py-20">
-                <div
-                    className="container grid grid-cols-1 items-start gap-12 md:grid-cols-[1.5fr_1fr] lg:gap-x-20 lg:gap-y-16">
+                <div className="container grid grid-cols-1 items-start gap-12 md:grid-cols-[1.5fr_1fr] lg:gap-x-20 lg:gap-y-16">
                     <div>
                         <h1 className="mb-5 text-6xl font-bold md:mb-6 md:text-9xl lg:text-10xl">{heading}</h1>
-                        <p className="md:text-md">{description}</p>
+                        <p className="lg:text-2xl">{description}</p>
                         <div className="mt-6 flex flex-wrap gap-2">
                             {tags.map((tag, index) => (
                                 <a
@@ -76,7 +69,7 @@ export const Programs = ({
                                         {metaDataSection.description}
                                     </a>
                                 ) : (
-                                    <p>{metaDataSection.description}</p>
+                                    <p className="lg:text-2xl">{metaDataSection.description}</p>
                                 )}
                             </div>
                         ))}
@@ -84,62 +77,8 @@ export const Programs = ({
                 </div>
             </div>
             <div className="container">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
-                    interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est,
-                    ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc
-                    sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet
-                    sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non
-                    fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
-                    interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est,
-                    ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc
-                    sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet
-                    sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non
-                    fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
-                    interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est,
-                    ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc
-                    sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet
-                    sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non
-                    fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
-                    interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est,
-                    ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc
-                    sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet
-                    sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non
-                    fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
-
-                </p>
-                <br/>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
-                    interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est,
-                    ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc
-                    sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet
-                    sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non
-                    fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
-                    interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est,
-                    ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc
-                    sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet
-                    sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non
-                    fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
-                    interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est,
-                    ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc
-                    sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet
-                    sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non
-                    fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
-                    interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est,
-                    ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc
-                    sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet
-                    sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non
-                    fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
-
-                </p>
+                <p className="lg:text-2xl">{content}</p>
             </div>
         </section>
-
     );
 };

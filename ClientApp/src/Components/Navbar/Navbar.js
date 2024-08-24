@@ -79,7 +79,7 @@ const ProgramsMenuList = [
     },
     {
         title: "Can Skate",
-        link: "https://www.federationskatingclub.ca/pages/club-page/links/",
+        link: "/program",
         description: "Find the perfect solution for your needs.",
         icon: UserCircleIcon,
     },
@@ -188,7 +188,7 @@ function ProgramsListMenu() {
 
     const renderItems = ProgramsMenuList.map(
         ({ icon, title, description, link }, key) => (
-            <Link to={link} key={key}>
+            <a href={link} key={key}>
                 <MenuItem className="flex items-center ">
                     <div className="flex items-center justify-center !bg-blue-gray-50 p-2 mr-2 ">
                         {""}
@@ -213,7 +213,7 @@ function ProgramsListMenu() {
                         </Typography>
                     </div>
                 </MenuItem>
-            </Link>
+            </a>
         ),
     );
 
