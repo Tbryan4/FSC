@@ -13,6 +13,7 @@ import TimelinePage from "./Pages/Events";
 import EventsPage from "./Pages/Events";
 import ProgramPage from "./Pages/program";
 import BlogsPage from "./Pages/Blogs";
+import SchedulePage from "./Pages/Schedule";
 
 const App = () => {
     return (
@@ -29,6 +30,7 @@ const App = () => {
                     <Route path="/events" component={EventsPage}/>
                     <Route path="/program" component={ProgramPage}/>
                     <Route path="/blogs" component={BlogsPage}/>
+                    <Route path="/Schedule" component={SchedulePage}/>
 
                 </Switch>
                 <FooterWithSocialLinks />
