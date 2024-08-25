@@ -18,18 +18,7 @@ const GoogleCalendarTabs = (props) => {
                     <p className="mb-3 font-semibold md:mb-4">{tagline}</p>
                     <h1 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">{heading}</h1>
                     <p className="md:text-md">{description}</p>
-                    <p className="mt-4 md:text-md">
-                        Download our calendar using our{" "}
-                        <a
-                            style={{ color: 'red' }}
-                            href="https://calendar.google.com/calendar/ical/federationskating@gmail.com/public/basic.ics"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            ICal
-                        </a>{" "}
-                        link.
-                    </p>                </div>
+                </div>
                 <div className="relative">
                     <Tabs value={activeTab} onValueChange={setActiveTab}>
                         <div className="overflow-x-auto">
@@ -83,6 +72,27 @@ const FeatureCard = ({ tab }) => {
                     title={tab.content.iframeTitle}
                     allowFullScreen
                 ></iframe>
+                {tab.content.ical && (
+                    <div>
+                  
+                        {tab.content.category && (
+                            <p className="mt-2 md:text-md">
+                                Download the {tab.content.category}
+                                {" "}
+                                <a
+                                style={{ color: 'red' }}
+                                href={tab.content.ical}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                iCal                           
+                                </a>
+                                {" "}
+                                link.
+                            </p>
+                        )}
+                    </div>
+                )}
             </motion.div>
         </div>
     );
@@ -103,67 +113,42 @@ const GoogleCalendarTabsDefaults = {
             value: "tab-1",
             trigger: "StarSkate",
             content: {
-                iframeSrc: "https://calendar.google.com/calendar/u/0/embed?src=federationskating@gmail.com&ctz=America/Edmonton&pli=1",
+                iframeSrc: "https://calendar.google.com/calendar/embed?src=federationskating%40gmail.com&ctz=America%2FEdmonton",
                 iframeTitle: "Calendar 1",
+                ical: "https://calendar.google.com/calendar/ical/federationskating%40gmail.com/public/basic.ics",
+                category: "StarSkate",
             },
         },
         {
             value: "tab-2",
-            trigger: "CanSkate",
+            trigger: "Learn To Skate",
             content: {
-                iframeSrc: "https://calendar.google.com/calendar/u/0/embed?src=federationskating@gmail.com&ctz=America/Edmonton&pli=1",
+                iframeSrc: "https://calendar.google.com/calendar/embed?src=78fb86290132d6eebf5420b417b0ed635e9bc25a45700635dd7543cf2102b2f1%40group.calendar.google.com&ctz=America%2FEdmonton",
                 iframeTitle: "Calendar 2",
+                ical: "https://calendar.google.com/calendar/ical/a22668c2091cb38b7053b4db1a64bb3d3e993a0e9f6080beffb9abaae835cf85%40group.calendar.google.com/public/basic.ics",
+                category: "Learn To Skate",
             },
         },
         {
             value: "tab-3",
-            trigger: "Adult CanSkate",
+            trigger: "Intro to Figure Skating",
             content: {
-                iframeSrc: "https://calendar.google.com/calendar/u/0/embed?src=federationskating@gmail.com&ctz=America/Edmonton&pli=1",
+                iframeSrc: "https://calendar.google.com/calendar/embed?src=0c4f1b78e382d2c7b92d84ea6c9e70fd2faa4f2957bde7d71594897feedb642e%40group.calendar.google.com&ctz=America%2FEdmonton",
                 iframeTitle: "Calendar 3",
+                ical: "https://calendar.google.com/calendar/ical/0c4f1b78e382d2c7b92d84ea6c9e70fd2faa4f2957bde7d71594897feedb642e%40group.calendar.google.com/public/basic.ics",
+                category: "Intro to Figure Skating",
             },
         },
         {
             value: "tab-4",
-            trigger: "Senior StarSkate",
+            trigger: "CanPower",
             content: {
-                iframeSrc: "https://calendar.google.com/calendar/u/0/embed?src=federationskating@gmail.com&ctz=America/Edmonton&pli=1",
+                iframeSrc: "https://calendar.google.com/calendar/embed?src=78fb86290132d6eebf5420b417b0ed635e9bc25a45700635dd7543cf2102b2f1%40group.calendar.google.com&ctz=America%2FEdmonton",
                 iframeTitle: "Calendar 4",
+                ical: "https://calendar.google.com/calendar/ical/78fb86290132d6eebf5420b417b0ed635e9bc25a45700635dd7543cf2102b2f1%40group.calendar.google.com/public/basic.ics",
+                category: "CanPower",
             },
         },
-        {
-            value: "tab-5",
-            trigger: "Adult CanPower",
-            content: {
-                iframeSrc: "https://calendar.google.com/calendar/u/0/embed?src=federationskating@gmail.com&ctz=America/Edmonton&pli=1",
-                iframeTitle: "Calendar 5",
-            },
-        },
-        {
-            value: "tab-6",
-            trigger: "Pre CanSkate",
-            content: {
-                iframeSrc: "https://calendar.google.com/calendar/u/0/embed?src=federationskating@gmail.com&ctz=America/Edmonton&pli=1",
-                iframeTitle: "Calendar 6",
-            },
-        },
-        {
-            value: "tab-7",
-            trigger: "Other Star Skate",
-            content: {
-                iframeSrc: "https://calendar.google.com/calendar/u/0/embed?src=federationskating@gmail.com&ctz=America/Edmonton&pli=1",
-                iframeTitle: "Calendar 6",
-            },
-        },
-        {
-            value: "tab-8",
-            trigger: "Other Events",
-            content: {
-                iframeSrc: "https://calendar.google.com/calendar/u/0/embed?src=federationskating@gmail.com&ctz=America/Edmonton&pli=1",
-                iframeTitle: "Calendar 6",
-            },
-        },
-        // Additional tabs can be added here
     ],
 };
 
