@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@relume_io/relume-ui";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -9,7 +9,21 @@ const GoogleCalendarTabs = (props) => {
     };
 
     const [activeTab, setActiveTab] = useState(defaultValue);
+    const [isMobile, setIsMobile] = useState(false);
     const MotionTabsContent = motion(TabsContent);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        handleResize(); // Check initial window size
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
 
     return (
         <section className="px-[5%] py-16 md:py-24 lg:py-28">
@@ -46,7 +60,7 @@ const GoogleCalendarTabs = (props) => {
                                     exit={{ opacity: 0 }}
                                     transition={{ duration: 0.6, ease: "easeInOut" }}
                                 >
-                                    <FeatureCard tab={tab} />
+                                    <FeatureCard tab={tab} isMobile={isMobile} />
                                 </MotionTabsContent>
                             ))}
                         </AnimatePresence>
@@ -57,7 +71,9 @@ const GoogleCalendarTabs = (props) => {
     );
 };
 
-const FeatureCard = ({ tab }) => {
+const FeatureCard = ({ tab, isMobile }) => {
+    const iframeSrc = isMobile ? `${tab.content.iframeSrc}&mode=AGENDA` : tab.content.iframeSrc;
+
     return (
         <div className="p-6">
             <motion.div
@@ -67,27 +83,24 @@ const FeatureCard = ({ tab }) => {
                 transition={{ duration: 0.6, ease: "easeInOut" }}
             >
                 <iframe
-                    src={tab.content.iframeSrc}
+                    src={iframeSrc}
                     className="w-full h-80 md:h-[450px] lg:h-[600px] border-0"
                     title={tab.content.iframeTitle}
                     allowFullScreen
                 ></iframe>
                 {tab.content.ical && (
                     <div>
-                  
                         {tab.content.category && (
                             <p className="mt-2 md:text-md">
-                                Download the {tab.content.category}
-                                {" "}
+                                Download the {tab.content.category}{" "}
                                 <a
-                                style={{ color: 'red' }}
-                                href={tab.content.ical}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                iCal                           
-                                </a>
-                                {" "}
+                                    style={{ color: 'red' }}
+                                    href={tab.content.ical}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    iCal
+                                </a>{" "}
                                 link.
                             </p>
                         )}
@@ -123,7 +136,7 @@ const GoogleCalendarTabsDefaults = {
             value: "tab-2",
             trigger: "Learn To Skate",
             content: {
-                iframeSrc: "https://calendar.google.com/calendar/embed?src=78fb86290132d6eebf5420b417b0ed635e9bc25a45700635dd7543cf2102b2f1%40group.calendar.google.com&ctz=America%2FEdmonton",
+                iframeSrc: "https://calendar.google.com/calendar/embed?src=a22668c2091cb38b7053b4db1a64bb3d3e993a0e9f6080beffb9abaae835cf85%40group.calendar.google.com&ctz=America%2FEdmonton",
                 iframeTitle: "Calendar 2",
                 ical: "https://calendar.google.com/calendar/ical/a22668c2091cb38b7053b4db1a64bb3d3e993a0e9f6080beffb9abaae835cf85%40group.calendar.google.com/public/basic.ics",
                 category: "Learn To Skate",

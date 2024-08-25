@@ -280,7 +280,7 @@ function NavList() {
             </Typography>
             <Typography
                 as="a"
-                href="https://www.federationskatingclub.ca/pages/schedule/"
+                href="/schedule"
                 variant="h6"
                 color="blue-gray"
                 className="font-medium"
