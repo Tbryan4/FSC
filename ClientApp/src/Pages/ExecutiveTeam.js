@@ -7,10 +7,8 @@ import img2 from "../assets/executiveteam/cat-h.png";
 import img3 from "../assets/executiveteam/vicky-b.png";
 import img4 from "../assets/executiveteam/abby-s.png";
 import img5 from "../assets/executiveteam/mr-hung.png";
-import img6 from "../assets/executiveteam/kara-h.png";
-import img7 from "../assets/executiveteam/Jenna-h.png";
-import img8 from "../assets/executiveteam/Jessica-y.png";
-import img9 from "../assets/executiveteam/monica-w.png";
+import img8 from "../assets/executiveteam/JY-com.png";
+import img9 from "../assets/executiveteam/monica-wang.png";
 import img10 from "../assets/executiveteam/ctn.png";
 import img11 from "../assets/executiveteam/Kar.png"
 import img12 from "../assets/executiveteam/LL.png"
@@ -75,7 +73,7 @@ const ExecutiveTeamPage = () => {
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
         },
         {
-            image: { src: img3, alt: "Nam Hoang" },
+            image: { src: img5, alt: "Nam Hoang" },
             name: "Nam Hoang",
             jobTitle: "Ice Show Planning Committee",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",

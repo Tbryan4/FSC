@@ -9,59 +9,51 @@ import img4 from '../../assets/index-carosel-img-four.jpg';
 const HomeCarouselItems = [
     {
         imgSrc: img1,
-        author: 'Welcome To The',
-        title: 'Federation',
-        topic: 'Skating Club 1',
-        description: `1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.`,
+        author: 'Registration',
+        title: 'is open for',
+        topic: 'Fall and Winter!',
+        description: `Spots are filling fast! Find the program that suits you best under our Program tab`,
     },
     {
         imgSrc: img2,
-        author: 'Welcome To The',
-        title: 'Federation',
-        topic: 'Skating Club 2',
-        description: `1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.`,
+        author: 'Find the',
+        title: 'Fall and Winter',
+        topic: 'Schedule here!',
+        description: `We are skating Tuesday, Thursday, Friday, Saturday, and Sunday. Definitely an option for you!`,
     },
     {
         imgSrc: img3,
-        author: 'Welcome To The',
-        title: 'Federation',
-        topic: 'Skating Club 3',
-        description: `1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.`,
+        author: 'Upcoming',
+        title: 'Federation Star 1-3 Competition on',
+        topic: 'November 9, 2024',
+        description: `Join us on November 9th for a Star 1-3 competition! We will host many events including FreeSkate Programs, FreeSkate Elements, Team Elements, and Dance!`,
     },
     {
         imgSrc: img4,
-        author: 'Welcome To The',
-        title: 'Federation',
-        topic: 'Skating Club 4',
-        description: `1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.`,
+        author: 'Now offering',
+        title: 'Thursday Learn To',
+        topic: 'Skate sessions!',
+        description: `Masked-only sessions at 2 pm and regular sessions at 3 pm. Excited to see everyone on the ice!`,
     },
 ];
 const HomeCarouselThumbnailItems = [
     {
         imgSrc: img2,
-        title: "Check this out",
-        description: "test 1"
+        title: "New Schedule",
     },
     {
         imgSrc: img3,
-        title: "New Event",
-        description: "test 2"
+        title: "Competition",
     },
 
     {
         imgSrc: img4,
-        title: "Sign Up",
-        description: "test 3"
+        title: "Learn To Skate",
     },
 
     {
         imgSrc: img1,
-        title: "Follow us!!",
-        description: "test 4"
+        title: "Registration",
     }
 
 ]

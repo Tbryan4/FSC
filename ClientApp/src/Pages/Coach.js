@@ -46,6 +46,7 @@ const starSkateBaseCoaches = [
         email: "rheajsherman@gmail.com",
         type: 'base' 
     },
+    /*
     {
         image: {src: BaseCoachImg4, alt: "Emily Johnston"},
         name: "Emily Johnston",
@@ -55,6 +56,8 @@ const starSkateBaseCoaches = [
         email: "emilyyjohnstonn3@gmail.com",
         type: 'base' 
     },
+   
+     */
     {
         image: {src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg", alt: "Elène Haave Audet"},
         name: "Elène Haave Audet",
@@ -103,6 +106,33 @@ const supplementalStarSkateCoaches = [
     },
 
     {
+        image: {src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg", alt: "Nidhi Patel"},
+        name: "Nidhi Patel",
+        jobTitle: "Supplemental Coach",
+        description: "",
+        email: "",
+        type: 'supplemental'
+    },
+
+    {
+        image: {src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg", alt: "Nidhi Patel"},
+        name: "Andrea Parry",
+        jobTitle: "Supplemental Coach",
+        description: "",
+        email: "",
+        type: 'supplemental'
+    },
+
+    {
+        image: {src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg", alt: "Megan Semmens"},
+        name: "Megan Semmens",
+        jobTitle: "Supplemental Coach",
+        description: "Meghan is a CanSkate-certified coach with three years of coaching experience and four years of Program Assistant (PA) experience. She has been accepted into the Regional Coaching Course and holds a diploma in Christian Leadership and Mission. Meghan is an active skater, having achieved Gold Artistic, Star 8 Skills, Star 7B Dance, and Star 6 Freeskate levels.",
+        email: "",
+        type: 'supplemental'
+    },
+
+    {
         image: {src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg", alt: "Melissa Lam"},
         name: "Melissa Lam",
         jobTitle: "Supplemental Coach",
@@ -115,28 +145,24 @@ const learnToSkateCoaches = [
     {
         image: { src: BaseCoachImg5, alt: "Katrina Abou Rjeily" },
         name: "Katrina Abou Rjeily",
-        jobTitle: "Base Coach",
         description: "Katrina is Club Coach Trained with three years of coaching experience and six years as a Program Assistant. She holds certifications in Star 5 Skills, Star 1 Dance, and Star 1 FreeSkate, has competitive synchro skating experience at the sectional level, and is pursuing a BEd at the University of Alberta.",
         type: 'base',
     },
     {
         image: { src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg", alt: "Allysa Higo" },
         name: "Allysa Higo",
-        jobTitle: "Base Coach",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
         type: 'base',
     },
     {
         image: { src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg", alt: "Astha Shah" },
         name: "Astha Shah",
-        jobTitle: "Base Coach",
         description: "Ashtha is a Club Coach In-Training with four years of Program Assistant experience and is an active skater.",
         type: 'base',
     },
     {
         image: { src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg", alt: "Astha Shah" },
         name: "Ellen Kim",
-        jobTitle: "Base Coach",
         description: "Ellen is a Club Coach In-Training with one year of Program Assistant (PA) experience. She specializes in figure skating coaching, focusing on developing foundational skills for skaters.",
         type: 'base',
     },
@@ -145,7 +171,6 @@ const CanPowerCoaches = [
     {
         image: { src: BaseCoachImg6, alt: "Brodie Case" },
         name: "Brodie Case",
-        jobTitle: "Base Coach",
         description: "Brodie is CanPower Coach Trained with over 20 years of hockey experience, including playing Tier 1 hockey. He has completed several credited competitive coaching courses at the college and university level and is also a professional photographer with a Certificate from the New York Institute of Photography. Brodie holds a Bachelor of Kinesiology.",
         type: 'base',
         email: "brodoe15@gmail.com",

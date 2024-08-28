@@ -52,15 +52,18 @@ export const Coaches: React.FC<CoachesProps> = (props) => {
                             </div>
                             <div className="mb-3 md:mb-4">
                                 <h5 className="text-md font-semibold md:text-lg">{member.name}</h5>
-                                <div className="d-flex justify-content-center mt-1">
-                                    <Chip
-                                        className="custom-chip"
-                                        size="sm"
-                                        color={"black"}
-                                        variant="outlined"
-                                        value={member.jobTitle}
-                                    />
-                                </div>
+                                {member.jobTitle && (
+                                    <div className="d-flex justify-content-center mt-1">
+                                        <Chip
+                                            className="custom-chip"
+                                            size="sm"
+                                            color="black"
+                                            variant="outlined"
+                                            value={member.jobTitle}
+                                        />
+                                    </div>
+                                )}
+
                             </div>
 
                             <p className="coach-description">{member.description}</p>
