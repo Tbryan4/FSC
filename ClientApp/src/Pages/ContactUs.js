@@ -1,13 +1,19 @@
-// src/pages/AboutPage.js
 import React from 'react';
-import Header9 from "../Components/ContactUsBanner/ContactUsBanner";
+import Banner from "../Components/Banner/Banner";
 import GoogleMapTabs from "../Components/GoogleMapTabs/GoogleMapTabs";
 import {ContactSection} from "../Components/ContactForm/ContactForm";
+import banner from "../assets/Banners/contact-us-banner.webp"
 
 const ContactPage = () => {
     return (
         <div>
-            <Header9/>
+            <Banner
+                image={{
+                    src: banner,
+                    alt: "Contact Us Banner",
+                    type: "image"
+                }}
+            />           
             <ContactSection/>
             <GoogleMapTabs/>
         </div>
