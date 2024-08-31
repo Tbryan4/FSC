@@ -112,7 +112,7 @@ const FeatureCard = ({ tab, isMobile }) => {
 };
 
 const GoogleCalendarTabsDefaults = {
-    tagline: "Tagline",
+    tagline: "Skate into 2024: Registration Open!",
     heading: "Fall and Winter 2024 Schedule",
     description:
         "August Learn to Skate Registration is Open\n" +

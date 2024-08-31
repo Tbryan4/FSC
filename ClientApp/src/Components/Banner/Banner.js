@@ -21,12 +21,12 @@ const Banner = (props) => {
     return (
         <section className="relative px-[5%]">
             <div className="container">
-                <div className="flex contact-banner items-center py-16 md:py-24 lg:py-28">
+                <div className="flex justify-content-center contact-banner items-center py-16 md:py-24 lg:py-28">
                     <div className="max-w-md">
-                        <h1 className="mb-5 text-6xl font-bold text-text-alternative md:mb-6 md:text-9xl lg:text-10xl">
+                        <h1 className="mb-5 text-center font-bold text-text-alternative md:mb-6 md:text-9xl lg:text-10xl">
                             {heading}
                         </h1>
-                        <p className="text-base text-text-alternative md:text-md">
+                        <p className="text-base text-center text-text-alternative md:text-md">
                             {description}
                         </p>
                     </div>
