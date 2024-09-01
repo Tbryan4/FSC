@@ -1,12 +1,75 @@
-import { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
-import {Button,} from "@material-tailwind/react";
+import { Button, Dialog, DialogHeader, DialogBody, DialogFooter } from "@material-tailwind/react";
 
-// Updated Timeline1 component in plain JavaScript
+// Default values for the TimelineEvents component
+export const TimelineDefaults = {
+    tagline: "2023-2024",
+    heading: "Events",
+    description: "Check out our events for the 2023-2024 season!",
+    timelines: [
+        {
+            date: "September 8, 2024",
+            heading: "CanSkate Parent Info Session",
+            description: "Check out our CanSkate parent information session!",
+            location: "1234 Ice Rink Lane, Edmonton, AB",
+            mapUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9491.124069891934!2d-113.501797!3d53.5081071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a02200b8c39223%3A0xff34a47400dd7898!2sGeorge%20S.%20Hughes%20South%20Side%20Arena!5e0!3m2!1sen!2sca!4v1724821176502!5m2!1sen!2sca",
+            buttons: [
+                { title: "View", variant: "secondary" }
+            ],
+        },
+        {
+            date: "November 9, 2024",
+            heading: "Federation Competition",
+            description: "Competition time!",
+            location: "5678 Skater's Alley, Edmonton, AB",
+            mapUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9491.124069891934!2d-113.501797!3d53.5081071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a02200b8c39223%3A0xff34a47400dd7898!2sGeorge%20S.%20Hughes%20South%20Side%20Arena!5e0!3m2!1sen!2sca!4v1724821176502!5m2!1sen!2sca",
+            buttons: [
+                { title: "View", variant: "secondary" }
+            ],
+        },
+        {
+            date: "December 22, 2024",
+            heading: "Holiday Showcase",
+            description: "Holiday showcase before Christmas!",
+            location: "9101 Holiday Drive, Edmonton, AB",
+            mapUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9491.124069891934!2d-113.501797!3d53.5081071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a02200b8c39223%3A0xff34a47400dd7898!2sGeorge%20S.%20Hughes%20South%20Side%20Arena!5e0!3m2!1sen!2sca!4v1724821176502!5m2!1sen!2sca",
+            buttons: [
+                { title: "View", variant: "secondary" }
+            ],
+        },
+        {
+            date: "March 23, 2025",
+            heading: "Annual Ice Show",
+            description: "Annual Ice Show Competition on March 25!",
+            location: "1122 Annual Avenue, Edmonton, AB",
+            mapUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9491.124069891934!2d-113.501797!3d53.5081071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a02200b8c39223%3A0xff34a47400dd7898!2sGeorge%20S.%20Hughes%20South%20Side%20Arena!5e0!3m2!1sen!2sca!4v1724821176502!5m2!1sen!2sca",
+            buttons: [
+                { title: "View", variant: "secondary" }
+            ],
+        },
+    ],
+};
+
+
+// Main TimelineEvents component
 export const TimelineEvents = (props) => {
-    const { tagline, heading, description, buttons, timelines } = {
+    const { tagline, heading, description, timelines } = {
         ...TimelineDefaults,
         ...props,
+    };
+
+    const [open, setOpen] = useState(false);
+    const [selectedTimeline, setSelectedTimeline] = useState(null);
+
+    const handleOpen = (timeline) => {
+        setSelectedTimeline(timeline);
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+        setSelectedTimeline(null);
     };
 
     return (
@@ -27,16 +90,55 @@ export const TimelineEvents = (props) => {
                     </div>
                     <div className="grid auto-cols-fr gap-x-12 gap-y-8 sm:gap-y-12 md:gap-x-20 md:gap-y-20">
                         {timelines.map((timeline, index) => (
-                            <Timeline key={index} timeline={timeline} />
+                            <Timeline key={index} timeline={timeline} onButtonClick={handleOpen} />
                         ))}
                     </div>
                 </div>
             </div>
+
+            {/* Dialog for displaying timeline details */}
+            {selectedTimeline && (
+                <Dialog
+                    open={open}
+                    handler={handleClose}
+                    animate={{
+                        mount: { scale: 1, y: 0 },
+                        unmount: { scale: 0.9, y: -100 },
+                    }}
+                >
+                    <DialogHeader>{selectedTimeline.heading}</DialogHeader>
+                    <DialogBody>
+                        <p>Date: {selectedTimeline.date}</p>
+                        <p>{selectedTimeline.description}</p>
+                        <p>Location: {selectedTimeline.location}</p>
+                        {/* Embed Google Map */}
+                        {selectedTimeline.mapUrl && (
+                            <div className="mt-4">
+                                <iframe
+                                    src={selectedTimeline.mapUrl}
+                                    width="100%"
+                                    height="300"
+                                    style={{ border: 0 }}
+                                    allowFullScreen
+                                    loading="lazy"
+                                    title="Location Map"
+                                ></iframe>
+                            </div>
+                        )}
+                    </DialogBody>
+                    <DialogFooter>
+                        <Button variant="text" color="red" onClick={handleClose} className="mr-1">
+                            <span>Close</span>
+                        </Button>
+                    </DialogFooter>
+                </Dialog>
+            )}
         </section>
     );
 };
 
-const Timeline = ({ timeline }) => {
+// Timeline component for each event
+const Timeline = ({ timeline, onButtonClick }) => {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -63,7 +165,12 @@ const Timeline = ({ timeline }) => {
                 <p>{timeline.description}</p>
                 <div className="mt-6 flex items-center gap-4 md:mt-8">
                     {timeline.buttons.map((button, index) => (
-                        <Button color={"red"} key={index} {...button}>
+                        <Button
+                            color={"red"}
+                            key={index}
+                            variant={button.variant}
+                            onClick={() => onButtonClick(timeline)}
+                        >
                             {button.title}
                         </Button>
                     ))}
@@ -72,44 +179,3 @@ const Timeline = ({ timeline }) => {
         </div>
     );
 };
-
-export const TimelineDefaults = {
-    tagline: "2023-2024",
-    heading: "Events",
-    description: "Check out our events for the 2023-2024 season!",
-    timelines: [
-        {
-            date: "September 8, 2024",
-            heading: "CanSkate Parent Info Session",
-            description: "Check out our CanSkate parent information session!",
-            buttons: [
-                { title: "View", variant: "secondary" }
-            ],
-        },
-        {
-            date: "November 9, 2024",
-            heading: "Federation Competition",
-            description: "Competition time!",
-            buttons: [
-                { title: "View", variant: "secondary" }
-            ],
-        },
-        {
-            date: "December 22, 2024",
-            heading: "Holiday Showcase",
-            description: "Holiday showcase before Christmas!",
-            buttons: [
-                { title: "View", variant: "secondary" }
-            ],
-        },
-        {
-            date: "March 23, 2025",
-            heading: "Annual Ice Show",
-            description: "Annual Ice Show Competition on March 25!",
-            buttons: [
-                { title: "View", variant: "secondary" }
-            ],
-        },
-    ],
-};
-
