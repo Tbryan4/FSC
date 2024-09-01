@@ -17,13 +17,6 @@ export const TimelineEvents = (props) => {
                         <p className="mb-3 font-semibold md:mb-4">{tagline}</p>
                         <h1 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">{heading}</h1>
                         <p className="md:text-md">{description}</p>
-                        <div className="mt-6 flex items-center gap-4 md:mt-8">
-                            {buttons.map((button, index) => (
-                                <Button color={"red"} key={index} {...button}>
-                                    {button.title}
-                                </Button>
-                            ))}
-                        </div>
                     </div>
                     <div className="absolute z-0 flex h-full w-8 flex-col items-center justify-self-start [grid-area:2/1/3/2] md:z-auto md:justify-self-center md:[grid-area:auto]">
                         <div className="absolute z-10 h-16 w-1 bg-gradient-to-b from-background-primary to-transparent" />
@@ -80,52 +73,43 @@ const Timeline = ({ timeline }) => {
     );
 };
 
-// Default props for Timeline1 component
 export const TimelineDefaults = {
-    tagline: "Tagline",
+    tagline: "2023-2024",
     heading: "Events",
-    description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.",
-    buttons: [
-        { title: "Button", variant: "secondary" },
-    ],
-
+    description: "Check out our events for the 2023-2024 season!",
     timelines: [
         {
-            date: "Skating Show",
-            heading: "October 22, 2024",
-            description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            date: "September 8, 2024",
+            heading: "CanSkate Parent Info Session",
+            description: "Check out our CanSkate parent information session!",
             buttons: [
                 { title: "View", variant: "secondary" }
             ],
         },
         {
-            date: "Meet The Parents",
-            heading: "January 15, 2025",
-            description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            buttons: [
-                { title: "View", variant: "secondary" },
-            ],
-        },
-        {
-            date: "Meet and Greet",
-            heading: "March 7, 2025",
-            description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            date: "November 9, 2024",
+            heading: "Federation Competition",
+            description: "Competition time!",
             buttons: [
                 { title: "View", variant: "secondary" }
             ],
         },
         {
-            date: "Coach Job Fair",
-            heading: "June 30, 2025",
-            description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            date: "December 22, 2024",
+            heading: "Holiday Showcase",
+            description: "Holiday showcase before Christmas!",
             buttons: [
-                { title: "View", variant: "secondary" },
+                { title: "View", variant: "secondary" }
+            ],
+        },
+        {
+            date: "March 23, 2025",
+            heading: "Annual Ice Show",
+            description: "Annual Ice Show Competition on March 25!",
+            buttons: [
+                { title: "View", variant: "secondary" }
             ],
         },
     ],
 };
+

@@ -8,7 +8,7 @@ const BannerDefaults = {
     image: {
         src: banner,
         alt: "Default video",
-        type: 'video', // Default to video
+        type: 'video', 
     },
 };
 
@@ -19,7 +19,7 @@ const Banner = (props) => {
     };
 
     return (
-        <section className="relative px-[5%]">
+        <section className="banner relative px-[5%]">
             <div className="container">
                 <div className="flex justify-content-center contact-banner items-center py-16 md:py-24 lg:py-28">
                     <div className="max-w-md">

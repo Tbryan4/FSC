@@ -433,16 +433,10 @@ body {
     border: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
+.banner
+{
+    z-index: 100;
+}
 
 @media screen and (max-width: 678px) {
 
