@@ -1,7 +1,8 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Banner = (props) => {
-    const { heading, description, buttons, image} = {
+    const { heading, description, buttons, image } = {
         ...props,
     };
 
@@ -19,7 +20,12 @@ const Banner = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="absolute inset-0 -z-10">
+            <motion.div
+                className="absolute inset-0 -z-10"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: .5 }}
+            >
                 {image.type === 'video' ? (
                     <video
                         className="absolute inset-0 aspect-video size-full object-cover"
@@ -37,7 +43,7 @@ const Banner = (props) => {
                     />
                 )}
                 <div className="absolute inset-0 bg-black/50"></div>
-            </div>
+            </motion.div>
         </section>
     );
 };
