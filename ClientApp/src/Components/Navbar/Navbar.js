@@ -96,7 +96,7 @@ const ProgramsMenuList = [
     },
     {
         title: "Adult-Intro-To-Figure-Skate",
-        link: "/adultintrotofigureskate",
+        link: "/adultfigureskate",
         description: "Program",
         icon: UserGroupIcon,
     },
