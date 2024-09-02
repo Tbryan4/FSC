@@ -290,27 +290,27 @@ function NavList() {
                 </ListItem>
             </Typography>
 
-            <Typography
-                as="a"
-                href="/blogs"
-                color="blue-gray"
-                className="font-medium"
-            >
-                <ListItem className="flex items-center gap-2 py-2 pr-4">
-                    News
-                </ListItem>
-            </Typography>
+            {/*<Typography*/}
+            {/*    as="a"*/}
+            {/*    href="/blogs"*/}
+            {/*    color="blue-gray"*/}
+            {/*    className="font-medium"*/}
+            {/*>*/}
+            {/*    <ListItem className="flex items-center gap-2 py-2 pr-4">*/}
+            {/*        News*/}
+            {/*    </ListItem>*/}
+            {/*</Typography>*/}
 
-            <Typography
-                as="a"
-                href="/equipment"
-                color="blue-gray"
-                className="font-medium"
-            >
-                <ListItem className="flex items-center gap-2 py-2 pr-4">
-                    Equipment
-                </ListItem>
-            </Typography>
+            {/*<Typography*/}
+            {/*    as="a"*/}
+            {/*    href="/equipment"*/}
+            {/*    color="blue-gray"*/}
+            {/*    className="font-medium"*/}
+            {/*>*/}
+            {/*    <ListItem className="flex items-center gap-2 py-2 pr-4">*/}
+            {/*        Equipment*/}
+            {/*    </ListItem>*/}
+            {/*</Typography>*/}
 
             <Typography
                 as="a"
@@ -375,7 +375,7 @@ export function GlobalNavbar() {
                     <div className="bg-background-primary">
                         <NavList/>
                         <div className="register-btn-group flex w-full flex-nowrap items-center gap-2 lg:hidden">
-                            <Button className="btn-12" variant="gradient" size="sm" fullWidth>
+                            <Button className="btn-12" color={"red"} variant="gradient" size="sm" fullWidth>
                                 Register
                             </Button>
                         </div>

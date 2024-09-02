@@ -64,60 +64,45 @@ export const Faq = (props) => {
 };
 
 export const FaqDefaults = {
-    heading: "Figure Skating Club FAQs",
+    heading: "Federation Skating FAQ\n",
     description:
         "Here are some frequently asked questions about our figure skating club. If you need more information, feel free to contact us.",
     questions: [
         {
-            title: "What is the registration process for new skaters?",
+            title: "Locations",
             answer:
                 "To register, visit our website and fill out the registration form. After submission, you will receive an email with further instructions and a link to schedule an evaluation session.",
         },
         {
-            title: "What are the membership fees?",
+            title: "Where can I find the schedule instead of can parents watch practices?\n",
             answer:
                 "Membership fees vary depending on the program. Please check our 'Programs' section on the website or contact us directly for detailed information about fees and payment options.",
         },
         {
-            title: "Do you offer private coaching?",
+            title: "What are the equipment requirements for CanSkate",
             answer:
                 "Yes, we offer private coaching sessions with our experienced coaches. You can book a session by contacting our administration office or speaking directly with one of our coaches.",
         },
         {
-            title: "What should my child wear to practice?",
+            title: "What are the equipment requirements for StarSkate",
             answer:
                 "Skaters should wear comfortable, moisture-wicking clothing and appropriate figure skating attire. We recommend a fitted skating outfit, gloves, and proper skating boots. Check our website for a detailed list of recommended gear.",
         },
         {
-            title: "Can parents watch the practices?",
+            title: "Where do I find the cost of programs?",
             answer:
                 "Yes, parents are welcome to watch their child's practices from the designated viewing area. We ask that you respect the skaters and coaches by remaining quiet and not interfering with the session.",
         },
         {
-            title: "Are there any upcoming events or competitions?",
+            title: "Do you have adult programming?",
             answer:
                 "We host several events and competitions throughout the year. You can find a schedule of upcoming events on our website or sign up for our newsletter to receive updates.",
         },
         {
-            title: "How can I volunteer with the club?",
+            title: "What can I expect for a first-time skater?",
             answer:
                 "We welcome volunteers to help with various activities and events. If you're interested in volunteering, please contact us via email or fill out the volunteer form available on our website.",
-        },
-        {
-            title: "What is the cancellation policy for classes?",
-            answer:
-                "If you need to cancel a class, please inform us at least 24 hours in advance to receive a refund or reschedule. For more details, refer to our cancellation policy on the website.",
-        },
-        {
-            title: "Do you provide equipment for beginners?",
-            answer:
-                "We provide basic equipment for beginners during their introductory classes. However, skaters are encouraged to invest in their own gear as they progress.",
-        },
-        {
-            title: "Who should I contact for more information?",
-            answer:
-                "For any additional information, please contact our office at (123) 456-7890 or email us at info@eliteskatingclub.com. We are here to assist you with any questions or concerns.",
-        },
+        }
     ],
     footerHeading: "Still have questions?",
     footerDescription: "Don't hesitate to get in touch with us for more details.",
