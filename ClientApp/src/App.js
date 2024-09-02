@@ -16,6 +16,8 @@ import BlogsPage from "./Pages/Blogs";
 import SchedulePage from "./Pages/Schedule";
 import CanSkatePage from "./Pages/CanSkate";
 import PreCanSkatePage from "./Pages/PreCanSkate";
+import AdultCanSkatePage from "./Pages/AdultCanSkate";
+import CanPowerSkatePage from "./Pages/CanPowerSkate";
 
 const App = () => {
     return (
@@ -30,6 +32,8 @@ const App = () => {
                     <Route path="/equipment" component={EquipmentPage} />
                     <Route path="/executives" component={ExecutiveTeam}/>
                     <Route path="/events" component={EventsPage}/>
+                    <Route path="/adultcanskate" component={AdultCanSkatePage}/>
+                    <Route path="/canpowerskate" component={CanPowerSkatePage}/>
                     <Route path="/canskate" component={CanSkatePage}/>
                     <Route path="/precanskate" component={PreCanSkatePage}/>
                     <Route path="/blogs" component={BlogsPage}/>

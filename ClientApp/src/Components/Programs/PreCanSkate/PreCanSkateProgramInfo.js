@@ -18,9 +18,6 @@ const PreCanSkateInfo = (props) => {
                     <p className="lg:text-2xl">{description}</p>
                 </div>
                 <div className="mb-12">
-                    <h4 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">What will your child learn?</h4>
-                    <p className="lg:text-2xl">PreCanSkate is divided into 3 stages that set-up the skater for success in the CanSkate program. These skills begin with standing up and walking forward and progress into moving backwards and skating around the area. Once these 3 stages are completed, skaters can move into the CanSkate program. Coaches will assess when your child is ready to move onto the CanSkate program.  </p></div>
-                <div className="mb-12">
                     <h4 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">What can you expect?</h4>
                     <p className="lg:text-2xl">Action, movement and fun! Lessons are given in a group format with a coach-to-student ratio of a maximum 1:8. Skaters progress at their own rate and coaches make sessions active using teaching aids, upbeat music and a wide variety of activities that create a motivational environment and promote learning. Ribbons and other incentives are used to benchmark skaters' progress and reward effort and participation. </p>
                 </div>

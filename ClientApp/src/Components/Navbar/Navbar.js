@@ -25,7 +25,6 @@ import {
     UsersIcon,
     UserCircleIcon
 } from "@heroicons/react/24/solid";
-import {Link} from "react-router-dom";
 
 //? navListMenuItems is an array containing menu items, each item is an object with three properties: (title, description, and icon.)
 //! Where each item has a title, a description, and an icon associated with it. 
@@ -61,7 +60,7 @@ const AboutUsMenuList = [
 const ProgramsMenuList = [
     {
         title: "CanPower Skate",
-        link: "https://www.federationskatingclub.ca/pages/club-page/board-members/",
+        link: "/canpowerskate",
         description: "Learn More",
         icon: UserGroupIcon,
     },
@@ -80,15 +79,52 @@ const ProgramsMenuList = [
     {
         title: "CanSkate",
         link: "/canskate",
-        description: "Learn More",
+        description: "Program",
         icon: UserGroupIcon,
     },
     {
         title: "PreCanSkate",
         link: "/precanskate",
-        description: "Learn More",
+        description: "Program",
         icon: UserGroupIcon,
     },
+    {
+        title: "Adult CanSkate",
+        link: "/adultcanskate",
+        description: "Program",
+        icon: UserGroupIcon,
+    },
+    {
+        title: "Intro-To-Figure-Skate",
+        link: "/introtofigureskate",
+        description: "Program",
+        icon: UserGroupIcon,
+    },
+    {
+        title: "Adult-Intro-To-Figure-Skate",
+        link: "/adultintrotofigureskate",
+        description: "Program",
+        icon: UserGroupIcon,
+    },
+    {
+        title: "STARSkate",
+        link: "/starskate",
+        description: "Program",
+        icon: UserGroupIcon,
+    },
+    {
+        title: "CompetitiveSkate",
+        link: "/competetiveskate",
+        description: "Program",
+        icon: UserGroupIcon,
+    },
+    {
+        title: "Drop In Ice Information",
+        link: "/dropininfo",
+        description: "Program",
+        icon: UserGroupIcon,
+    },
+    
 ];
 
 function AboutUsListMenu() {
