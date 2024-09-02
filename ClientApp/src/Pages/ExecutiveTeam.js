@@ -1,7 +1,7 @@
 import React from 'react';
 import ExecutiveTeam from "../Components/ExecutiveTeams/ExecutiveTeams";
-import { Banner } from "../Components/StaticBanner/StaticBanner";
-import BannerImg from "../assets/execteam.jpg";
+import Banner  from "../Components/Banner/Banner";
+import BannerImg from "../assets/Banners/executive-team-banner.webp";
 import img1 from "../assets/executiveteam/scott-sutton.png";
 import img2 from "../assets/executiveteam/cat-h.png";
 import img3 from "../assets/executiveteam/vicky-b.png";
@@ -138,7 +138,7 @@ const ExecutiveTeamPage = () => {
     return (
         <div>
             <Banner
-                heading="Meet Our Executive Team"
+                heading="Executive Team"
                 description="Our executive team is a dynamic part of the Federation Skating Club that shapes the vision and direction of our organization. Their strategic leadership and dedication enable us to continually grow and achieve excellence in all our programs."
                 footer={""}
                 buttons={[{ title: "Contact Us" }]}
