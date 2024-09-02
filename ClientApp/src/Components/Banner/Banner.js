@@ -32,6 +32,7 @@ const Banner = (props) => {
                         autoPlay
                         loop
                         muted
+                        playsInline
                     >
                         <source src={image.src} type="video/mp4" />
                     </video>
@@ -40,6 +41,7 @@ const Banner = (props) => {
                         className="absolute inset-0 aspect-video size-full object-cover"
                         src={image.src}
                         alt={image.alt}
+                        loading="lazy"
                     />
                 )}
                 <div className="absolute inset-0 bg-black/50"></div>
