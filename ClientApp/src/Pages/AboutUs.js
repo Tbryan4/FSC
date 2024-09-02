@@ -1,13 +1,12 @@
-// src/pages/AboutPage.js
 import React from 'react';
 import {ScrollingBanner} from "../Components/ScrollingBanner/ScrollingBanner";
-import img1 from "../assets/about-us-scrolling-banner/scrolling-banner-img1.jpg"
-import img2 from "../assets/about-us-scrolling-banner/scrolling-banner-img2.jpg"
-import img3 from "../assets/about-us-scrolling-banner/scrolling-banner-img3.jpg"
-import img4 from "../assets/about-us-scrolling-banner/scrolling-banner-img4.jpg"
-import img5 from "../assets/about-us-scrolling-banner/scrolling-banner-img5.jpg"
-import img6 from "../assets/about-us-scrolling-banner/scrolling-banner-img6.jpg"
-import img7 from "../assets/about-us-scrolling-banner/scrolling-banner-img7.jpg"
+import img1 from "../assets/about-us-scrolling-banner/scrolling-banner-img1.webp"
+import img2 from "../assets/about-us-scrolling-banner/scrolling-banner-img2.webp"
+import img3 from "../assets/about-us-scrolling-banner/scrolling-banner-img3.webp"
+import img4 from "../assets/about-us-scrolling-banner/scrolling-banner-img4.webp"
+import img5 from "../assets/about-us-scrolling-banner/scrolling-banner-img5.webp"
+import img6 from "../assets/about-us-scrolling-banner/scrolling-banner-img6.webp"
+import img7 from "../assets/about-us-scrolling-banner/scrolling-banner-img7.webp"
 import {Faq} from "../Components/Faq/FAQ";
 
 const buttons = [

@@ -1,6 +1,7 @@
 import {
     Button
 } from "@material-tailwind/react";
+import {motion } from "framer-motion";
 const ScrollingBannerDefaults = {
     heading: "Medium length hero heading goes here",
     description:
@@ -13,6 +14,11 @@ export const ScrollingBanner = (props) => {
     const { heading, description, buttons, images } = {
         ...ScrollingBannerDefaults,
         ...props,
+    };
+
+    const fadeInVariants = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1, transition: { duration: 1 } },
     };
 
     return (
@@ -32,7 +38,13 @@ export const ScrollingBanner = (props) => {
                 <div className="grid w-full grid-cols-2 gap-x-4">
                     <div className="-mt-[120%] grid size-full animate-loop-vertically columns-2 grid-cols-1 gap-4 self-center">
                         {images.slice(0, 3).map((image, index) => (
-                            <div key={index} className="grid size-full grid-cols-1 gap-4">
+                            <motion.div
+                                key={index}
+                                className="grid size-full grid-cols-1 gap-4"
+                                initial="hidden"
+                                animate="visible"
+                                variants={fadeInVariants}
+                            >
                                 <div className="relative w-full pt-[120%]">
                                     <img
                                         className="absolute inset-0 size-full object-cover"
@@ -40,12 +52,18 @@ export const ScrollingBanner = (props) => {
                                         alt={image.alt}
                                     />
                                 </div>
-                            </div>
+                            </motion.div>
                         ))}
                     </div>
                     <div className="grid size-full animate-loop-vertically grid-cols-1 gap-4">
                         {images.slice(3).map((image, index) => (
-                            <div key={index} className="grid size-full grid-cols-1 gap-4">
+                            <motion.div
+                                key={index}
+                                className="grid size-full grid-cols-1 gap-4"
+                                initial="hidden"
+                                animate="visible"
+                                variants={fadeInVariants}
+                            >
                                 <div className="relative w-full pt-[120%]">
                                     <img
                                         className="absolute inset-0 size-full object-cover"
@@ -53,12 +71,11 @@ export const ScrollingBanner = (props) => {
                                         alt={image.alt}
                                     />
                                 </div>
-                            </div>
+                            </motion.div>
                         ))}
                     </div>
                 </div>
             </div>
-            
-            </section>
+        </section>
     );
 };
