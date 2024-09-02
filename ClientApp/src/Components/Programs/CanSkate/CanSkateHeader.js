@@ -1,7 +1,7 @@
 import React from 'react';
-import img from "../../assets/can-power.jpg";
+import img from "../../../assets/can-power.jpg";
 
-export const CanSkate = ({
+export const CanSkateHeader = ({
                              heading = "CanSkate",
                              description = "August Learn to Skate Registration is Open\n" +
                              " \n" +

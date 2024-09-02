@@ -15,6 +15,7 @@ import ProgramPage from "./Pages/CanSkate";
 import BlogsPage from "./Pages/Blogs";
 import SchedulePage from "./Pages/Schedule";
 import CanSkatePage from "./Pages/CanSkate";
+import PreCanSkatePage from "./Pages/PreCanSkate";
 
 const App = () => {
     return (
@@ -30,9 +31,9 @@ const App = () => {
                     <Route path="/executives" component={ExecutiveTeam}/>
                     <Route path="/events" component={EventsPage}/>
                     <Route path="/canskate" component={CanSkatePage}/>
+                    <Route path="/precanskate" component={PreCanSkatePage}/>
                     <Route path="/blogs" component={BlogsPage}/>
                     <Route path="/Schedule" component={SchedulePage}/>
-
                 </Switch>
                 <FooterWithSocialLinks />
             </Router>

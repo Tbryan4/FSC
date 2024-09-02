@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from "@material-tailwind/react";
 
-const ProgramInfo = (props) => {
+const CanSkateProgramInfo = (props) => {
     const {
         heading = "Why Sign up for CanSkate?",
         description = "CanSkate is a dynamic learn-to-skate program that focuses on fun, participation, and basic skill development. Based on Sport Canada's long term athlete development (LTAD) principles, CanSkate centers on physical literacy and the fundamental skills needed to take part in any ice sport or to skate as a recreational activity.",
@@ -51,4 +51,4 @@ const ProgramInfo = (props) => {
     );
 };
 
-export default ProgramInfo;
+export default CanSkateProgramInfo;
