@@ -1,7 +1,7 @@
 import React from 'react';
 import GoogleSchedule from "../Components/GoogleCalendar/GoogleCalendar";
 import Banner from "../Components/Banner/Banner";
-import BannerImg from "../assets/Banners/schedule-banner.jpg"
+import BannerImg from "../assets/Banners/schedule-banner.webp"
 
 const SchedulePage = () => {
     return (
