@@ -108,7 +108,7 @@ const ProgramsMenuList = [
     },
     {
         title: "Drop In Ice Information",
-        link: "/dropininfo",
+        link: "/dropin",
         description: "Program",
         icon: UserGroupIcon,
     },

@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from "@material-tailwind/react";
 import {CompetetiveSkateHeader} from "./CompetetiveSkateHeader";
 
-const CompetetiveSkateInfo = (props) => {
+const DropInInfo = (props) => {
     const {
         heading = "Why Sign up for Competitive Skate?",
         description ="Skaters will also have the opportunity to take part in Skate Canada assessments through a nationally standardized assessment system. Skaters will work individually or in a small group with a coach(es) of their choosing. On their sessions, CompetitiveSkate skaters will be guaranteed a lesson with their coach(es) or an arranged coach. With this coach(es), they will develop skills, goals and training pathways. When choosing a coach, please visit the coaches page and browse the club's coaches. Each coach may be contacted individually by using their email. Please contact us at federationskating@gmail.com with any questions. ",
@@ -32,4 +32,4 @@ const CompetetiveSkateInfo = (props) => {
     );
 };
 
-export default CompetetiveSkateInfo;
+export default DropInInfo;

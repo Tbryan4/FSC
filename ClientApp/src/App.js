@@ -23,6 +23,7 @@ import AdultFigureSkatePage from "./Pages/AdultFigureSkate";
 import StarSkatePage from "./Pages/StarSkate";
 import CompetetiveSkatePage from "./Pages/CompetetiveSkate";
 import CompetitiveSkatePage from "./Pages/CompetetiveSkate";
+import DropInPage from "./Pages/DropIn";
 
 const App = () => {
     return (
@@ -48,6 +49,7 @@ const App = () => {
                     <Route path="/adultfigureskate" component={AdultFigureSkatePage}/>
                     <Route path="/starskate" component={StarSkatePage}/>
                     <Route path="/competitiveskate" component={CompetitiveSkatePage}/>
+                    <Route path="/dropin" component={DropInPage}/>
                 </Switch>
                 <FooterWithSocialLinks />
             </Router>
