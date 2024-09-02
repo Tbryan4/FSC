@@ -1,8 +1,8 @@
 import React from 'react';
 import { Coaches } from "../Components/CoachingTeam/Coaches";
-import {Banner} from "../Components/StaticBanner/StaticBanner";
+import Banner from "../Components/Banner/Banner";
 
-import BannerImg from "../assets/coaching-staff/coaching-staff.jpg"
+import BannerImg from "../assets/Banners/coaching-team-banner.webp"
 
 
 // star skate coaches
@@ -180,7 +180,7 @@ const CoachPage = () => {
     return (
         <div>
             <Banner
-                heading="Meet Our Coaching Staff"
+                heading="Coaching Staff"
                 description="Our coaching team is a dynamic part of the Federation Skating Club that molds and shapes the atmosphere on and off the ice. Their enthusiastic dedication to the skaters and our programs enables them to pass on knowledge and build the basic skills of all our skaters."
                 buttons={[{ title: "Contact Us" }]}
                 image={{
