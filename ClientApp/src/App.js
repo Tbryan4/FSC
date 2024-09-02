@@ -18,6 +18,7 @@ import CanSkatePage from "./Pages/CanSkate";
 import PreCanSkatePage from "./Pages/PreCanSkate";
 import AdultCanSkatePage from "./Pages/AdultCanSkate";
 import CanPowerSkatePage from "./Pages/CanPowerSkate";
+import IntroToFigureSkatePage from "./Pages/IntroToFigureSkate";
 
 const App = () => {
     return (
@@ -32,12 +33,14 @@ const App = () => {
                     <Route path="/equipment" component={EquipmentPage} />
                     <Route path="/executives" component={ExecutiveTeam}/>
                     <Route path="/events" component={EventsPage}/>
+                    <Route path="/blogs" component={BlogsPage}/>
+                    <Route path="/Schedule" component={SchedulePage}/>
+                    {/*Programs*/}
                     <Route path="/adultcanskate" component={AdultCanSkatePage}/>
                     <Route path="/canpowerskate" component={CanPowerSkatePage}/>
                     <Route path="/canskate" component={CanSkatePage}/>
                     <Route path="/precanskate" component={PreCanSkatePage}/>
-                    <Route path="/blogs" component={BlogsPage}/>
-                    <Route path="/Schedule" component={SchedulePage}/>
+                    <Route path="/introtofigureskate" component={IntroToFigureSkatePage}/>
                 </Switch>
                 <FooterWithSocialLinks />
             </Router>

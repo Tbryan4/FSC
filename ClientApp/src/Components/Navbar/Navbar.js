@@ -71,12 +71,6 @@ const ProgramsMenuList = [
         icon: UserGroupIcon,
     },
     {
-        title: "Intro To Figure Skate",
-        link: "https://www.federationskatingclub.ca/pages/club-page/links/",
-        description: "Learn More",
-        icon: UserGroupIcon,
-    },
-    {
         title: "CanSkate",
         link: "/canskate",
         description: "Program",
