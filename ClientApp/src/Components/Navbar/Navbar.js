@@ -102,7 +102,7 @@ const ProgramsMenuList = [
     },
     {
         title: "CompetitiveSkate",
-        link: "/competetiveskate",
+        link: "/competitiveskate",
         description: "Program",
         icon: UserGroupIcon,
     },
