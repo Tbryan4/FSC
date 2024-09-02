@@ -9,9 +9,6 @@ import img6 from "../assets/about-us-scrolling-banner/scrolling-banner-img6.webp
 import img7 from "../assets/about-us-scrolling-banner/scrolling-banner-img7.webp"
 import {Faq} from "../Components/Faq/FAQ";
 
-const buttons = [
-    { title: "View More" },
-];
 
 const images = [
     {
@@ -51,7 +48,6 @@ const AboutPage = () => {
                 heading={"About Us"}
                 description={"Federation Skating Club is a welcoming figure skating club where skaters of all levels can thrive. Our certified coaches are committed to helping each skater improve, whether they're just starting out or competing. Join us to enjoy the sport, refine your skills, and be part of our skating community."}
                 images={images} 
-                buttons={buttons}
             />
             <Faq/>
         </div>

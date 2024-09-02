@@ -26,13 +26,6 @@ export const ScrollingBanner = (props) => {
             <div className="mx-[5%] max-w-[40rem] justify-self-start lg:ml-[5vw] lg:mr-20 lg:justify-self-end">
                 <h1 className="mb-5 text-6xl font-bold md:mb-6 md:text-9xl lg:text-10xl">{heading}</h1>
                 <p className="md:text-lg">{description}</p>
-                <div className="mt-6 flex gap-x-4 md:mt-8">
-                    {buttons.map((button, index) => (
-                        <Button className="btn-12" variant="gradient" size="md" color="red" key={index} {...button}>
-                            {button.title}
-                        </Button>
-                    ))}
-                </div>
             </div>
             <div className="h-[30rem] overflow-hidden pl-[5vw] pr-[5vw] md:h-[40rem] lg:h-screen lg:pl-0">
                 <div className="grid w-full grid-cols-2 gap-x-4">

@@ -60,28 +60,28 @@ const AboutUsMenuList = [
 
 const ProgramsMenuList = [
     {
-        title: "Can Power Skate",
+        title: "CanPower Skate",
         link: "https://www.federationskatingclub.ca/pages/club-page/board-members/",
         description: "Learn how we can help you achieve your goals.",
-        icon: UsersIcon,
+        icon: UserGroupIcon,
     },
     {
-        title: "Star Skate",
+        title: "StarSkate",
         link : "https://www.federationskatingclub.ca/pages/club-page/undefined/",
         description: "Meet our team of professional coaches.",
         icon: UserGroupIcon,
     },
     {
-        title: "Intro To figure Skate",
+        title: "Intro To Figure Skate",
         link: "https://www.federationskatingclub.ca/pages/club-page/links/",
         description: "Explore our network of trusted partners.",
-        icon: Bars4Icon,
+        icon: UserGroupIcon,
     },
     {
-        title: "Can Skate",
-        link: "/program",
+        title: "CanSkate",
+        link: "/canskate",
         description: "Find the perfect solution for your needs.",
-        icon: UserCircleIcon,
+        icon: UserGroupIcon,
     },
 ];
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from "@relume_io/relume-ui";
+import { Button } from "@material-tailwind/react";
 
 const ProgramInfo = (props) => {
     const {
@@ -7,7 +7,7 @@ const ProgramInfo = (props) => {
         description = "CanSkate is a dynamic learn-to-skate program that focuses on fun, participation, and basic skill development. Based on Sport Canada's long term athlete development (LTAD) principles, CanSkate centers on physical literacy and the fundamental skills needed to take part in any ice sport or to skate as a recreational activity.",
         footerHeading = "What do you need to participate?",
         footerDescription = "All you need are skates, a CSA-approved hockey helmet, long pants, mittens, warm sweater or jacket. Dress in layers - it will get warm!",
-        button = { title: "Contact", variant: "secondary" }
+        button = { title: "Register Now", variant: "secondary", link: "https://www.federationskatingclub.ca/registration/" }
     } = props;
 
     return (
@@ -41,7 +41,9 @@ const ProgramInfo = (props) => {
                     <h4 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">{footerHeading}</h4>
                     <p className="md:text-md">{footerDescription}</p>
                     <div className="mt-6 md:mt-8">
-                        <Button {...button}>{button.title}</Button>
+                        <a href={button.link} target="_blank" rel="noopener noreferrer">
+                            <Button {...button}>{button.title}</Button>
+                        </a>
                     </div>
                 </div>
             </div>

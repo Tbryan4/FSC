@@ -1,14 +1,14 @@
 // src/pages/AboutPage.js
 import React from 'react';
-import {Content1, Content9, Content9Props, PortfolioHeader6, Programs} from "../Components/Program/Program";
-import {Banner} from "../Components/StaticBanner/StaticBanner";
+import {CanSkate} from "../Components/CanSkate/CanSkate";
+import Banner from "../Components/Banner/Banner";
 import ProgramInfo from "../Components/ProgramInfo/ProgramInfo";
 import BannerImg from "../assets/canskatebanner.jpg";
 
 
 
 
-const ProgramPage = () => {
+const CanSkatePage = () => {
     return (
         <div>
             <Banner
@@ -17,7 +17,7 @@ const ProgramPage = () => {
                     alt: "Executive Team Image"
                 }}
             />
-            <Programs
+            <CanSkate
                 content="The only standardized national Learn-to-Skate program that is designed to teach
                  the basic skating skills for all ages and abilities. The skills learned can be applied to any on-ice sport,
                   including hockey, ringette, speed skating and figure skating. This program is taught by professional coaches who are specially 
@@ -29,4 +29,4 @@ const ProgramPage = () => {
     );
 };
 
-export default ProgramPage;
+export default CanSkatePage;

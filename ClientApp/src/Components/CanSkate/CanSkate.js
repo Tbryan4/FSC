@@ -1,7 +1,7 @@
 import React from 'react';
 import img from "../../assets/can-power.jpg";
 
-export const Programs = ({
+export const CanSkate = ({
                              heading = "CanSkate",
                              description = "August Learn to Skate Registration is Open\n" +
                              " \n" +
@@ -14,22 +14,21 @@ export const Programs = ({
                              },
                              tags = [
                                  {
-                                     url: "#",
-                                     label: "Tag one",
+                                     label: "Program",
                                  }
                              ],
                              metaDataSections = [
                                  {
                                      title: "Program Difficulty",
-                                     description: "Easy",
+                                     description: "Age requirement: 5-14 years of age",
                                  },
                                  {
                                      title: "Registration Start Date",
                                      description: "March 2025",
                                  },
                                  {
-                                     title: "Role",
-                                     description: "Role name",
+                                     title: "Level",
+                                     description: "Beginner to intermediate skaters",
                                  },
                                  {
                                      url: "#",
@@ -50,18 +49,19 @@ export const Programs = ({
                             {tags.map((tag, index) => (
                                 <a
                                     key={index}
-                                    href={tag.url}
-                                    className="bg-background-secondary px-2 py-1 text-sm font-semibold"
+                                    className="bg-red-500 px-2 py-1 text-sm font-semibold text-white rounded-md"
                                 >
                                     {tag.label}
                                 </a>
                             ))}
                         </div>
+
+
                     </div>
                     <div className="grid auto-cols-fr grid-cols-2 gap-8">
                         {metaDataSections.map((metaDataSection, index) => (
                             <div key={index}>
-                                <h2 className="mb-2 text-md font-bold leading-[1.4] md:text-xl">
+                                <h2 className="mb-2 text-md font-bold leading-[1.4]">
                                     {metaDataSection.title}
                                 </h2>
                                 {metaDataSection.url ? (
@@ -69,7 +69,7 @@ export const Programs = ({
                                         {metaDataSection.description}
                                     </a>
                                 ) : (
-                                    <p className="lg:text-2xl">{metaDataSection.description}</p>
+                                    <p className="text-md">{metaDataSection.description}</p>
                                 )}
                             </div>
                         ))}

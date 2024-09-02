@@ -11,9 +11,10 @@ import EquipmentPage from "./Pages/Equipment";
 import ExecutiveTeam from "./Pages/ExecutiveTeam";
 import TimelinePage from "./Pages/Events";
 import EventsPage from "./Pages/Events";
-import ProgramPage from "./Pages/program";
+import ProgramPage from "./Pages/CanSkate";
 import BlogsPage from "./Pages/Blogs";
 import SchedulePage from "./Pages/Schedule";
+import CanSkatePage from "./Pages/CanSkate";
 
 const App = () => {
     return (
@@ -28,7 +29,7 @@ const App = () => {
                     <Route path="/equipment" component={EquipmentPage} />
                     <Route path="/executives" component={ExecutiveTeam}/>
                     <Route path="/events" component={EventsPage}/>
-                    <Route path="/program" component={ProgramPage}/>
+                    <Route path="/canskate" component={CanSkatePage}/>
                     <Route path="/blogs" component={BlogsPage}/>
                     <Route path="/Schedule" component={SchedulePage}/>
 
