@@ -3,14 +3,12 @@ import { Button } from "@material-tailwind/react";
 
 const FigureSkateParentInfo = (props) => {
     const {
-        heading = "Equipment\n",
-        description = "Required Equipment: skates (hockey or figure) and a CSA-approved helmet\n" +
-            "All of our Learn-to-Skate programs (PreCanskate, Canskate & Adult Canskate) require skates, hockey or figure, and a CSA-approved skating helmet. We recommend purchasing the lace-up skates as the plastic-molded skates do not allow for the necessary ankle movement and fit required. All helmets must have a CSA-approved sticker on them. Helmets should fit properly and not move when the skaters nods or turns their head.\n" +
+        heading = "Intro-to-Figure Skating\n\n",
+        description = "This program serves as a gateway into the StarSkate and/or CompetitiveSkate programs. \n" +
             "\n" +
-            "Before the first day of skating, please ensure that the skates have been sharpened. Newly purchased skates do not come pre-sharpened. Without regular sharpening (once a season/session), skaters will not be able to properly use their edges. \n" +
+            "Equipment Required: figure skates and a CSA-approved helmet\n" +
             "\n" +
-            "After each session, ensure that skates are dried off completely before placing them in a bag. Rust can form on the blades if not completely dried off properly.\n" +
-            "\n",
+            "Upon completion of the Stage 5 Canskate skating skills, the coach/program coordinator and parents/guardians may discuss removing the childs helmet. All helmets must be worn until coach and/or program coordinator and parent approval is granted. ",
         footerHeading = "What do you need to participate?",
         footerDescription = "All you need are skates, a CSA-approved hockey helmet, long pants, mittens, warm sweater or jacket. Dress in layers - it will get warm!",
         button = { title: "Register Now", variant: "secondary", link: "https://www.federationskatingclub.ca/registration/" }
@@ -23,62 +21,145 @@ const FigureSkateParentInfo = (props) => {
                     <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">{heading}</h2>
                     <p className="lg:text-2xl">{description}</p>
                 </div>
-                <div className="mb-12">
-                    <h4 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">Recommended
-                        Clothing: gloves/mittens, warm sweater/jacket and warm pants</h4>
-                    <p className="lg:text-2xl">We recommend dressing in layers. The arenas can be very cool at the start
-                        of each class. We recommend that young skaters wear snow pants. This will prevent them from
-                        having wet pants after the class after falling. </p>
-                </div>
-                <div className="mb-12">
-                    <h4 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">On Ice</h4>
-                    <p className="lg:text-2xl">The first day of skating is always overwhelming and may be scary for
-                        young skaters. Please encourage them to keep trying and become their 'cheerleader' from the
-                        stands. Seemingly easy skills, such as standing up, can be very challenging for young skaters
-                        and they may require some time to master this skill
-                        Once on the ice, skaters are grouped according to ability. It is natural for skaters to be moved
-                        within groups a couple of times in order to find the best fit. We strive to put skaters into
-                        groups that encourage the skaters to try new skills, while ensuring that the skills are within
-                        the childs ability.</p>
-                </div>
-                <div className="mb-12">
-                    <h4 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">Safety</h4>
-                    <p className="lg:text-2xl">Our coaches and volunteers are committed to creating a safe learning
-                        environment for all skaters. Please respect the coaches and volunteers decisions in respect to
-                        club operations and skaters safety. To speak with a program coordinator or a board member,
-                        please email federationskating@gmail.com. </p>
-                </div>
-                <div className="mb-12">
-                    <h4 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">Communication</h4>
-                    <p className="lg:text-2xl">We communicate with parents primarily through email with program updates,
-                        registration information and skating schedules. Please review your account annually to ensure
-                        that you are subscribed to all club email lists.
-                        Skater specific questions may be answered by the skater's coach after each session or by
-                        emailing federationskating@gmail.com. Please do not approach a coach if they are on the ice,
-                        this distracts the coach and takes time away from the skaters that they are working with. </p>
-                </div>
-                <div className="mb-12">
-                    <h4 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">Volunteer &
-                        Fundraiser Requirements</h4>
-                    <p className="lg:text-2xl">We do not require Learn-to-Skate families to complete any volunteer or
-                        fundraiser requirements. If you wish to inquiry about volunteer or fundraising opportunities,
-                        please email federationskating@gmail.com.</p>
-                </div>
-                <div className="mb-12">
-                    <h4 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">Age Requirements</h4>
-                    <p className="lg:text-2xl">All skaters must be 3 years old before getting on the ice.
+                <br/>
+                <p className="lg:text-2xl">
+                    <span className="underline">Session Structure</span>: each session is broken into a Group Lesson,
+                    Stroking
+                    Lesson and Off-Ice Lesson.
+                </p>
+                <br/>
+                <p className="lg:text-2xl">
+                    <span className="underline">Group Lesson</span>: the group lesson builds upon the skills learned in
+                    Canskate,
+                    while teaching the basic figure skating skills such as jumps, spins, turns and steps.
+                </p>
+                <br/>
+                <p className="lg:text-2xl">
+                    <span className="underline">Stroking Lesson</span>: this lesson is combined with the StarSkate and
+                    CompetitiveSkate skaters and focuses
+                    on speed, stamina, turns, edges and artistic expression. Skaters will be encouraged to skate with
+                    speed and engage in a variety of drills and exercises.
+                </p>
+                <br/>
+                <p className="lg:text-2xl">
+                    <span className="underline">Off-Ice Lesson</span>: this lesson is combined with the StarSkate and
+                    CompetitiveSkate skaters and focuses on flexibility, jump/spin technique and cardio. Skaters will
+                    participate in a group lesson with different focus areas every week.
+                </p>
+                <br/>
+                <p className="lg:text-2xl">
+                    Clothing Recommendation: gloves/mittens, tight-fitting pants, a light jacket or sweater.Skaters
+                    should avoid wearing bulky clothes that inhibits movement. Loose pants can become caught in a
+                    skaters skates, posing a safety risk.
+                </p>
+                <br/>
+                <p className="lg:text-2xl">
+                    Events: skaters may choose to participate in a variety of events over the course of the season
+                </p>
+                <br/>
+                <p className="lg:text-2xl">
+                    <span className="underline">Fun Competitions </span>: skaters may choose to participate in fun
+                    competitions that are held in the city and surrounding communities. These events do have additional
+                    costs associated which may include: travel, coaching, registration and clothing. For more
+                    information, please contact federationskating@gmail.com.
+                </p>
+                <br/>
+                <p className="lg:text-2xl">
+                    <span className="underline">Ice Show</span>: every March, we put on a Annual Ice Show which allows
+                    skaters to show-off their new skills to friends and family. This event is completely free to
+                    participate in. For more information, please contact federationskating@gmail.com.
+                </p>
 
-                        The age requirements for Canskate and Adult Canskate can be overridden upon approval from a program coordinator. Approval is given on a case-by-case basis and takes into consideration skating experience.  Please send all requests to federationskating@gmail.com</p>
+
+                <div className="mb-12 mt-12 text-center md:mb-18 lg:mb-20">
+                    <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">StarSkate &
+                        CompetitiveSkate</h2>
+                    <p className="lg:text-2xl">StarSkate is a recreational figure skating program that teaches figure
+                        skating skills to skaters of all ages.
+                        CompetitiveSkate is a figure skating program for skaters who wish to compete in Skate Canada
+                        competitions.
+                        Equipment Required: figure skates and yoga mat
+                        Session Structure: most sessions are broken into a Private/Semi-Private Lesson, Stroking Lesson
+                        and Off-Ice Lesson. </p>
                 </div>
-                <div className="mx-auto mt-12 max-w-md text-center md:mt-18 lg:mt-20">
-                    <h4 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">{footerHeading}</h4>
-                    <p className="md:text-md">{footerDescription}</p>
-                    <div className="mt-6 md:mt-8">
-                        <a href={button.link} target="_blank" rel="noopener noreferrer">
-                            <Button {...button}>{button.title}</Button>
-                        </a>
-                    </div>
-                </div>
+                <br/>
+                <p className="lg:text-2xl">
+                    <span className="underline">Private/Semi-Private Lesson</span>: skaters will select their own coach
+                    and work with this coach to build figure skating skills, programs and complete assessments. This
+                    coach is responsible for the skater's development and goals.
+                </p>
+                <br/>
+                <p className="lg:text-2xl">
+                    <span className="underline">Stroking Lesson</span>: this lesson is combined with the Intro-to-Figure
+                    Skate skaters and focuses on speed, stamina, turns, edges and artistic expression. Skaters will be
+                    encouraged to skate with speed and engage in a variety of drills and exercises. Skills are adjusted
+                    according to the skater's skating level to ensure that everyone is challenged.
+                </p>
+                <br/>
+                <p className="lg:text-2xl">
+                    <span className="underline">Off-Ice Lesson:</span>: this lesson is combined with the Intro-to-Figure
+                    Skate skaters and focuses on flexibility, jump/spin technique and cardio. Skaters will participate
+                    in a group lesson with different focus areas every week. Skills are adjusted according to the
+                    skater's skating level to ensure that everyone is challenged.
+                </p>
+                <br/>
+                <p className="lg:text-2xl">
+                    Clothing Recommendation: gloves/mittens, tight-fitting pants, a light jacket or sweater.
+                    Skaters should avoid wearing bulky clothes that inhibits movement. Loose pants can become caught in
+                    a skaters skates, posing a safety risk.
+                    Selecting a Coach: all skaters will have the opportunity to select the coach that they will to
+                    receive private or semi-private lessons from.
+                    When selecting a coach, please take into consideration your skaters preference and the skaters
+                    goals. Each coaches qualifications and contact information can be viewed on our Coaches Page.
+                    All communications regarding your skater's development should be held with your coach before
+                    approaching any other coach for additional lessons.
+                </p>
+                <br/>
+                <p className="lg:text-2xl">
+                    <span className="underline">Competitions</span>: skaters may choose to participate in competitions.
+                    These events do have additional costs associated which may include: travel, coaching, registration,
+                    accommodations and clothing. For more information, please contact your coach and/or
+                    federationskating@gmail.com.
+                </p>
+                <br/>
+                <p className="lg:text-2xl">
+                    <span className="underline">Ice Show</span>: every March, we put on a Annual Ice Show which allows
+                    skaters to show-off their new skills to friends and family. This event is completely free to
+                    participate in. For more information, please contact federationskating@gmail.com.
+                </p>
+                <br/>
+                <p className="lg:text-2xl">
+                    <span className="underline">Partnering Sessions</span>: once a skater reaches a particular dance
+                    level, they have the opportunity to partner with a professional ice dance partner for practice and
+                    then assessment days. These events do have additional costs associated which may include: travel,
+                    coaching and dance partner fees. For more information please contact your coach and/or
+                    federationskating@gmail.com.
+                </p>
+                <br/>
+                <p className="lg:text-2xl">
+                    <span className="underline">Assessment Levels:</span>: skills are divided into four disciplines.
+                    Each discipline is then divided into eleven levels - Star 1-10 and Gold. Each level contains a
+                    number of skills and is completed upon the passing of the assessment.
+                </p>
+                <br/>
+                <p className="lg:text-2xl">
+                    <span className="underline">Ice Dance </span>: composed of steps, turns and movements placed on a
+                    pattern and skated to music. This discipline teaches edges, flow, control, unison, musicality and
+                    timing. These skills are first taught in isolation and then placed on a pattern. May be performed
+                    solo, shadowed or with a partner.
+                </p>
+                <br/>
+                <p className="lg:text-2xl">
+                    <span className="underline">Skating Skills </span>: edges, turns, steps and field movements make up
+                    this discipline. These skills are the basic components of all figure skating and can be found in the
+                    three other disciplines. The skills are judged on edge quality, control, power and speed.
+                </p>
+                <br/>
+                <p className="lg:text-2xl">
+                    <span className="underline">Artistic </span>: designed to challenge a skaters' musicality,
+                    expression, movement and creativity. This discipline gives the skaters' the opportunity to explore
+                    the performance aspect of skating.
+                </p>
             </div>
         </section>
     );
