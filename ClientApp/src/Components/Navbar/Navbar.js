@@ -34,7 +34,7 @@ const AboutUsMenuList = [
     {
         title: "Executive Team",
         link: "/executives",
-        description: "Learn how we can help you achieve your goals.",
+        description: "Meet our executive team.",
         icon: UsersIcon,
     },
     {
@@ -45,14 +45,26 @@ const AboutUsMenuList = [
     },
     {
         title: "Recommended Vendors & Funding Assistance",
-        link: "https://www.federationskatingclub.ca/pages/club-page/links/",
-        description: "Explore our network of trusted partners.",
+        link: "/recommendedvendors",
+        description: "View our recommended vendors!",
         icon: Bars4Icon,
     },
     {
         title: "About Us",
         link: "/aboutus",
-        description: "Find the perfect solution for your needs.",
+        description: "Learn more about federation skating!",
+        icon: UserCircleIcon,
+    },
+    {
+        title: "Figure Skating Parent Information\n",
+        link: "/fsparentinformation\n",
+        description: "View more information about figure skate",
+        icon: UserCircleIcon,
+    },
+    {
+        title: "Learn To Skate Parent Information\n",
+        link: "/ltsparentinformation",
+        description: "View more information about learn to skate",
         icon: UserCircleIcon,
     },
 ];
