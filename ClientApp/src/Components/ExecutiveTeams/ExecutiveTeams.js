@@ -51,7 +51,6 @@ const ExecutiveTeamMember = ({ member }) => {
                 <h5 className="text-md font-semibold md:text-lg">{member.name}</h5>
                 <h6 className="md:text-md">{member.jobTitle}</h6>
             </div>
-            <p>{member.description}</p>
         </div>
     );
 };

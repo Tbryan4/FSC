@@ -71,38 +71,149 @@ export const FaqDefaults = {
         {
             title: "Locations",
             answer:
-                "To register, visit our website and fill out the registration form. After submission, you will receive an email with further instructions and a link to schedule an evaluation session.",
+                "We are conveniently located very centrally in the city for most of our skating days. On Thursdays, Fridays, and Sundays you can find us at Tipton Arena. On Tuesdays, we skate at SouthSide Arena. And on Saturdays, we skate at Kinsmen Twin Arenas (111st and 23rd ave).",
         },
         {
-            title: "Where can I find the schedule instead of can parents watch practices?\n",
-            answer:
-                "Membership fees vary depending on the program. Please check our 'Programs' section on the website or contact us directly for detailed information about fees and payment options.",
+            title: "Where can I find the Schedule?",
+            answer: (
+                <>
+                    Here is the link to the schedule:{" "}
+                    <a
+                        href="/schedule"
+                        className="text-blue-500 underline"
+                    >
+                        Schedule
+                    </a>. You will find a Google Calendar and iCal options to keep track of the session times.
+                    Reminder that you can only attend the specific day you registered for!
+                </>
+            ),
         },
+
         {
             title: "What are the equipment requirements for CanSkate",
-            answer:
-                "Yes, we offer private coaching sessions with our experienced coaches. You can book a session by contacting our administration office or speaking directly with one of our coaches.",
+            answer: (
+                <>
+                    <ul className="list-disc list-inside">
+                        <li>Skates</li>
+                        <li>CSA-approved hockey helmet</li>
+                        <li>Long pants</li>
+                        <li>Mittens</li>
+                        <li>Warm sweater or jacket</li>
+                    </ul>
+                    <p className="mt-2">
+                        For skates, the most important aspect is good ankle support and appropriate size.{" "}
+                        <a
+                            href="https://unitedsport.ca/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-500 underline"
+                        >
+                            United Cycle
+                        </a>{" "}
+                        and{" "}
+                        <a
+                            href="https://www.proskate.ca/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-500 underline"
+                        >
+                            ProSkate
+                        </a>{" "}
+                        are great stores to learn about skates, get expert advice, and get skate sharpenings. 111 Street Skate Sharpening does an excellent job for regular skate sharpenings.
+                    </p>
+                    <p className="mt-2">
+                        Find more information here:{" "}
+                        <a
+                            href="/ltsparentinformation"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-500 underline"
+                        >
+                            Learn to Skate Parent Info Page
+                        </a>.
+                    </p>
+                </>
+            ),
         },
+
+
         {
             title: "What are the equipment requirements for StarSkate",
-            answer:
-                "Skaters should wear comfortable, moisture-wicking clothing and appropriate figure skating attire. We recommend a fitted skating outfit, gloves, and proper skating boots. Check our website for a detailed list of recommended gear.",
+            answer: (
+                <>
+                    <ul className="list-disc list-inside">
+                        <li>
+                            A pair of figure skates with strong ankle support — you should not be able to bend the ankle with your hands!
+                        </li>
+                        <li>Yoga mat and running shoes for off-ice training</li>
+                        <li>
+                            Dress comfortably and safely for both on-ice and off-ice training. Avoid any clothing that may accidentally get hooked on something.
+                        </li>
+                    </ul>
+                </>
+            ),
         },
+
         {
             title: "Where do I find the cost of programs?",
-            answer:
-                "Yes, parents are welcome to watch their child's practices from the designated viewing area. We ask that you respect the skaters and coaches by remaining quiet and not interfering with the session.",
+            answer: (
+                <>
+                    <ul className="list-disc list-inside">
+                        <li>
+                            Cost varies per program. Please find a breakdown for each session on our{" "}
+                            <a
+                                href="https://www.federationskatingclub.ca/registration/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-500 underline"
+                            >
+                                registration page
+                            </a>.
+                        </li>
+                        <li>
+                            The cost of the class applies only to the specific day listed!
+                        </li>
+                        <li>
+                            For StarSkate and IFS programs, the cost includes group programming such as off-ice and stroking but does <strong>NOT</strong> include coaching fees for additional lessons.
+                        </li>
+                    </ul>
+                </>
+            ),
         },
+
         {
             title: "Do you have adult programming?",
             answer:
-                "We host several events and competitions throughout the year. You can find a schedule of upcoming events on our website or sign up for our newsletter to receive updates.",
+                "We offer a broad range of adult programming! There is something for every level of learning and interest. Learn to Skate for those beginning their skating journey. Intro to Figure Skating for those building basic skating skills but interested in getting exposure to figure skating skills. StarSkate is for those with some figure skating experience and who are interested in expanding that skill set through focused private and semi-private lessons. Lastly, we offer group CanPower lessons for those looking to augment hockey and ringette skills through power and edge training.",
         },
         {
             title: "What can I expect for a first-time skater?",
-            answer:
-                "We welcome volunteers to help with various activities and events. If you're interested in volunteering, please contact us via email or fill out the volunteer form available on our website.",
+            answer: (
+                <>
+                    <ul className="list-disc list-inside">
+                        <li>
+                            When you arrive at the rink (~15m before class begins), you should see a table with nametags. Retrieve your skater’s name tag (e.g., John Doe, Saturday CanSkate 2).
+                        </li>
+                        <li>
+                            If your skater’s name is not at the table, please let a coach know so we can have one ready for the next class.
+                        </li>
+                        <li>
+                            Check the rink boards for the dressing room assigned to your class.
+                        </li>
+                        <li>
+                            Coaches will prompt skaters onto the ice surface when class is ready to begin.
+                        </li>
+                        <li>
+                            During class, skaters will be assigned a group for the session. Please be patient for the first one to two classes as we are assessing skaters, assigning them to the correct group, and helping first-time skaters adjust to the new environment.
+                        </li>
+                        <li>
+                            At the end of class, meet your skater in the dressing rooms and return their nametag to the table at the front.
+                        </li>
+                    </ul>
+                </>
+            ),
         }
+
     ],
     footerHeading: "Still have questions?",
     footerDescription: "Don't hesitate to get in touch with us for more details.",

@@ -65,11 +65,50 @@ const LearnToSkateParentInfo = (props) => {
                         please email federationskating@gmail.com.</p>
                 </div>
                 <div className="mb-12">
-                    <h4 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">Age Requirements</h4>
+                    <h4 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">Age
+                        Requirements</h4>
                     <p className="lg:text-2xl">All skaters must be 3 years old before getting on the ice.
 
-                        The age requirements for Canskate and Adult Canskate can be overridden upon approval from a program coordinator. Approval is given on a case-by-case basis and takes into consideration skating experience.  Please send all requests to federationskating@gmail.com</p>
+                        The age requirements for Canskate and Adult Canskate can be overridden upon approval from a
+                        program coordinator. Approval is given on a case-by-case basis and takes into consideration
+                        skating experience. Please send all requests to federationskating@gmail.com</p>
                 </div>
+                <div className="mb-12">
+                    <h4 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">Age</h4>
+                    <p className="lg:text-2xl">All skaters must be 3 years old before getting on the ice.
+                    </p>
+
+                </div>
+                <div className="mb-12">
+                    <h4 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">Policy</h4>
+                    <p className="lg:text-2xl">
+                        <strong>Refund Policy:</strong> All programs are non-refundable except in extenuating circumstances and will be
+                        considered on a case-by-case basis by the board of volunteers. Reasons for a refund could
+                        include:
+                        moving away, injury preventing participation, and incorrect program. Refunds are not guaranteed.
+                        If
+                        a
+                        refund is granted, the Admin fee and the Skate Canada fee are non-refundable. The Skate Canada
+                        fee
+                        goes
+                        directly to Skate Canada and not to our organization. This membership can be used at any other
+                        Skate
+                        Canada club.
+                    </p>
+
+<br/>
+                    <p className="lg:text-2xl">
+                        <strong>Credit Policy:</strong> Credit will be considered in all cases. Please request
+                        credit and give reason at which time the registrar will be able to process this for you.
+                        All skaters must be 3 years old before getting on the ice. All requests must be made with
+                        respect to our program coordinators and board members. Please remember that our board members
+                        are parent
+                        volunteers and that our organization is a non-profit organization providing opportunities for
+                        all individuals to learn how to skate!
+                    </p>
+
+                </div>
+
                 <div className="mx-auto mt-12 max-w-md text-center md:mt-18 lg:mt-20">
                     <h4 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">{footerHeading}</h4>
                     <p className="md:text-md">{footerDescription}</p>

@@ -100,7 +100,7 @@ const GoogleMapTabs = (props) => {
 };
 
 const GoogleMapTabsDefaults = {
-    tagline: "Info",
+    tagline: "",
     heading: "Where We Skate",
     description:
         "The arenas we skate at are: Kinsmen Twin Arena, Tipton Arena, and Southside Arena\n",

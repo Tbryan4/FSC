@@ -126,7 +126,7 @@ const ExecutiveTeamPage = () => {
     ]
 
     const footer = {
-        heading: "We're hiring!",
+        heading: "Get Involved",
         description: "Volunteer with us! We are always looking for enthusiastic volunteers to get involved in our club to support our programming, events, and skaters. Email us today at federationskating@gmail.com with any interest. We are currently looking for: Test Chair (Board Position), Planning Committee members for the Banquet and Ice Show. ",
     };
 

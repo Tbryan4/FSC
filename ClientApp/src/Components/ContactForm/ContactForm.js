@@ -1,7 +1,7 @@
 import { BiEnvelope, BiMap, BiMessageDetail, BiPhone } from "react-icons/bi";
 
 export const ContactSection = ({
-                                   tagline = "info",
+                                   tagline = "",
                                    heading = "Contact us",
                                    description = "If you have any questions don't be afraid to reach out!",
                                    contacts = [
