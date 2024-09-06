@@ -42,7 +42,7 @@ export function CardList() {
     const cards = [
         {
             src: img1,
-            title: "CanPower Skating",
+            title: "CanPowerSkate",
             description: "Develop and improve upon the skills required for hockey and/or ringette in a fast-paced and upbeat environment from certified coaches."
         },
         {
@@ -52,7 +52,7 @@ export function CardList() {
         },
         {
             src: img2,
-            title: "Intro To Figure Skating\n",
+            title: "Intro to Figure Skating",
             description: "Develop the basic figure skating skills in group lesson. Acts as a transition between CanSkate and StarSkate."
         },
         {
@@ -69,20 +69,19 @@ export function CardList() {
                         color="blue-gray"
                         className="mb-2 font-bold uppercase"
                     >
-                        Programs
+                        Check Out Our
                     </Typography>
                     <Typography
                         color="blue-gray"
                         className="mb-4 !text-2xl font-bold lg:!text-4xl"
                     >
-                        Check out or programs!
+                        Programs
                     </Typography>
                     <Typography
                         variant="lead"
                         className="mx-auto max-w-lg !text-gray-500"
                     >
-                        We're constantly trying to express ourselves and actualize our
-                        dreams. If you have the opportunity to play
+                        Explore our wide range of figure skating programs! From beginners to advanced skaters, we offer something for everyone. Take a look at the programs we offer and find the one that's right for you.
                     </Typography>
                 </div>
                 <div className="flex flex-wrap gap-4 justify-center mt-5">

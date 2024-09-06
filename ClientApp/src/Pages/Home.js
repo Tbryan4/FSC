@@ -2,7 +2,7 @@
 import React from 'react';
 import Carousel from "../Components/Carousel/Carousel";
 import {CardList} from "../Components/HomeCardSection/HomeCardSection";
-import {Layout1, Layout1Props} from "../Components/ContactSection/ContactSection";
+import Jumpstart from "../Components/JumpStart/JumpStart";
 import {Layout423} from "../Components/StepsRegister/Steps";
 
 const HomePage = () => {
@@ -10,7 +10,7 @@ const HomePage = () => {
         <div>
             <Carousel />
             <CardList />
-            <Layout1 />
+            <Jumpstart />
             <Layout423/>
         </div>
     );
