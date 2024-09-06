@@ -5,6 +5,7 @@ import { RxChevronRight } from "react-icons/rx";
 import register from "../../assets/register.jpg"
 import register2 from "../../assets/register-program.jpg"
 import register3 from "../../assets/register-skate.jpg"
+import {Typography} from "@material-tailwind/react";
 
 const slideVariants = {
     hidden: {
@@ -20,9 +21,6 @@ const slideVariants = {
 };
 
 const Layout423Defaults = {
-    tagline: "Tagline",
-    heading: "Where to Start",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     features: [
         {
             tagline: "Step 1",
@@ -42,7 +40,7 @@ const Layout423Defaults = {
         },
         {
             tagline: "Step 2",
-            url: "#",
+            url: "/schedule",
             heading: "View Schedule",
             description:
                 "Secure your spot in the program of your choice!",
@@ -58,7 +56,7 @@ const Layout423Defaults = {
         },
         {
             tagline: "Step 3",
-            url: "#",
+            url: "https://www.federationskatingclub.ca/registration/",
             heading: "Register for Program",
             description:
                 "Decide which rink and time works for you!\n",
@@ -86,6 +84,27 @@ const Layout423 = (props) => {
 
     return (
         <section className="px-[5%] py-16 md:py-24 lg:py-28">
+            <div className="container mx-auto mb-10 text-center">
+                <Typography
+                    color="blue-gray"
+                    className="mb-2 font-bold uppercase"
+                >
+                    Where To
+                </Typography>
+                <Typography
+                    color="blue-gray"
+                    className="mb-4 !text-2xl font-bold lg:!text-4xl"
+                >
+                    Get Started
+                </Typography>
+                <Typography
+                    variant="lead"
+                    className="mx-auto max-w-lg !text-gray-500"
+                >
+
+                    To get started, simply follow three easy steps: first, explore our range of skating programs designed for all skill levels; next, check the schedule to find the perfect time; and finally, register for the program that suits you best. We can't wait to see you on the ice!
+                </Typography>
+            </div>
             <div className="container">
                 <div className="mx-auto w-full max-w-lg text-center md:mb-18 lg:mb-40">
                     <p className="mb-3 font-semibold md:mb-4">{tagline}</p>
@@ -101,8 +120,9 @@ const Layout423 = (props) => {
                             onMouseEnter={() => setHoveredFeatureIdx(index)}
                             onMouseLeave={() => setHoveredFeatureIdx(null)}
                         >
-                            <div className="absolute inset-0 flex size-full flex-col items-center justify-center self-start">
-                                <div className="absolute inset-0 bg-black/50" />
+                            <div
+                                className="absolute inset-0 flex size-full flex-col items-center justify-center self-start">
+                                <div className="absolute inset-0 bg-black/50"/>
                                 <img
                                     src={feature.image.src}
                                     alt={feature.image.alt}
@@ -110,7 +130,8 @@ const Layout423 = (props) => {
                                 />
                             </div>
                             <div className="group relative flex h-full min-h-[70vh] flex-col justify-end p-6 md:p-8">
-                                <div className="lg:absolute lg:inset-0 lg:z-0 lg:transition-all lg:duration-300 lg:group-hover:bg-black/50" />
+                                <div
+                                    className="lg:absolute lg:inset-0 lg:z-0 lg:transition-all lg:duration-300 lg:group-hover:bg-black/50"/>
                                 <div className="z-10">
                                     <p className="mb-2 font-semibold text-text-alternative">{feature.tagline}</p>
                                     <h3 className="text-2xl font-bold text-text-alternative md:text-3xl md:leading-[1.3] lg:text-4xl">
@@ -125,7 +146,7 @@ const Layout423 = (props) => {
                                             initial="hidden"
                                             animate="visible"
                                             exit="hidden"
-                                            transition={{ duration: 0.3, ease: "easeInOut" }}
+                                            transition={{duration: 0.3, ease: "easeInOut"}}
                                         >
                                             <p className="mt-5 text-text-alternative md:mt-6">{feature.description}</p>
                                             <div className="mt-6 md:mt-8">
@@ -136,7 +157,7 @@ const Layout423 = (props) => {
                                                     iconLeft={feature.button.iconLeft}
                                                     className="text-text-alternative"
                                                 >
-                                                    Button
+                                                    View More
                                                 </Button>
                                             </div>
                                         </motion.div>
@@ -165,4 +186,4 @@ const Layout423 = (props) => {
     );
 };
 
-export { Layout423, Layout423Defaults };
+export {Layout423, Layout423Defaults};
