@@ -123,6 +123,12 @@ const ExecutiveTeamPage = () => {
             jobTitle: "Banquet Planning Committee",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
         },
+        {
+            image: { src: img12, alt: "Katy Abou Rjeily " },
+            name: "Katy Abou Rjeily",
+            jobTitle: "Banquet Planning Committee",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+        },
     ]
 
     const footer = {
