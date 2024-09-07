@@ -59,7 +59,7 @@ export function CardList() {
             src: img2,
             title: "Intro to Figure Skating",
             description: "Develop the basic figure skating skills in group lesson. Acts as a transition between CanSkate and StarSkate.",
-            link: "/introtofigureskate" // Replace with actual URL
+            link: "/introtofigureskating" // Replace with actual URL
         },
         {
             src: img4,
