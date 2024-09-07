@@ -5,16 +5,16 @@ const LINKS = [
         title: "Programs",
         items: [
             { name: "CanSkate", link: "/canskate" },
-            { name: "CanPower", link: "/canpowerskate" },
-            { name: "Intro To Figure Skate", link: "/introtofigureskate" },
+            { name: "CanPowerSkate", link: "/canpowerskate" },
+            { name: "Intro To Figure Skating", link: "/introtofigureskating" },
         ],
     },
     {
         title: "Company",
         items: [
             { name: "About us", link: "/aboutus" },
-            { name: "Coaching Team", link: "/coachingteam" },
-            { name: "Executive Team", link: "/executiveteam" },
+            { name: "Coaching Team", link: "/coach" },
+            { name: "Executive Team", link: "/executives" },
         ],
     },
     {

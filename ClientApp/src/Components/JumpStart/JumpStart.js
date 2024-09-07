@@ -22,7 +22,7 @@ const Jumpstart = (props) => {
                     color="blue-gray"
                     className="mb-2 font-bold uppercase"
                 >
-                    Support Your Community With
+                    Support Your Skaters With
                 </Typography>
                 <Typography
                     color="blue-gray"

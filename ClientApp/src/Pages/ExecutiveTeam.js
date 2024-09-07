@@ -16,6 +16,7 @@ import img13 from "../assets/executiveteam/ela.png"
 import img14 from "../assets/executiveteam/mar.png"
 import img15 from "../assets/executiveteam/as.png"
 import img16 from "../assets/executiveteam/RS.png"
+import img17 from "../assets/executiveteam/kar-new.png"
 
 
 const ExecutiveTeamPage = () => {
@@ -124,7 +125,7 @@ const ExecutiveTeamPage = () => {
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
         },
         {
-            image: { src: img12, alt: "Katy Abou Rjeily " },
+            image: { src: img17, alt: "Katy Abou Rjeily " },
             name: "Katy Abou Rjeily",
             jobTitle: "Banquet Planning Committee",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",

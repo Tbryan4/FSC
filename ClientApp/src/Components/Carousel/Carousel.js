@@ -69,7 +69,7 @@ const Carousel = () => {
         let prevButton = document.getElementById('prev');
 
 
-        let timeAutoNext = 5000;
+        let timeAutoNext = 10000;
         let autorun = setTimeout(() => {
              nextButton.click();
         }, timeAutoNext);
