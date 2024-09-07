@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from "@material-tailwind/react";
 
-const IntroToFigureSkateInfo = (props) => {
+const IntroToFigureSkatingInfo = (props) => {
     const {
         heading = "Learn the Basics of Figure Skating\n",
         description ="\n" +
@@ -130,4 +130,4 @@ const IntroToFigureSkateInfo = (props) => {
     );
 };
 
-export default IntroToFigureSkateInfo;
+export default IntroToFigureSkatingInfo;

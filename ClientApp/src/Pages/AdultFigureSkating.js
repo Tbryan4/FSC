@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from "../Components/Banner/Banner";
 import BannerImg from "../assets/Banners/adult-figure-skate.webp";
-import {AdultFigureSkateHeader} from "../Components/Programs/AdultFigureSkate/AdultFigureSkateHeader";
+import {AdultFigureSkatingHeader} from "../Components/Programs/AdultFigureSkate/AdultFigureSkateHeader";
 import AdultFigureSkateProgramInfo from "../Components/Programs/AdultFigureSkate/AdultFigureSkateProgramInfo";
 
 
@@ -16,7 +16,7 @@ const  AdultFigureSkatePage = () => {
                     alt: "Executive Team Image"
                 }}
             />
-            <AdultFigureSkateHeader/>
+            <AdultFigureSkatingHeader/>
             <AdultFigureSkateProgramInfo
             />
         </div>

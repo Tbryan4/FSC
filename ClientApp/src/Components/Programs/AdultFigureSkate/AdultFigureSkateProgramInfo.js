@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from "@material-tailwind/react";
 
-const AdultFigureSkateInfo = (props) => {
+const AdultFigureSkatingInfo = (props) => {
     const {
         heading = "Learn the Basics of Figure Skating\n",
         description ="Skaters can expect action, movement and fun, both on and off the ice! Lessons are taught in a group format with a coach-to-student ratio of a maximum 1:10. Skaters progress at their own rate and coaches makes sessions active using teaching aids, upbeat music and a wide variety of activities that create a motivation environment and promote learning. \n" +
@@ -109,4 +109,4 @@ const AdultFigureSkateInfo = (props) => {
     );
 };
 
-export default AdultFigureSkateInfo;
+export default AdultFigureSkatingInfo;

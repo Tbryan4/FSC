@@ -71,7 +71,7 @@ const AboutUsMenuList = [
 
 const ProgramsMenuList = [
     {
-        title: "CanPower Skate",
+        title: "CanPowerSkate",
         link: "/canpowerskate",
         description: "Learn More",
         icon: UserGroupIcon,
@@ -95,19 +95,19 @@ const ProgramsMenuList = [
         icon: UserGroupIcon,
     },
     {
-        title: "Intro-To-Figure-Skate",
-        link: "/introtofigureskate",
+        title: "Intro To Figure Skating",
+        link: "/introtofigureskating",
         description: "Program",
         icon: UserGroupIcon,
     },
     {
-        title: "Adult-Intro-To-Figure-Skate",
-        link: "/adultfigureskate",
+        title: "Adult Intro To Figure Skating",
+        link: "/adultfigureskating",
         description: "Program",
         icon: UserGroupIcon,
     },
     {
-        title: "STARSkate",
+        title: "StarSkate",
         link: "/starskate",
         description: "Program",
         icon: UserGroupIcon,

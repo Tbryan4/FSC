@@ -16,8 +16,8 @@ import CanSkatePage from "./Pages/CanSkate";
 import PreCanSkatePage from "./Pages/PreCanSkate";
 import AdultCanSkatePage from "./Pages/AdultCanSkate";
 import CanPowerSkatePage from "./Pages/CanPowerSkate";
-import IntroToFigureSkatePage from "./Pages/IntroToFigureSkate";
-import AdultFigureSkatePage from "./Pages/AdultFigureSkate";
+import IntroToFigureSkatingPage from "./Pages/IntroToFigureSkating";
+import AdultFigureSkatingPage from "./Pages/AdultFigureSkating";
 import StarSkatePage from "./Pages/StarSkate";
 import CompetitiveSkatePage from "./Pages/CompetetiveSkate";
 import DropInPage from "./Pages/DropIn";
@@ -45,8 +45,8 @@ const App = () => {
                     <Route path="/canpowerskate" component={CanPowerSkatePage}/>
                     <Route path="/canskate" component={CanSkatePage}/>
                     <Route path="/precanskate" component={PreCanSkatePage}/>
-                    <Route path="/introtofigureskate" component={IntroToFigureSkatePage}/>
-                    <Route path="/adultfigureskate" component={AdultFigureSkatePage}/>
+                    <Route path="/introtofigureskating" component={IntroToFigureSkatingPage}/>
+                    <Route path="/adultfigureskating" component={AdultFigureSkatingPage}/>
                     <Route path="/starskate" component={StarSkatePage}/>
                     <Route path="/competitiveskate" component={CompetitiveSkatePage}/>
                     <Route path="/dropin" component={DropInPage}/>

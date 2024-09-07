@@ -1,8 +1,8 @@
 import React from 'react';
 import img from "../../../assets/can-power.jpg";
 
-export const IntroToFigureSkateHeader = ({
-                                   heading = "Intro To Figure Skate",
+export const IntroToFigureSkatingHeader = ({
+                                   heading = "Intro To Figure Skating",
                                    description = 
                                    "Intro-to-Figure Skating (IFS) is a group program designed for skaters who wish to enter into the sport of figure skating. Skaters are taught the basic figure skating skills, including edges, turns, jumps and spins, in a group lesson format. ",
                                    image = {

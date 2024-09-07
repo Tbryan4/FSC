@@ -1,8 +1,8 @@
 import React from 'react';
 import img from "../../../assets/can-power.jpg";
 
-export const AdultFigureSkateHeader = ({
-                                   heading = "Adult Figure Skate",
+export const AdultFigureSkatingHeader = ({
+                                   heading = "Adult Figure Skating",
                                    description = "The Adult IFS group is a separate program and is guaranteed to have a coach dedicated to this program. ",
                                        image = {
                                        src: img,
