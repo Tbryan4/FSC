@@ -79,7 +79,7 @@ const LearnToSkateParentInfo = (props) => {
                     </p>
 
                 </div>
-                <div className="mb-12">
+                {/*<div className="mb-12">
                     <h4 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">Policy</h4>
                     <p className="lg:text-2xl">
                         <strong>Refund Policy:</strong> All programs are non-refundable except in extenuating circumstances and will be
@@ -107,7 +107,7 @@ const LearnToSkateParentInfo = (props) => {
                         all individuals to learn how to skate!
                     </p>
 
-                </div>
+                </div>*/}
 
                 <div className="mx-auto mt-12 max-w-md text-center md:mt-18 lg:mt-20">
                     <h4 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">{footerHeading}</h4>
