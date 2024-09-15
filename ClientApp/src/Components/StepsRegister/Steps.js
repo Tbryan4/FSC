@@ -157,7 +157,7 @@ const Layout423 = (props) => {
                                                     iconLeft={feature.button.iconLeft}
                                                     className="text-text-alternative"
                                                 >
-                                                    View More
+                                                    Learn More
                                                 </Button>
                                             </div>
                                         </motion.div>

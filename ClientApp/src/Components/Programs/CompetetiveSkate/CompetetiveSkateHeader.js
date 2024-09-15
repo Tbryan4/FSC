@@ -17,7 +17,7 @@ export const CompetitiveSkateHeader = ({
                                    metaDataSections = [
                                        {
                                            title: "Program Difficulty",
-                                           description: "All Ages",
+                                           description: "Advanced",
                                        },
                                        {
                                            title: "Registration Start Date",

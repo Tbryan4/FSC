@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { Button, Dialog, DialogHeader, DialogBody, DialogFooter } from "@material-tailwind/react";
+import thanksGivingPhoto from "../../assets/events-photos/happy-thanksgiving-background-free-vector.jpg"
 
 // Default values for the TimelineEvents component
 export const TimelineDefaults = {
@@ -9,21 +10,20 @@ export const TimelineDefaults = {
     description: "Check out our events for the 2023-2024 season!",
     timelines: [
         {
-            date: "September 8, 2024",
-            heading: "CanSkate Parent Info Session",
-            description: "Check out our CanSkate parent information session!",
-            location: "1234 Ice Rink Lane, Edmonton, AB",
-            mapUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9491.124069891934!2d-113.501797!3d53.5081071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a02200b8c39223%3A0xff34a47400dd7898!2sGeorge%20S.%20Hughes%20South%20Side%20Arena!5e0!3m2!1sen!2sca!4v1724821176502!5m2!1sen!2sca",
+            date: "October 10 - 15, 2024",
+            heading: "No Skating - Thanksgiving Holiday",
+            description: "Enjoy your thanksgiving holiday!",
             buttons: [
                 { title: "View", variant: "secondary" }
             ],
+            photo: thanksGivingPhoto,
         },
         {
             date: "November 9, 2024",
             heading: "Federation Competition",
             description: "Competition time!",
-            location: "5678 Skater's Alley, Edmonton, AB",
-            mapUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9491.124069891934!2d-113.501797!3d53.5081071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a02200b8c39223%3A0xff34a47400dd7898!2sGeorge%20S.%20Hughes%20South%20Side%20Arena!5e0!3m2!1sen!2sca!4v1724821176502!5m2!1sen!2sca",
+            location: "Kinsmen Twin Arenas",
+            mapUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9503.908915811548!2d-113.5139819!3d53.4509933!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a01efb180d768b%3A0x63cd6491dbb20f1d!2sKinsmen%20Twin%20Arenas!5e0!3m2!1sen!2sca!4v1724820009834!5m2!1sen!2sca",
             buttons: [
                 { title: "View", variant: "secondary" }
             ],
@@ -32,8 +32,8 @@ export const TimelineDefaults = {
             date: "December 22, 2024",
             heading: "Holiday Showcase",
             description: "Holiday showcase before Christmas!",
-            location: "9101 Holiday Drive, Edmonton, AB",
-            mapUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9491.124069891934!2d-113.501797!3d53.5081071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a02200b8c39223%3A0xff34a47400dd7898!2sGeorge%20S.%20Hughes%20South%20Side%20Arena!5e0!3m2!1sen!2sca!4v1724821176502!5m2!1sen!2sca",
+            location: "Kinsmen Twin Arenas",
+            mapUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9503.908915811548!2d-113.5139819!3d53.4509933!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a01efb180d768b%3A0x63cd6491dbb20f1d!2sKinsmen%20Twin%20Arenas!5e0!3m2!1sen!2sca!4v1724820009834!5m2!1sen!2sca",
             buttons: [
                 { title: "View", variant: "secondary" }
             ],
@@ -42,7 +42,7 @@ export const TimelineDefaults = {
             date: "March 23, 2025",
             heading: "Annual Ice Show",
             description: "Annual Ice Show Competition on March 25!",
-            location: "1122 Annual Avenue, Edmonton, AB",
+            location: "George S. Hughes South Side Arena\n",
             mapUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9491.124069891934!2d-113.501797!3d53.5081071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a02200b8c39223%3A0xff34a47400dd7898!2sGeorge%20S.%20Hughes%20South%20Side%20Arena!5e0!3m2!1sen!2sca!4v1724821176502!5m2!1sen!2sca",
             buttons: [
                 { title: "View", variant: "secondary" }
@@ -108,9 +108,19 @@ export const TimelineEvents = (props) => {
                 >
                     <DialogHeader>{selectedTimeline.heading}</DialogHeader>
                     <DialogBody>
-                        <p>Date: {selectedTimeline.date}</p>
+                        <p><strong>Date</strong>: {selectedTimeline.date}</p>
+                        {selectedTimeline.location && <p><strong>Location:</strong> {selectedTimeline.location}</p>}
+                        <br/>
                         <p>{selectedTimeline.description}</p>
-                        <p>Location: {selectedTimeline.location}</p>
+                        {selectedTimeline.photo && (
+                            <div className="mt-4">
+                                <img
+                                    src={selectedTimeline.photo}
+                                    alt="Event"
+                                    style={{ width: '100%', height: 'auto' }}
+                                />
+                            </div>
+                        )}
                         {/* Embed Google Map */}
                         {selectedTimeline.mapUrl && (
                             <div className="mt-4">
