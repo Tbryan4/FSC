@@ -42,8 +42,8 @@ export const TimelineDefaults = {
             date: "March 23, 2025",
             heading: "Annual Ice Show",
             description: "Annual Ice Show Competition on March 25!",
-            location: "George S. Hughes South Side Arena\n",
-            mapUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9491.124069891934!2d-113.501797!3d53.5081071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a02200b8c39223%3A0xff34a47400dd7898!2sGeorge%20S.%20Hughes%20South%20Side%20Arena!5e0!3m2!1sen!2sca!4v1724821176502!5m2!1sen!2sca",
+            location: "Confederation Leisure Centre\n\n",
+            mapUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9497.508024632969!2d-113.5202265!3d53.4795933!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a01f3fde5eab41%3A0xe77fe04023f4ce03!2sConfederation%20Leisure%20Centre!5e0!3m2!1sen!2sca!4v1726358772130!5m2!1sen!2sca",
             buttons: [
                 { title: "View", variant: "secondary" }
             ],
