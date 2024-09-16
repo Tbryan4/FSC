@@ -45,7 +45,7 @@ export function CardList() {
     const cards = [
         {
             src: img1,
-            title: "CanPowerSkate",
+            title: "CanPower",
             description: "Develop and improve upon the skills required for hockey and/or ringette in a fast-paced and upbeat environment from certified coaches.",
             link: "/canpowerskate" // Replace with actual URL
         },

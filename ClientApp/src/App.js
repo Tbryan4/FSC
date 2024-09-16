@@ -42,7 +42,7 @@ const App = () => {
                     <Route path="/Schedule" component={SchedulePage}/>
                     {/*Programs*/}
                     <Route path="/adultcanskate" component={AdultCanSkatePage}/>
-                    <Route path="/canpowerskate" component={CanPowerSkatePage}/>
+                    <Route path="/canpower" component={CanPowerSkatePage}/>
                     <Route path="/canskate" component={CanSkatePage}/>
                     <Route path="/precanskate" component={PreCanSkatePage}/>
                     <Route path="/introtofigureskating" component={IntroToFigureSkatingPage}/>

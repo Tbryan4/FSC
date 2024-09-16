@@ -2,7 +2,7 @@ import React from 'react';
 import img from "../../../assets/can-power.jpg";
 
 export const CanPowerSkateHeader = ({
-                             heading = "CanPowerSkate\n",
+                             heading = "CanPower\n",
                              description = "CanPowerSkate is an action-packed, high energy instructional power skating program geared to hockey and ringette skaters that focuses on balance, power, agility, speed and endurance. Skills, techniques and conditioning drills are taught in a progressive format that emphasizes how the skills apply to game situations. ",
                              image = {
                                  src: img,

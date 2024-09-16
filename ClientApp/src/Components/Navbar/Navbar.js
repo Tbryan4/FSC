@@ -72,7 +72,7 @@ const AboutUsMenuList = [
 const ProgramsMenuList = [
     {
         title: "CanPower",
-        link: "/canpowerskate",
+        link: "/canpower",
         description: "Learn More",
         icon: UserGroupIcon,
     },

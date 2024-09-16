@@ -7,7 +7,7 @@ const LINKS = [
         title: "Programs",
         items: [
             { name: "CanSkate", link: "/canskate" },
-            { name: "CanPowerSkate", link: "/canpowerskate" },
+            { name: "CanPower", link: "/canpowerskate" },
             { name: "Intro To Figure Skating", link: "/introtofigureskating" },
         ],
     },
