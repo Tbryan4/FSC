@@ -70,7 +70,7 @@ export function CardList() {
     ];
 
     return (
-        <div>
+        <div id="program-section">
             <div className="container mx-auto mb-10 mt-30 text-center lg:mb-20">
                 <Typography
                     color="blue-gray"
