@@ -15,8 +15,8 @@ export const AdultFigureSkatingHeader = ({
                                    ],
                                    metaDataSections = [
                                        {
-                                           title: "Program Difficulty",
-                                           description: "Age requirement: 18+",
+                                           title: "Age Requirement",
+                                           description: "18+",
                                        },
                                        {
                                            title: "Registration Start Date",

@@ -15,8 +15,8 @@ export const CanPowerSkateHeader = ({
                              ],
                              metaDataSections = [
                                  {
-                                     title: "Program Difficulty",
-                                     description: "Age requirement: 6+",
+                                     title: "Age Requirement",
+                                     description: "6+",
                                  },
                                  {
                                      title: "Registration Start Date",

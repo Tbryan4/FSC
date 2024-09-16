@@ -15,8 +15,8 @@ export const StarSkateHeader = ({
                                    ],
                                    metaDataSections = [
                                        {
-                                           title: "Program Difficulty",
-                                           description: "Age requirement: 3-5 years of age",
+                                           title: "Age requirement",
+                                           description: "3-5 years of age",
                                        },
                                        {
                                            title: "Registration Start Date",

@@ -16,7 +16,7 @@ export const IntroToFigureSkatingHeader = ({
                                    ],
                                    metaDataSections = [
                                        {
-                                           title: "Program Difficulty",
+                                           title: "Age Requirement",
                                            description: "Beginner",
                                        },
                                        {
