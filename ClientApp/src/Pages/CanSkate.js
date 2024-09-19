@@ -12,6 +12,9 @@ const CanSkatePage = () => {
     return (
         <div>
             <Banner
+                heading="CanSkate"
+                description="
+CanSkate is a fun, beginner-friendly learn-to-skate program that emphasizes participation and basic skill development. Guided by Sport Canada's LTAD principles, it focuses on building physical literacy and essential skating skills for recreational skating or any ice sport."
                 image={{
                     src: BannerImg,
                     alt: "Executive Team Image"

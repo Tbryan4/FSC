@@ -8,6 +8,8 @@ const  AdultCanSkatePage = () => {
     return (
         <div>
             <Banner
+                heading="Adult CanSkate"
+                description="Adult CanSkate offers a safe, supportive, and fun environment for adults looking to learn to skate or continue developing their skills. Skaters are grouped by skill level, allowing each person to progress at their own pace."
                 image={{
                     src: BannerImg,
                     alt: "Executive Team Image"

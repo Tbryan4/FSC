@@ -11,6 +11,9 @@ const  StarSkatePage = () => {
     return (
         <div>
             <Banner
+                heading="StarSkate"
+                description="
+STARSkate helps skaters of all ages develop skills in ice dance, free skate, artistic skating, and more through group or private lessons. Skaters can participate in Skate Canada assessments and competitions, working with a coach of their choice to set goals and training plans."
                 image={{
                     src: BannerImg,
                     alt: "Executive Team Image"

@@ -13,6 +13,9 @@ const  CompetitiveSkatePage = () => {
     return (
         <div>
             <Banner
+                heading="CompetitiveSkate"
+                description="
+CompetitiveSkate offers skaters the chance to develop skills in ice dance, freeskate, and artistic skating through both group and private lessons. "
                 image={{
                     src: BannerImg,
                     alt: "Executive Team Image"

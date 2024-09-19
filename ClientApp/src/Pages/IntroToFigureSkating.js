@@ -11,6 +11,9 @@ const  IntroToFigureSkatingPage = () => {
     return (
         <div>
             <Banner
+                heading="Intro To Figure Skating"
+                description="
+Intro-to-Figure Skating (IFS) is a fun group program for skaters entering figure skating, teaching foundational skills like edges, turns, jumps, and spins. With a 1:10 coach-to-student ratio, skaters progress at their own pace through engaging sessions filled with teaching aids, music, and activities."
                 image={{
                     src: BannerImg,
                     alt: "Intro To Figure Skating Page"
