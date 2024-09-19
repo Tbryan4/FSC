@@ -6,19 +6,18 @@ import BannerImg from "../assets/Banners/coaching-team-banner.webp"
 
 
 // star skate coaches
-import BaseCoachImg1 from "../assets/coaching-staff/jenna-hodnefield.jpg";
-import BaseCoachImg2 from "../assets/coaching-staff/abi-seewald.jpeg";
-import BaseCoachImg3 from "../assets/coaching-staff/rhea-sherman.jpg";
-import BaseCoachImg4 from "../assets/coaching-staff/emily-johnston.jpg";
+import BaseCoachImg1 from "../assets/coaching-staff/jenna-hodnefield.webp";
+import BaseCoachImg2 from "../assets/coaching-staff/abi-seewald.webp";
+import BaseCoachImg3 from "../assets/coaching-staff/rhea-sherman.webp";
 
-import SupplementalCoachImg1 from "../assets/coaching-staff/jaelyn-hodnefield.jpg";
-import SupplementalCoachImg2 from "../assets/coaching-staff/marie-terez-abou-rjeily  .jpg";
+import SupplementalCoachImg1 from "../assets/coaching-staff/jaelyn-hodnefield.webp";
+import SupplementalCoachImg2 from "../assets/coaching-staff/marie-terez-abou-rjeily.webp";
 
 // learn to skate coaches
-import BaseCoachImg5 from "../assets/coaching-staff/katrina-abou-rjeily  .jpg"
+import BaseCoachImg5 from "../assets/coaching-staff/katrina-abou-rjeily.webp"
 
 // CanPower coaches
-import BaseCoachImg6 from "../assets/coaching-staff/brodie-case.jpg"
+import BaseCoachImg6 from "../assets/coaching-staff/brodie-case.webp"
 
 
 const starSkateBaseCoaches = [
