@@ -188,7 +188,7 @@ const HomeBannerDefaults = {
             },
             {
                 value: "tab-three",
-                heading: "Upcoming Federation Star 1-3 Competition on November 9, 2024",
+                heading: "Upcoming Competition on November 9, 2024",
                 description:
                     "Join us on November 9th for a Star 1-3 competition! We will host many events including FreeSkate Programs, FreeSkate Elements, Team Elements, and Dance!",
                 image: {
