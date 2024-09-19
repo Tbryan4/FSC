@@ -14,7 +14,7 @@ const LINKS = [
     {
         title: "Company",
         items: [
-            { name: "About us", link: "/aboutus" },
+            { name: "About Us", link: "/aboutus" },
             { name: "Coaching Team", link: "/coach" },
             { name: "Executive Team", link: "/executives" },
         ],
