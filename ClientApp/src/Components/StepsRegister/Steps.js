@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Button } from "@relume_io/relume-ui";
 import { AnimatePresence, motion } from "framer-motion";
 import { RxChevronRight } from "react-icons/rx";
-import register from "../../assets/register.jpg"
-import register2 from "../../assets/register-program.jpg"
-import register3 from "../../assets/register-skate.jpg"
+import register2 from "../../assets/steps-section/register.webp"
+import register from "../../assets/steps-section/register-program.webp"
+import register3 from "../../assets/steps-section/register-skate.webp"
 import {Typography} from "@material-tailwind/react";
 
 const slideVariants = {
@@ -20,7 +20,7 @@ const slideVariants = {
     },
 };
 
-const Layout423Defaults = {
+const RegisterHereDefaults = {
     features: [
         {
             tagline: "Step 1",
@@ -74,9 +74,9 @@ const Layout423Defaults = {
     ],
 };
 
-const Layout423 = (props) => {
+const RegisterHere = (props) => {
     const { tagline, heading, description, features } = {
-        ...Layout423Defaults,
+        ...RegisterHereDefaults,
         ...props,
     };
 
@@ -186,4 +186,4 @@ const Layout423 = (props) => {
     );
 };
 
-export {Layout423, Layout423Defaults};
+export {RegisterHere, RegisterHereDefaults};
