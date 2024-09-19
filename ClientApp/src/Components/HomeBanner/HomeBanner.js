@@ -113,18 +113,28 @@ const TabContent = ({heading, description, buttons, image}) => {
             </div>
             <div className="absolute inset-0 -z-10">
                 <div className="absolute inset-0 z-10 bg-black/50"/>
+                <motion.div
+                    className="absolute inset-0 bg-black"
+                    initial={{opacity: 1}}  // Start fully opaque (black)
+                    animate={{opacity: 0}}  // Fade out to reveal the image
+                    exit={{opacity: 1}}     // Fade back to black on exit
+                    transition={{duration: 0.5}}  // Control the duration of the fade
+                />
+
+                {/* Image fade */}
                 <motion.img
                     className="size-full object-cover"
                     src={image.src}
                     alt={image.alt}
-                    initial={{opacity: 0}}   // Initial fade-in state
-                    animate={{opacity: 1}}   // Fade in to full opacity
-                    exit={{opacity: 0}}      // Fade out when switching
-                    transition={{duration: 0.8}}  // Control the duration of the fade-in
+                    initial={{opacity: 0}}  // Image starts invisible
+                    animate={{opacity: 1}}  // Fade in the image to full visibility
+                    exit={{opacity: 0}}     // Fade out the image on exit
+                    transition={{duration: 0.5}}  // Control the duration of the fade-in and fade-out
                 />
             </div>
-        </div>
-    );
+</div>
+)
+    ;
 };
 
 const HomeBannerDefaults = {
@@ -162,7 +172,7 @@ const HomeBannerDefaults = {
                 }],
                 image: {
                     src: img1,
-                    alt: "Relume placeholder image 1",
+                    alt: "Banner Img 1",
                 },
             },
             {
@@ -173,7 +183,7 @@ const HomeBannerDefaults = {
                 buttons: [{ title: "See More", href: "/schedule" }],
                 image: {
                     src: img2,
-                    alt: "Relume placeholder image 2",
+                    alt: "Banner Img 2",
                 },
             },
             {
@@ -183,7 +193,7 @@ const HomeBannerDefaults = {
                     "Join us on November 9th for a Star 1-3 competition! We will host many events including FreeSkate Programs, FreeSkate Elements, Team Elements, and Dance!",
                 image: {
                     src: img3,
-                    alt: "Relume placeholder image 3",
+                    alt: "Banner Img 3",
                 },
             },
             {
@@ -193,7 +203,7 @@ const HomeBannerDefaults = {
                     "Masked-only sessions at 2 pm and regular sessions at 3 pm. Excited to see everyone on the ice!",
                 image: {
                     src: img4,
-                    alt: "Relume placeholder image 4",
+                    alt: "Banner Img 4",
                 },
             },
         ],
