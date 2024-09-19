@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from "../Components/Banner/Banner";
-import BannerImg from "../assets/Banners/competitive-skate-banner.jpg";
+import BannerImg from "../assets/Banners/competetive-skate-banner.webp";
 import {
     CompetitiveSkateHeader
 } from "../Components/Programs/CompetetiveSkate/CompetetiveSkateHeader";
