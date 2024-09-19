@@ -31,68 +31,68 @@ const HomeBanner = (props) => {
     }, [activeTab, tabs.trigger, autoSwitchInterval]);
 
     return (
-        <section>
-            <div className="relative min-h-[80vh]"> {/* Updated height */}
-                <Tabs value={activeTab} onValueChange={setActiveTab}>
-                    <AnimatePresence initial={false}>
-                        {tabs.content.map(
-                            (content, index) =>
-                                content.value === activeTab && (
-                                    <TabsContent
-                                        key={index}
-                                        value={content.value}
-                                        className="relative max-h-[40rem] min-h-[80vh] overflow-visible" // Smaller height
-                                    >
-                                        <TabContent {...content} />
-                                    </TabsContent>
-                                ),
-                        )}
-                    </AnimatePresence>
-                    <TabsList className="absolute bottom-12 left-0 right-0 top-auto z-20 mx-auto flex justify-center gap-4 px-[5vw] md:bottom-16 lg:bottom-20 lg:max-w-xl">
-                        {tabs.trigger.map((trigger, index) => (
-                            <TabsTrigger
-                                key={index}
-                                value={trigger.value}
-                                onClick={() => setActiveTab(trigger.value)}
-                                className="relative flex-1 whitespace-normal border-0 bg-transparent px-4 py-4 text-center text-neutral-light duration-0 data-[state=active]:bg-transparent data-[state=active]:text-neutral-white sm:px-8 md:min-w-32"
-                            >
-                                <span>{trigger.text}</span>
-                                <div className="absolute inset-0 top-auto h-1 w-full bg-white/20">
-                                    <motion.div
-                                        className="h-full bg-white"
-                                        initial={{ width: "0%" }}
-                                        animate={{ width: activeTab === trigger.value ? "100%" : "0%" }}
-                                        transition={{
-                                            duration: activeTab === trigger.value ? 1.5 : 0.3,
-                                            ...(activeTab === trigger.value
-                                                ? {
-                                                    type: "spring",
-                                                    stiffness: 25,
-                                                    damping: 30,
-                                                }
-                                                : { ease: "easeInOut" }),
-                                        }}
-                                    />
-                                </div>
-                            </TabsTrigger>
-                        ))}
-                    </TabsList>
-                </Tabs>
-            </div>
-        </section>
+        <div className="relative min-h-[80vh]">
+            <Tabs value={activeTab} onValueChange={setActiveTab}>
+                <AnimatePresence initial={false}>
+                    {tabs.content.map(
+                        (content, index) =>
+                            content.value === activeTab && (
+                                <TabsContent
+                                    key={index}
+                                    value={content.value}
+                                    className="relative max-h-[40rem] min-h-[80vh] overflow-visible" // Smaller height
+                                >
+                                    <TabContent {...content} />
+                                </TabsContent>
+                            ),
+                    )}
+                </AnimatePresence>
+                <TabsList
+                    className="absolute bottom-12 left-0 right-0 top-auto z-20 mx-auto flex justify-center gap-2 px-2 sm:gap-4 sm:px-[5vw] md:bottom-16 lg:bottom-20 lg:max-w-xl">
+                    {tabs.trigger.map((trigger, index) => (
+                        <TabsTrigger
+                            key={index}
+                            value={trigger.value}
+                            onClick={() => setActiveTab(trigger.value)}
+                            className="relative flex-1 min-w-0 whitespace-normal border-0 bg-transparent px-2 py-2 text-center text-sm text-neutral-light duration-0 data-[state=active]:bg-transparent data-[state=active]:text-neutral-white sm:px-4 sm:py-4 sm:text-base"
+                        >
+                            <span>{trigger.text}</span>
+                            <div className="absolute inset-0 top-auto h-1 w-full bg-white/20">
+                                <motion.div
+                                    className="h-full bg-white"
+                                    initial={{width: "0%"}}
+                                    animate={{width: activeTab === trigger.value ? "100%" : "0%"}}
+                                    transition={{
+                                        duration: activeTab === trigger.value ? 1.5 : 0.3,
+                                        ...(activeTab === trigger.value
+                                            ? {
+                                                type: "spring",
+                                                stiffness: 25,
+                                                damping: 30,
+                                            }
+                                            : {ease: "easeInOut"}),
+                                    }}
+                                />
+                            </div>
+                        </TabsTrigger>
+                    ))}
+                </TabsList>
+            </Tabs>
+        </div>
+
     );
 };
 
-const TabContent = ({ heading, description, buttons, image }) => {
+const TabContent = ({heading, description, buttons, image}) => {
     return (
         <div className="flex h-[80vh] flex-col items-center justify-center"> {/* Updated height */}
             <div className="px-[5%] py-16 md:py-24 lg:py-28">
                 <motion.div
                     className="mx-auto max-w-lg text-center"
-                    initial={{ y: "20%", opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    exit={{ y: "-20%", opacity: 0 }}
-                    transition={{ duration: 0.4, ease: "easeOut" }}
+                    initial={{y: "20%", opacity: 0}}
+                    animate={{y: 0, opacity: 1}}
+                    exit={{y: "-20%", opacity: 0}}
+                    transition={{duration: 0.4, ease: "easeOut"}}
                 >
                     <h1 className="mb-5 text-6xl font-bold text-text-alternative md:mb-6 md:text-9xl lg:text-10xl">
                         {heading}
@@ -117,10 +117,10 @@ const TabContent = ({ heading, description, buttons, image }) => {
                     className="size-full object-cover"
                     src={image.src}
                     alt={image.alt}
-                    initial={{ opacity: 0 }}   // Initial fade-in state
-                    animate={{ opacity: 1 }}   // Fade in to full opacity
-                    exit={{ opacity: 0 }}      // Fade out when switching
-                    transition={{ duration: 0.8 }}  // Control the duration of the fade-in
+                    initial={{opacity: 0}}   // Initial fade-in state
+                    animate={{opacity: 1}}   // Fade in to full opacity
+                    exit={{opacity: 0}}      // Fade out when switching
+                    transition={{duration: 0.8}}  // Control the duration of the fade-in
                 />
             </div>
         </div>
