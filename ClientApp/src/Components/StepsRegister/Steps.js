@@ -24,7 +24,7 @@ const RegisterHereDefaults = {
     features: [
         {
             tagline: "Step 1",
-            url: "#",
+            url: "#program-section",
             heading: "View Programs",
             description:
                 "Find which program is the best fit for your skater’s training!",
