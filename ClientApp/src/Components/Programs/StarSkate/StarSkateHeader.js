@@ -15,8 +15,8 @@ export const StarSkateHeader = ({
                                    ],
                                    metaDataSections = [
                                        {
-                                           title: "Age requirement",
-                                           description: "3-5 years of age",
+                                           title: "Level requirement",
+                                           description: "Completion of IFS program OR discretion of program coordinators",
                                        },
                                        {
                                            title: "Registration Start Date",
@@ -24,7 +24,7 @@ export const StarSkateHeader = ({
                                        },
                                        {
                                            title: "Level",
-                                           description: "Beginner to intermediate skaters",
+                                           description: "Experienced Skaters",
                                        },
                                        {
                                            url: "#",

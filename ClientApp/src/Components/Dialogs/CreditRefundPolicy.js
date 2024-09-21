@@ -21,7 +21,7 @@ export function CreditPolicyDialog() {
             <Dialog open={open} handler={handleOpen}>
                 <DialogHeader>Credit Policy</DialogHeader>
                 <DialogBody>
-                    Credit will be considered in all cases. Please request credit and give reason at which time the registrar will be able to process this for you.
+                    Credit back to account will be considered on a case by case basis. You will receive it as a gift card to your account.
                 </DialogBody>
                 <DialogFooter>
                     <Button

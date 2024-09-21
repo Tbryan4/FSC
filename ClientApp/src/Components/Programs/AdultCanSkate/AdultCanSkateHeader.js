@@ -20,11 +20,11 @@ export const AdultCanSkateHeader = ({
                              metaDataSections = [
                                  {
                                      title: "Age Requirement",
-                                     description: "18+",
+                                     description: "14+",
                                  },
                                  {
                                      title: "Registration Start Date",
-                                     description: "March 2025",
+                                     description: "Fall 2024",
                                  },
                                  {
                                      title: "Level",

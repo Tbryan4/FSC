@@ -16,16 +16,16 @@ export const IntroToFigureSkatingHeader = ({
                                    ],
                                    metaDataSections = [
                                        {
-                                           title: "Age Requirement",
-                                           description: "Beginner",
+                                           title: "Level Requirement",
+                                           description: "Stage 3 CanSkate",
                                        },
                                        {
                                            title: "Registration Start Date",
-                                           description: "March 2025",
+                                           description: "Fall 2024",
                                        },
                                        {
                                            title: "Level",
-                                           description: "Beginner to intermediate skaters",
+                                           description: "Intermediate skaters",
                                        },
                                        {
                                            url: "#",

@@ -15,8 +15,8 @@ export const AdultFigureSkatingHeader = ({
                                    ],
                                    metaDataSections = [
                                        {
-                                           title: "Age Requirement",
-                                           description: "18+",
+                                           title: "Level & Age Requirement",
+                                           description: "Stage 3 CanSkate & 14+",
                                        },
                                        {
                                            title: "Registration Start Date",
@@ -24,7 +24,7 @@ export const AdultFigureSkatingHeader = ({
                                        },
                                        {
                                            title: "Level",
-                                           description: "Beginner to intermediate skaters",
+                                           description: "Intermediate skaters",
                                        },
                                        {
                                            url: "#",

@@ -29,7 +29,7 @@ export const TimelineDefaults = {
             ],
         },
         {
-            date: "December 22, 2024",
+            date: "December 21, 2024",
             heading: "Holiday Showcase",
             description: "Holiday showcase before Christmas!",
             location: "Kinsmen Twin Arenas",

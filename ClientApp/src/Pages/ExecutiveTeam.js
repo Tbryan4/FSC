@@ -63,7 +63,7 @@ const ExecutiveTeamPage = () => {
 
         {
             image: { src: img11, alt: "Nam Hoang" },
-            name: "Katie Abou Rjeily",
+            name: "Katy Abou Rjeily",
             jobTitle: "Ice Show Planning Committee",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
         },

@@ -15,8 +15,8 @@ export const CanPowerSkateHeader = ({
                              ],
                              metaDataSections = [
                                  {
-                                     title: "Age Requirement",
-                                     description: "6+",
+                                     title: "Level Requirement",
+                                     description: "Stage 3 CanSkate",
                                  },
                                  {
                                      title: "Registration Start Date",
@@ -24,7 +24,7 @@ export const CanPowerSkateHeader = ({
                                  },
                                  {
                                      title: "Level",
-                                     description: "Beginner to intermediate skaters",
+                                     description: "Intermediate to senior skaters",
                                  },
                                  {
                                      url: "#",

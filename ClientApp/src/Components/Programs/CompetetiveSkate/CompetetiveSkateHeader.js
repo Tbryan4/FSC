@@ -16,8 +16,8 @@ export const CompetitiveSkateHeader = ({
                                    ],
                                    metaDataSections = [
                                        {
-                                           title: "Age Requirement",
-                                           description: "18+",
+                                           title: "Level Requirement",
+                                           description: "Star 4",
                                        },
                                        {
                                            title: "Registration Start Date",
@@ -25,7 +25,7 @@ export const CompetitiveSkateHeader = ({
                                        },
                                        {
                                            title: "Level",
-                                           description: "Beginner to intermediate skaters",
+                                           description: "Experienced Figure Skaters",
                                        },
                                        {
                                            url: "#",

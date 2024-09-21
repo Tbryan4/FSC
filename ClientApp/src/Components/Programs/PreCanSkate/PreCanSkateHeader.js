@@ -20,7 +20,7 @@ export const PreCanSkateHeader = ({
                                    metaDataSections = [
                                        {
                                            title: "Age Requirement",
-                                           description: "3-5 years of age",
+                                           description: "3-4 years of age",
                                        },
                                        {
                                            title: "Registration Start Date",
@@ -28,7 +28,7 @@ export const PreCanSkateHeader = ({
                                        },
                                        {
                                            title: "Level",
-                                           description: "Beginner to intermediate skaters",
+                                           description: "Beginner skaters",
                                        },
                                        {
                                            url: "#",

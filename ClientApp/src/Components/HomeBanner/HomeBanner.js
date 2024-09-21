@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState, useEffect } from "react";
 import { Button } from "@relume_io/relume-ui";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@relume_io/relume-ui";
@@ -63,17 +61,12 @@ const HomeBanner = (props) => {
                                     initial={{width: "0%"}}
                                     animate={{width: activeTab === trigger.value ? "100%" : "0%"}}
                                     transition={{
-                                        duration: activeTab === trigger.value ? 1.5 : 0.3,
-                                        ...(activeTab === trigger.value
-                                            ? {
-                                                type: "spring",
-                                                stiffness: 25,
-                                                damping: 30,
-                                            }
-                                            : {ease: "easeInOut"}),
+                                        duration: activeTab === trigger.value ? 10 : 0.3, // 10 seconds for expanding, 0.3 seconds for collapsing
+                                        ease: "easeInOut", // use the same easing for both transitions
                                     }}
                                 />
                             </div>
+
                         </TabsTrigger>
                     ))}
                 </TabsList>
@@ -139,7 +132,7 @@ const TabContent = ({heading, description, buttons, image}) => {
 
 const HomeBannerDefaults = {
     defaultTabValue: "tab-one",
-    autoSwitchInterval: 5000, // 5 seconds interval for auto-switch
+    autoSwitchInterval: 10000, // 5 seconds interval for auto-switch
     tabs: {
         trigger: [
             {
