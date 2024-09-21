@@ -23,15 +23,11 @@ export const CanSkateHeader = ({
                                      description: "5-14 years of age",
                                  },
                                  {
-                                     title: "Registration Start Date",
-                                     description: "March 2025",
-                                 },
-                                 {
                                      title: "Level",
                                      description: "Beginner to intermediate skaters",
                                  },
                                  {
-                                     url: "#",
+                                     url: "https://www.federationskatingclub.ca/registration/",
                                      title: "Registration",
                                      description: "https://www.federationskatingclub.ca/registration/",
                                  },

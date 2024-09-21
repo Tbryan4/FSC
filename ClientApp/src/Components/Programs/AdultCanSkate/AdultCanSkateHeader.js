@@ -23,15 +23,11 @@ export const AdultCanSkateHeader = ({
                                      description: "14+",
                                  },
                                  {
-                                     title: "Registration Start Date",
-                                     description: "Fall 2024",
-                                 },
-                                 {
                                      title: "Level",
                                      description: "Beginner to intermediate skaters",
                                  },
                                  {
-                                     url: "#",
+                                     url: "https://www.federationskatingclub.ca/registration/",
                                      title: "Registration",
                                      description: "https://www.federationskatingclub.ca/registration/",
                                  },

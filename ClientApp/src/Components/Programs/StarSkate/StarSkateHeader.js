@@ -19,15 +19,11 @@ export const StarSkateHeader = ({
                                            description: "Completion of IFS program OR discretion of program coordinators",
                                        },
                                        {
-                                           title: "Registration Start Date",
-                                           description: "March 2025",
-                                       },
-                                       {
                                            title: "Level",
                                            description: "Experienced Skaters",
                                        },
                                        {
-                                           url: "#",
+                                           url: "https://www.federationskatingclub.ca/registration/",
                                            title: "Registration",
                                            description: "https://www.federationskatingclub.ca/registration/",
                                        },

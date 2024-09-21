@@ -20,15 +20,11 @@ export const CompetitiveSkateHeader = ({
                                            description: "Star 4",
                                        },
                                        {
-                                           title: "Registration Start Date",
-                                           description: "March 2025",
-                                       },
-                                       {
                                            title: "Level",
                                            description: "Experienced Figure Skaters",
                                        },
                                        {
-                                           url: "#",
+                                           url: "https://www.federationskatingclub.ca/registration/",
                                            title: "Registration",
                                            description: "https://www.federationskatingclub.ca/registration/",
                                        },

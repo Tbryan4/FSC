@@ -20,15 +20,11 @@ export const IntroToFigureSkatingHeader = ({
                                            description: "Stage 3 CanSkate",
                                        },
                                        {
-                                           title: "Registration Start Date",
-                                           description: "Fall 2024",
-                                       },
-                                       {
                                            title: "Level",
                                            description: "Intermediate skaters",
                                        },
                                        {
-                                           url: "#",
+                                           url: "https://www.federationskatingclub.ca/registration/",
                                            title: "Registration",
                                            description: "https://www.federationskatingclub.ca/registration/",
                                        },

@@ -90,12 +90,12 @@ export function FooterWithSocialLinks() {
                     <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
                         <Typography as="a" href="https://www.facebook.com/federationskatingclub/"
                                     className="opacity-80 transition-opacity hover:opacity-100">
-                            <FaFacebook className="h-5 w-5"/>
+                            <FaFacebook className="h-8 w-8"/>
                         </Typography>
 
                         <Typography as="a" href="https://www.instagram.com/federationskatingclub/"
                                     className="opacity-80 transition-opacity hover:opacity-100">
-                            <FaInstagram className="h-5 w-5"/>
+                            <FaInstagram className="h-8 w-8"/>
                         </Typography>
                     </div>
             </div>

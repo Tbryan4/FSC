@@ -23,15 +23,11 @@ export const PreCanSkateHeader = ({
                                            description: "3-4 years of age",
                                        },
                                        {
-                                           title: "Registration Start Date",
-                                           description: "March 2025",
-                                       },
-                                       {
                                            title: "Level",
                                            description: "Beginner skaters",
                                        },
                                        {
-                                           url: "#",
+                                           url: "https://www.federationskatingclub.ca/registration/",
                                            title: "Registration",
                                            description: "https://www.federationskatingclub.ca/registration/",
                                        },
