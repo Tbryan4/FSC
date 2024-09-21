@@ -87,8 +87,7 @@ const TabContent = ({heading, description, buttons, image}) => {
                     exit={{y: "-20%", opacity: 0}}
                     transition={{duration: 0.4, ease: "easeOut"}}
                 >
-                    <h1 className="mb-5 text-6xl font-bold text-text-alternative md:mb-6 md:text-9xl lg:text-10xl">
-                        {heading}
+                    <h1 className="mb-5 text-6xl font-bold text-text-alternative md:mb-6 md:text-9xl lg:text-10xl" dangerouslySetInnerHTML={{ __html: heading }} >
                     </h1>
                     <p className="text-text-alternative md:text-md">{description}</p>
                     <div className="h-carousel-buttons d-flex justify-content-center">
@@ -155,7 +154,7 @@ const HomeBannerDefaults = {
         content: [
             {
                 value: "tab-one",
-                heading: "Welcome To Federation Skating Club",
+                heading: "Welcome To <br/> Federation Skating Club",
                 description:
                 "Registration is open for Fall and Winter! Spots are filling fast! Find the program that suits you best under our Program tab",
                 buttons: [{
