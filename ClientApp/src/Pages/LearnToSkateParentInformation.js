@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from "../Components/Banner/Banner";
-import BannerImg from "../assets/Banners/learn-to-skate-parent-information.webp";
+import BannerImg from "../assets/Banners/lts-parentinformation.webp";
 import LearnToSkateParentInformation from "../Components/ParentInformation/LearnToSkateParentInfo";
 
 const LearnToSkateInformationPage = () => {
