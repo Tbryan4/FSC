@@ -7,7 +7,7 @@ const FigureSkateParentInformationPage = () => {
     return (
         <div>
             <Banner
-                heading="Figure Skate Parent Information"
+                heading="Figure Skating Parent Information"
                 footer={""}
                 buttons={[{ title: "Contact Us" }]}
                 image={{

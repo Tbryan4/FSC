@@ -4,13 +4,7 @@ import { Button } from "@material-tailwind/react";
 const LearnToSkateParentInfo = (props) => {
     const {
         heading = "Equipment\n",
-        description = "Required Equipment: skates (hockey or figure) and a CSA-approved helmet\n" +
-            "All of our Learn-to-Skate programs (PreCanskate, Canskate & Adult Canskate) require skates, hockey or figure, and a CSA-approved skating helmet. We recommend purchasing the lace-up skates as the plastic-molded skates do not allow for the necessary ankle movement and fit required. All helmets must have a CSA-approved sticker on them. Helmets should fit properly and not move when the skaters nods or turns their head.\n" +
-            "\n" +
-            "Before the first day of skating, please ensure that the skates have been sharpened. Newly purchased skates do not come pre-sharpened. Without regular sharpening (once a season/session), skaters will not be able to properly use their edges. \n" +
-            "\n" +
-            "After each session, ensure that skates are dried off completely before placing them in a bag. Rust can form on the blades if not completely dried off properly.\n" +
-            "\n",
+        description = "<strong>Required Equipment:</strong> skates (hockey or figure) and a CSA-approved helmet. All of our Learn-to-Skate programs (PreCanskate, Canskate & Adult Canskate) require skates, hockey or figure, and a CSA-approved skating helmet.<br/> <br/> We recommend purchasing the lace-up skates as the plastic-molded skates do not allow for the necessary ankle movement and fit required. All helmets must have a CSA-approved sticker on them. Helmets should fit properly and not move when the skater nods or turns their head. Before the first day of skating, please ensure that the skates have been sharpened. Newly purchased skates do not come pre-sharpened. <br/> <br/> Without regular sharpening (once a season/session), skaters will not be able to properly use their edges. After each session, ensure that skates are dried off completely before placing them in a bag. Rust can form on the blades if not completely dried off properly.",
         footerHeading = "What do you need to participate?",
         footerDescription = "All you need are skates, a CSA-approved hockey helmet, long pants, mittens, warm sweater or jacket. Dress in layers - it will get warm!",
         button = { title: "Register Now", variant: "secondary", link: "https://www.federationskatingclub.ca/registration/" }
@@ -21,7 +15,7 @@ const LearnToSkateParentInfo = (props) => {
             <div className="container mx-auto">
                 <div className="mb-12 text-center md:mb-18 lg:mb-20">
                     <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">{heading}</h2>
-                    <p className="lg:text-2xl">{description}</p>
+                    <p className="lg:text-2xl text-start" dangerouslySetInnerHTML={{__html: description}}></p>
                 </div>
                 <div className="mb-12">
                     <h4 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">Recommended
