@@ -8,7 +8,7 @@ const DropInInfo = (props) => {
         description ="Skaters will also have the opportunity to take part in Skate Canada assessments through a nationally standardized assessment system. Skaters will work individually or in a small group with a coach(es) of their choosing. On their sessions, CompetitiveSkate skaters will be guaranteed a lesson with their coach(es) or an arranged coach. With this coach(es), they will develop skills, goals and training pathways. When choosing a coach, please visit the coaches page and browse the club's coaches. Each coach may be contacted individually by using their email. Please contact us at federationskating@gmail.com with any questions. ",
         footerHeading = "What do you need to participate?",
         footerDescription = "All you need are skates, a CSA-approved hockey helmet, long pants, mittens, warm sweater or jacket. Dress in layers - it will get warm!",
-        button = { title: "Register Now", variant: "secondary", link: "https://www.federationskatingclub.ca/registration/" }
+        button = { title: "Register Now", variant: "secondary", link: "https://www.registrationfederation.ca/registration/" }
     } = props;
 
     return (

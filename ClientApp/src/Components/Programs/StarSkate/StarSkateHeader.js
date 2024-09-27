@@ -23,9 +23,9 @@ export const StarSkateHeader = ({
                                            description: "Experienced Skaters",
                                        },
                                        {
-                                           url: "https://www.federationskatingclub.ca/registration/",
+                                           url: "https://www.registrationfederation.ca/registration/",
                                            title: "Registration",
-                                           description: "https://www.federationskatingclub.ca/registration/",
+                                           description: "https://www.registrationfederation.ca/registration/",
                                        },
                                    ],
 content="Skaters have the opportunity to take part in Skate Canada assessments through a nationally standardized assessments system and/or competitions. \n" +

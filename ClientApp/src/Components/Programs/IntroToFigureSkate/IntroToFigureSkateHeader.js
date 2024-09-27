@@ -24,9 +24,9 @@ export const IntroToFigureSkatingHeader = ({
                                            description: "Intermediate skaters",
                                        },
                                        {
-                                           url: "https://www.federationskatingclub.ca/registration/",
+                                           url: "https://www.registrationfederation.ca/registration/",
                                            title: "Registration",
-                                           description: "https://www.federationskatingclub.ca/registration/",
+                                           description: "https://www.registrationfederation.ca/registration/",
                                        },
                                    ],
 content="Lead by a NCCP Professional Coaches and trained Program Assistants. This fun and upbeat class acts as a transition program between the Canskate and STARSkate programs. "                               }) => {

@@ -9,7 +9,7 @@ const CanPowerSkateProgramInfo = (props) => {
             "This program is desired for skaters who can skate forwards and glide on one foot. This program acts as an entry into the CanPowerSkate program. Skaters are not required to wear hockey equipment and hockey/ringette sticks are not allowed. ",
         footerHeading = "What do you need to participate?",
         footerDescription = "All you need are skates, a CSA-approved hockey helmet, long pants, mittens, warm sweater or jacket. Dress in layers - it will get warm!",
-        button = { title: "Register Now", variant: "secondary", link: "https://www.federationskatingclub.ca/registration/" }
+        button = { title: "Register Now", variant: "secondary", link: "https://www.registrationfederation.ca/registration/" }
     } = props;
 
     return (

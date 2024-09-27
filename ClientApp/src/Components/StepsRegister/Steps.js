@@ -56,7 +56,7 @@ const RegisterHereDefaults = {
         },
         {
             tagline: "Step 3",
-            url: "https://www.federationskatingclub.ca/registration/",
+            url: "https://www.registrationfederation.ca/registration/",
             heading: "Register for Program",
             description:
                 "Decide which rink and time works for you!\n",

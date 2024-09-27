@@ -111,7 +111,7 @@ const FigureSkateParentInfo = (props) => {
             "Upon completion of the Stage 5 Canskate skating skills, the coach/program coordinator and parents/guardians may discuss removing the childs helmet. All helmets must be worn until coach and/or program coordinator and parent approval is granted. ",
         footerHeading = "What do you need to participate?",
         footerDescription = "All you need are skates, a CSA-approved hockey helmet, long pants, mittens, warm sweater or jacket. Dress in layers - it will get warm!",
-        button = { title: "Register Now", variant: "secondary", link: "https://www.federationskatingclub.ca/registration/" }
+        button = { title: "Register Now", variant: "secondary", link: "https://www.registrationfederation.ca/registration/" }
     } = props;
 
     return (

@@ -162,7 +162,7 @@ export const FaqDefaults = {
                         <li>
                             Cost varies per program. Please find a breakdown for each session on our{" "}
                             <a
-                                href="https://www.federationskatingclub.ca/registration/"
+                                href="https://www.registrationfederation.ca/registration/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-blue-500 underline"

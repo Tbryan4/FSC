@@ -27,9 +27,9 @@ export const PreCanSkateHeader = ({
                                            description: "Beginner skaters",
                                        },
                                        {
-                                           url: "https://www.federationskatingclub.ca/registration/",
+                                           url: "https://www.registrationfederation.ca/registration/",
                                            title: "Registration",
-                                           description: "https://www.federationskatingclub.ca/registration/",
+                                           description: "https://www.registrationfederation.ca/registration/",
                                        },
                                    ],
     content="This Learn-to-Skate program is designed for young skaters ages 3-5 with little to no previous skating experience. Skaters learn the basic skating skills, such as standing up, moving forwards, jumping and marching on the spot. These skills are taught using on-ice aids and games in order to keep skating interesting and fun!"

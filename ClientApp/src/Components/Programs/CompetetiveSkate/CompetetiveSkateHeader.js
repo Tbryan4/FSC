@@ -24,9 +24,9 @@ export const CompetitiveSkateHeader = ({
                                            description: "Experienced Figure Skaters",
                                        },
                                        {
-                                           url: "https://www.federationskatingclub.ca/registration/",
+                                           url: "https://www.registrationfederation.ca/registration/",
                                            title: "Registration",
-                                           description: "https://www.federationskatingclub.ca/registration/",
+                                           description: "https://www.registrationfederation.ca/registration/",
                                        },
                                    ],
 content=

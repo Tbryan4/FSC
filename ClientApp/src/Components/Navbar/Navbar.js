@@ -392,7 +392,7 @@ export function GlobalNavbar() {
                             <NavList/>
                         </div>
                         <div className="hidden gap-2 lg:flex">
-                            <a href="https://www.federationskatingclub.ca/registration/" target="_blank"
+                            <a href="https://www.registrationfederation.ca/registration/" target="_blank"
                                rel="noopener noreferrer">
                                 <Button color="red" style={{width:'6.5rem', height:'3rem',fontSize: '0.8rem'}}>
                                     Register

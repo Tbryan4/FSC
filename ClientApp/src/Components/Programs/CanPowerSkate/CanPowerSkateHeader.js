@@ -23,9 +23,9 @@ export const CanPowerSkateHeader = ({
                                      description: "Intermediate to senior skaters",
                                  },
                                  {
-                                     url: "https://www.federationskatingclub.ca/registration/",
+                                     url: "https://www.registrationfederation.ca/registration/",
                                      title: "Registration",
-                                     description: "https://www.federationskatingclub.ca/registration/",
+                                     description: "https://www.registrationfederation.ca/registration/",
                                  },
                              ],
                              content = "\n" +
