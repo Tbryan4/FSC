@@ -8,7 +8,7 @@ const SchedulePage = () => {
         <div>
             <Banner
                 heading="Schedule"
-                description="We'd love to hear from you! Whether you have questions, feedback, or need assistance, our team is here to help. Reach out to us through any of the following methods below, and we'll get back to you as soon as possible."
+                description="Check out the schedule for the 2024/2025 season!"
                 image={{
                     src: BannerImg,
                     alt: "Schedule Banner"

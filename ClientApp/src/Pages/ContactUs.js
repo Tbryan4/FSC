@@ -9,7 +9,7 @@ const ContactPage = () => {
         <div>
             <Banner
                 heading="Contact Us"
-                description="Join us for exciting events throughout the season! Whether you're looking to participate in skating showcases, competitions, or community gatherings, our club offers something for everyone. "
+                description="We'd love to hear from you! Whether you have questions, feedback, or need assistance, our team is here to help. Reach out to us through any of the following methods below, and we'll get back to you as soon as possible. "
                 image={{
                     src: BannerImg,
                     alt: "Contact Us Banner",

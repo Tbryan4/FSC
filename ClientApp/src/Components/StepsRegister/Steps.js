@@ -172,8 +172,7 @@ const RegisterHere = (props) => {
                                             iconRight={feature.button.iconRight}
                                             iconLeft={feature.button.iconLeft}
                                             className="text-text-alternative"
-                                        >
-                                            Button
+                                        >View More
                                         </Button>
                                     </div>
                                 </div>
