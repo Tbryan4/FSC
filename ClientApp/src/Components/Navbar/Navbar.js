@@ -71,26 +71,26 @@ const AboutUsMenuList = [
 
 const ProgramsMenuList = [
     {
-        title: "CanPower",
-        link: "/canpower",
-        description: "Program",
-        icon: UserGroupIcon,
-    },
-    {
         title: "CanSkate",
         link: "/canskate",
-        description: "Program",
+        description: "Learn To Skate Program",
         icon: UserGroupIcon,
     },
     {
         title: "PreCanSkate",
         link: "/precanskate",
-        description: "Program",
+        description: "Learn To Skate Program",
         icon: UserGroupIcon,
     },
     {
         title: "Adult CanSkate",
         link: "/adultcanskate",
+        description: "Learn To Skate Program",
+        icon: UserGroupIcon,
+    },
+    {
+        title: "CanPower",
+        link: "/canpower",
         description: "Program",
         icon: UserGroupIcon,
     },
