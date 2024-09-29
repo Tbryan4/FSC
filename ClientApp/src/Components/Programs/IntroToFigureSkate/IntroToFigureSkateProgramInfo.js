@@ -8,7 +8,7 @@ const IntroToFigureSkatingInfo = (props) => {
             "Skaters can expect action, movement and fun, both on and off the ice! Lessons are taught in a group format with a coach-to-student ratio of a maximum 1:10. Skaters progress at their own rate and coaches makes sessions active using teaching aids, upbeat music, and a wide variety of activities that create a motivational environment and promote learning. Ribbons and other incentives are used to benchmark skaters' progress and reward effort and participation.",
         footerHeading = "What do you need to participate?",
         footerDescription = "All you need are skates, a CSA-approved hockey helmet, long pants, mittens, warm sweater or jacket. Dress in layers - it will get warm!",
-        button = { title: "Register Now", variant: "secondary", link: "https://www.federationskatingclub.ca/registration/" }
+        button = { title: "Register Now", variant: "secondary", link: "https://www.registrationfederation.ca/registration/" }
     } = props;
 
     return (

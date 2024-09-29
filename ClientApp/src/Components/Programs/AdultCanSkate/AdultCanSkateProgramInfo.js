@@ -7,7 +7,7 @@ const AdultCanSkateProgramInfo = (props) => {
         description = "CanSkate is a dynamic learn-to-skate program that focuses on fun, participation, and basic skill development. Based on Sport Canada's long term athlete development (LTAD) principles, CanSkate centers on physical literacy and the fundamental skills needed to take part in any ice sport or to skate as a recreational activity.",
         footerHeading = "What do you need to participate?",
         footerDescription = "All you need are skates, a CSA-approved hockey helmet, long pants, mittens, warm sweater or jacket. Dress in layers - it will get warm!",
-        button = { title: "Register Now", variant: "secondary", link: "https://www.federationskatingclub.ca/registration/" }
+        button = { title: "Register Now", variant: "secondary", link: "https://www.registrationfederation.ca/registration/" }
     } = props;
 
     return (
