@@ -63,9 +63,6 @@ const IntroToFigureSkatingInfo = (props) => {
                                 <span style={{fontSize: '11pt', fontWeight: 'bold'}}>Activity</span>
                             </td>
                             <td style={{width: '33.33%', border: '1px solid black'}}>
-                                <span style={{fontSize: '11pt', fontWeight: 'bold'}}>Length of Time</span>
-                            </td>
-                            <td style={{width: '33.33%', border: '1px solid black'}}>
                                 <span style={{fontSize: '11pt', fontWeight: 'bold'}}>Information</span>
                             </td>
                         </tr>
@@ -74,27 +71,8 @@ const IntroToFigureSkatingInfo = (props) => {
                                 <span style={{fontSize: '11pt'}}>Group Lesson</span>
                             </td>
                             <td style={{width: '33.33%', border: '1px solid black'}}>
-                                <span style={{fontSize: '11pt'}}>45 minutes</span>
-                            </td>
-                            <td style={{width: '33.33%', border: '1px solid black'}}>
                         <span style={{fontSize: '11pt'}}>
-                            This group session develops upon the basic skating skills taught in Canskate
-                            while teaching the basic jumps, spins, turns, and steps that make up the sport of
-                            figure skating.
-                        </span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style={{width: '33.33%', border: '1px solid black'}}>
-                                <span style={{fontSize: '11pt'}}>Group Stroking Lesson</span>
-                            </td>
-                            <td style={{width: '33.33%', border: '1px solid black'}}>
-                                <span style={{fontSize: '11pt'}}>15 minutes</span>
-                            </td>
-                            <td style={{width: '33.33%', border: '1px solid black'}}>
-                        <span style={{fontSize: '11pt'}}>
-                            This group session is combined with the Starskate program and develops speed, edges,
-                            turns, creative expression, and flexibility.
+                            This group session develops upon the basic skating skills taught in Canskate while teaching the basic jumps, spins, turns, and steps that make up the sport of figure skating. Additionally, the class will have dedicated time towards developing speed, edges, turns, creative expression, and flexibility. 
                         </span>
                             </td>
                         </tr>
@@ -103,13 +81,8 @@ const IntroToFigureSkatingInfo = (props) => {
                                 <span style={{fontSize: '11pt'}}>Group Off-Ice Lesson</span>
                             </td>
                             <td style={{width: '33.33%', border: '1px solid black'}}>
-                                <span style={{fontSize: '11pt'}}>30 minutes</span>
-                            </td>
-                            <td style={{width: '33.33%', border: '1px solid black'}}>
                         <span style={{fontSize: '11pt'}}>
-                            This group session is combined with the Starskate program and develops strength,
-                            flexibility, stamina, and jump/spin technique. Topics such as goal setting are
-                            also covered.
+                            This group session is combined with the Starskate program and develops strength, flexibility, stamina, and jump/spin technique. Topics such as goal setting are also covered.
                         </span>
                             </td>
                         </tr>
