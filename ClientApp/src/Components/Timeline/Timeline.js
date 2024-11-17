@@ -9,29 +9,30 @@ export const TimelineDefaults = {
     heading: "Events",
     description: "Check out our events for the 2023-2024 season!",
     timelines: [
-        {
-            date: "October 10 - 15, 2024",
-            heading: "No Skating - Thanksgiving Holiday",
-            description: "Enjoy your thanksgiving holiday!",
-            buttons: [
-                { title: "View", variant: "secondary" }
-            ],
-            photo: thanksGivingPhoto,
-        },
-        {
-            date: "November 9, 2024",
-            heading: "Federation Competition",
-            description: "Competition time!",
-            location: "Kinsmen Twin Arenas",
-            mapUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9503.908915811548!2d-113.5139819!3d53.4509933!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a01efb180d768b%3A0x63cd6491dbb20f1d!2sKinsmen%20Twin%20Arenas!5e0!3m2!1sen!2sca!4v1724820009834!5m2!1sen!2sca",
-            buttons: [
-                { title: "View", variant: "secondary" }
-            ],
-        },
+        // {
+        //     date: "October 10 - 15, 2024",
+        //     heading: "No Skating - Thanksgiving Holiday",
+        //     description: "Enjoy your thanksgiving holiday!",
+        //     buttons: [
+        //         { title: "View", variant: "secondary" }
+        //     ],
+        //     photo: thanksGivingPhoto,
+        // },
+        // {
+        //     date: "November 9, 2024",
+        //     heading: "Federation Competition",
+        //     description: "Competition time!",
+        //     location: "Kinsmen Twin Arenas",
+        //     mapUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9503.908915811548!2d-113.5139819!3d53.4509933!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a01efb180d768b%3A0x63cd6491dbb20f1d!2sKinsmen%20Twin%20Arenas!5e0!3m2!1sen!2sca!4v1724820009834!5m2!1sen!2sca",
+        //     buttons: [
+        //         { title: "View", variant: "secondary" }
+        //     ],
+        // },
         {
             date: "December 21, 2024",
+            time: "2:45pm - 3:45pm and 4:00pm - 5:00pm",
             heading: "Holiday Showcase",
-            description: "Holiday showcase before Christmas!",
+            description: "Holiday showcase before Christmas! All Federation StarSkaters welcome! Registration information has been sent to your emails. The show will run 2:45pm - 3:45pm and 4:00pm - 5:00pm with a reception after the show and during intermission",
             location: "Kinsmen Twin Arenas",
             mapUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9503.908915811548!2d-113.5139819!3d53.4509933!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a01efb180d768b%3A0x63cd6491dbb20f1d!2sKinsmen%20Twin%20Arenas!5e0!3m2!1sen!2sca!4v1724820009834!5m2!1sen!2sca",
             buttons: [

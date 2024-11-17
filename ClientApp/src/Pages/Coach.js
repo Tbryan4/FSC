@@ -6,7 +6,7 @@ import BannerImg from "../assets/Banners/coaching-team-banner.webp"
 
 
 // star skate coaches
-import BaseCoachImg1 from "../assets/coaching-staff/jenna-hodnefield.webp";
+import BaseCoachImg1 from "../assets/coaching-staff/jenna.jpg";
 import BaseCoachImg2 from "../assets/coaching-staff/abi.png";
 import BaseCoachImg3 from "../assets/coaching-staff/rhea.png";
 
@@ -14,6 +14,8 @@ import SupplementalCoachImg1 from "../assets/coaching-staff/jaelyn.png";
 import SupplementalCoachImg2 from "../assets/coaching-staff/marie.png";
 import SupplementalCoachImg3 from "../assets/coaching-staff/grace.png"
 import SupplementalCoachImg4 from "../assets/coaching-staff/melissa.png"
+import SupplementalCoachImg5 from "../assets/coaching-staff/megan.png"
+
 
 // learn to skate coaches
 import BaseCoachImg5 from "../assets/coaching-staff/katrina-abou-rjeily.webp"
@@ -247,7 +249,7 @@ const supplementalStarSkateCoaches = [
     },
 
     {
-        image: {src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg", alt: "Megan Semmens"},
+        image: {src: SupplementalCoachImg5, alt: "Megan Semmens"},
         name: "Megan Semmens",
         jobTitle: "Supplemental Coach",
         description: (
