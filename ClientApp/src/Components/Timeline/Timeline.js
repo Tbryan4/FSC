@@ -39,6 +39,42 @@ export const TimelineDefaults = {
             ],
         },
         {
+            date: "December 28th 2024",
+            time: "1:00pm - 5:00pm",
+            heading: "Development Seminar",
+            description: (
+                <>
+                    Open to all skaters! Guest coaches: Lynne Koper, Ben Ferreira, Christina Penkov, Katie Castle MC., R. Psych, Elite Dance Studio
+                    <br />
+                    <br />
+                    Check out the <a href="https://drive.google.com/file/d/1E2a7Tpvf9xpRpLoxWWV3lbBs24zYaRmb/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ color: 'blue' }}>flyer</a> for more information!
+                </>
+            ),
+
+            location: "Kinsmen Twin Arenas",
+            mapUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9503.908915811548!2d-113.5139819!3d53.4509933!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a01efb180d768b%3A0x63cd6491dbb20f1d!2sKinsmen%20Twin%20Arenas!5e0!3m2!1sen!2sca!4v1724820009834!5m2!1sen!2sca",
+            buttons: [
+                { title: "View", variant: "secondary" }
+            ],
+        },
+        {
+            date: "December 29th 2024",
+            time: "1:15pm - 6:30pm",
+            heading: "Development Seminar",
+            description: (
+                <>
+                    Open to all skaters! Guest coaches: Lynne Koper, Ben Ferreira, Christina Penkov, Katie Castle MC., R. Psych, Elite Dance Studio
+                    <br />
+                    <br />
+                    Check out the <a href="https://drive.google.com/file/d/1E2a7Tpvf9xpRpLoxWWV3lbBs24zYaRmb/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ color: 'blue' }}>flyer</a> for more information!
+                </>
+            ),            location: "Tipton arena",
+            mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.301001462776!2d-113.51403112325795!3d53.51668097233917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a0220347dd7275%3A0x1a9dca81a2aff720!2sTipton%20Arena!5e0!3m2!1sen!2sca!4v1731800943943!5m2!1sen!2sca",
+            buttons: [
+                { title: "View", variant: "secondary" }
+            ],
+        },
+        {
             date: "March 23, 2025",
             heading: "Annual Ice Show",
             description: "Annual Ice Show Competition on March 25!",
@@ -109,6 +145,9 @@ export const TimelineEvents = (props) => {
                     <DialogHeader>{selectedTimeline.heading}</DialogHeader>
                     <DialogBody>
                         <p><strong>Date</strong>: {selectedTimeline.date}</p>
+                        {selectedTimeline.time && (
+                            <p><strong>Time:</strong> {selectedTimeline.time}</p>
+                        )}
                         {selectedTimeline.location && <p><strong>Location:</strong> {selectedTimeline.location}</p>}
                         <br/>
                         <p>{selectedTimeline.description}</p>
@@ -168,10 +207,19 @@ const Timeline = ({ timeline, onButtonClick }) => {
                 />
             </div>
             <div className="ml-12 mt-4 flex flex-col md:ml-0">
-                <h2 className="mb-3 text-4xl font-bold leading-[1.2] md:mb-4 md:text-5xl lg:text-6xl">
-                    {timeline.date}
+                <h2 className="text-4xl font-bold leading-[1.2] md:mb-4 md:text-5xl lg:text-6xl">
+                    {timeline.heading}
                 </h2>
-                <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl">{timeline.heading}</h3>
+                <h3 className=" font-bold md:mb-4 md:text-2xl">{timeline.date}
+                    {
+                        timeline.time && (
+                            <h4 className="md:text-md">
+                                {timeline.time}
+                            </h4>
+                        )
+                    }
+                </h3>
+                
                 <p>{timeline.description}</p>
                 <div className="mt-6 flex items-center gap-4 md:mt-8">
                     {timeline.buttons.map((button, index) => (

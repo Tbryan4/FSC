@@ -7,14 +7,20 @@ import BannerImg from "../assets/Banners/coaching-team-banner.webp"
 
 // star skate coaches
 import BaseCoachImg1 from "../assets/coaching-staff/jenna-hodnefield.webp";
-import BaseCoachImg2 from "../assets/coaching-staff/abi-seewald.webp";
-import BaseCoachImg3 from "../assets/coaching-staff/rhea-sherman.webp";
+import BaseCoachImg2 from "../assets/coaching-staff/abi.png";
+import BaseCoachImg3 from "../assets/coaching-staff/rhea.png";
 
-import SupplementalCoachImg1 from "../assets/coaching-staff/jaelyn-hodnefield.webp";
-import SupplementalCoachImg2 from "../assets/coaching-staff/marie-terez-abou-rjeily.webp";
+import SupplementalCoachImg1 from "../assets/coaching-staff/jaelyn.png";
+import SupplementalCoachImg2 from "../assets/coaching-staff/marie.png";
+import SupplementalCoachImg3 from "../assets/coaching-staff/grace.png"
+import SupplementalCoachImg4 from "../assets/coaching-staff/melissa.png"
 
 // learn to skate coaches
 import BaseCoachImg5 from "../assets/coaching-staff/katrina-abou-rjeily.webp"
+import BaseCoachImg7 from "../assets/coaching-staff/alyssa.png"
+import BaseCoachImg8 from "../assets/coaching-staff/astha.png"
+import BaseCoachImg9 from "../assets/coaching-staff/elene.png"
+import BaseCoachImg10 from "../assets/coaching-staff/melanie.png"
 
 // CanPower coaches
 import BaseCoachImg6 from "../assets/coaching-staff/brodie-case.webp"
@@ -90,7 +96,7 @@ const starSkateBaseCoaches = [
         type: 'base' 
     },
     {
-        image: {src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg", alt: "Elène Haave Audet"},
+        image: {src: BaseCoachImg9, alt: "Elène Haave Audet"},
         name: "Elène Haave Audet",
         jobTitle: "Base Coach",
         description: (
@@ -158,7 +164,7 @@ const supplementalStarSkateCoaches = [
         type: 'supplemental' 
     },
     {
-        image: {src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg", alt: "Melanie Cheng"},
+        image: {src: BaseCoachImg10, alt: "Melanie Cheng"},
         name: "Melanie Cheng",
         jobTitle: "Supplemental Coach",
         description: (
@@ -179,7 +185,7 @@ const supplementalStarSkateCoaches = [
         type: 'supplemental'
     },
     {
-        image: {src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg", alt: "Grace Fedor"},
+        image: {src: SupplementalCoachImg3, alt: "Grace Fedor"},
         name: "Grace Fedor",
         jobTitle: "Supplemental Coach",
         description: (
@@ -263,7 +269,7 @@ const supplementalStarSkateCoaches = [
     },
 
     {
-        image: {src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg", alt: "Melissa Lam"},
+        image: {src: SupplementalCoachImg4, alt: "Melissa Lam"},
         name: "Melissa Lam",
         jobTitle: "Supplemental Coach",
         description: (
@@ -303,7 +309,7 @@ const learnToSkateCoaches = [
         type: 'base',
     },
     {
-        image: { src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg", alt: "Alyssa Higo" },
+        image: { src: BaseCoachImg7, alt: "Alyssa Higo" },
         name: "Alyssa Higo",
         description: (
             <>
@@ -321,7 +327,7 @@ const learnToSkateCoaches = [
         type: 'base',
     },
     {
-        image: { src: "https://relume-assets.s3.amazonaws.com/placeholder-image.svg", alt: "Astha Shah" },
+        image: { src: BaseCoachImg8, alt: "Astha Shah" },
         name: "Astha Shah",
         description: (
             <>
