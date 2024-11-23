@@ -4,10 +4,13 @@ import { Button, Dialog, DialogHeader, DialogBody, DialogFooter } from "@materia
 import thanksGivingPhoto from "../../assets/events-photos/happy-thanksgiving-background-free-vector.jpg"
 
 // Default values for the TimelineEvents component
+
+const currentYear = new Date().getFullYear();
+const season = `${currentYear}-${currentYear + 1}`;
 export const TimelineDefaults = {
-    tagline: "2023-2024",
+    tagline: season,
     heading: "Events",
-    description: "Check out our events for the 2023-2024 season!",
+    description: `Check out our events for the ${season} season!`,
     timelines: [
         // {
         //     date: "October 10 - 15, 2024",

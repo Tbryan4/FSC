@@ -31,7 +31,7 @@ const GoogleCalendarTabs = (props) => {
                 <div className="container mb-12 max-w-lg text-center md:mb-18 lg:mb-20">
                     <p className="mb-3 font-semibold md:mb-4">{tagline}</p>
                     <h1 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">{heading}</h1>
-                    <p className="md:text-md">{description}</p>
+                    <p className="md:text-md"><strong>{description}</strong></p>
                 </div>
                 <div className="relative">
                     <Tabs value={activeTab} onValueChange={setActiveTab}>
@@ -111,15 +111,25 @@ const FeatureCard = ({ tab, isMobile }) => {
     );
 };
 
+const currentYear = new Date().getFullYear();
+
+const currentDate = new Date();
+const currentMonth = currentDate.getMonth();
+
+let heading;
+if (currentMonth >= 3  && currentMonth <= 8) {
+    // March to August (Spring and Summer)
+    heading = `Spring and Summer ${currentYear} Schedule`;
+} else {
+    // September to February (Fall and Winter)
+    heading = `Fall and Winter ${currentMonth >= 8 ? currentYear : currentYear - 1} Schedule`;
+}
+
 const GoogleCalendarTabsDefaults = {
-    tagline: "Skate into 2024: Registration Open!",
-    heading: "Fall and Winter 2024 Schedule",
+    tagline: `Skate into 2025: Registration Open!`,
+    heading: `Fall and Winter ${currentYear} Schedule`,
     description:
-        "August Learn to Skate Registration is Open\n" +
-        " \n" +
-        "Schedule is available under the 'Schedule' tab.\n" +
-        " \n" +
-        "Fall & Winter Registration is Open",
+        "Winter 2025 Registration is open - use the Register tab in the top right corner! The schedule is below for PreCanSkate and CanSkate under Learn to Skate",
     defaultValue: "tab-1",
     tabs: [
         {
