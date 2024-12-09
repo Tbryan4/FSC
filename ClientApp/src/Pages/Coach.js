@@ -36,6 +36,7 @@ const starSkateBaseCoaches = [
         description: (
             <>
                 <ul className="list-disc pl-5 text-left">
+                    <li>Provincial In-Training</li>
                     <li>Regional Coach Certified</li>
                     <li>Club Coach Certified</li>
                     <li>Program Coordinator</li>

@@ -4,7 +4,7 @@ import { Button } from "@material-tailwind/react";
 const DropInInfo = (props) => {
     const {
         heading = "Drop In Ice For Non-Federation Skating Club Members",
-        description ="STARSkate Drop-In: All skaters must be Skate Canada members and must email the club before purchasing the tickets to to request permission. Drop-In coaching requests are subject to board approval. Drop-in tickets can not be used for any programs except STARSkate. If you are interested we offer 1 day tickets for you to drop in on any of STARSkate ice times. Please email us in advance to purchasing your tickets to ensure the ice time you are looking to have your skater skate on has available space. federationskating@gmail.com",
+        description ="STARSkate Drop-In: All skaters must be Skate Canada members and must email the club before purchasing the tickets to request permission. Drop-In coaching requests are subject to board approval. Drop-in tickets can not be used for any programs except STARSkate. If you are interested we offer 1 day tickets for you to drop in on any of STARSkate ice times. Please email us in advance to purchasing your tickets to ensure the ice time you are looking to have your skater skate on has available space. federationskating@gmail.com",
         footerHeading = "What do you need to participate?",
         footerDescription = "All you need are skates, a CSA-approved hockey helmet, long pants, mittens, warm sweater or jacket. Dress in layers - it will get warm!",
         button = { title: "Register Now", variant: "secondary", link: "https://www.registrationfederation.ca/registration/" }
